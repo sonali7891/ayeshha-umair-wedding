@@ -365,18 +365,28 @@
     s.className = 'lb-slide';
     s.dataset.idx = String(i);
 
+    // Show the small thumbnail straight away as a placeholder so the slide
+    // is never empty, then fade the larger preview in over it.
+    s.style.backgroundImage = 'url("' + THUMB_DIR + p.thumb + '")';
+    s.style.backgroundSize = 'contain';
+    s.style.backgroundPosition = 'center';
+    s.style.backgroundRepeat = 'no-repeat';
+
     var img = document.createElement('img');
     img.alt = 'Wedding photograph ' + (i + 1) + ' of ' + view.length;
     img.decoding = 'async';
-    img.src = showingFull ? PHOTO_DIR + encodeURIComponent(p.src) : PREV_DIR + p.preview;
+    img.style.opacity = '0';
+    var fullSrc = showingFull ? PHOTO_DIR + encodeURIComponent(p.src) : PREV_DIR + p.preview;
+    img.src = fullSrc;
     sizeSlideImage(img, p);
     applyZoom(img);
-    img.addEventListener('load', function () {
+    var reveal = function () {
+      img.style.opacity = '1';
       if (Number(s.dataset.idx) === current) el.lb.classList.remove('is-loading');
-    });
-    img.addEventListener('error', function () {
-      if (Number(s.dataset.idx) === current) el.lb.classList.remove('is-loading');
-    });
+    };
+    img.addEventListener('load', reveal);
+    img.addEventListener('error', reveal);
+    if (img.complete && img.naturalWidth > 0) reveal();
 
     s.appendChild(img);
     slideEls[i] = s;
@@ -420,7 +430,6 @@
     slidesRendered = [];
     for (var m2 = lo; m2 <= hi; m2++) if (slideEls[m2]) slidesRendered.push(slideEls[m2]);
     prefetch(center - 1); prefetch(center + 1);
-    prefetch(center - 2); prefetch(center + 2);
     return lo;
   }
 
@@ -521,7 +530,7 @@
   function step(d) { goTo(current + d); }
 
   /* ---------- Slideshow (3 second default) ---------- */
-  var SLIDE_MS = 3000;
+  var SLIDE_MS = 2000;
 
   function startSlideshow() {
     if (playing) return;
@@ -564,6 +573,7 @@
 
     el.lb.classList.add('is-loading');
     showingFull = !showingFull;
+    img.style.opacity = '0';
     img.src = showingFull ? PHOTO_DIR + encodeURIComponent(p.src) : PREV_DIR + p.preview;
     sizeSlideImage(img, p);
     applyZoom(img);

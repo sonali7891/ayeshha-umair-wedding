@@ -285,6 +285,10 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
   width: 100vw; height: 100%;
   display: grid; place-items: center;
   overflow: hidden;
+  /* Thumbnail placeholder sits behind the image so a slide is never blank. */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .lb-slide img {
   --zx: 0px; --zy: 0px; --zs: 1;
@@ -294,16 +298,15 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
   object-fit: contain;
   display: block;
   will-change: transform, opacity;
+  opacity: 0;
   transform: translate(var(--zx), var(--zy)) scale(var(--zs));
-  transition: transform .34s cubic-bezier(.22,.68,.28,1), opacity .3s ease;
+  transition: transform .34s cubic-bezier(.22,.68,.28,1), opacity .28s ease;
 }
 /* Neighbouring slides sit slightly back, giving depth while swiping.
    The zoom variables keep the true aspect ratio at every zoom level. */
 .lb-slide:not(.is-active) img {
   transform: translate(var(--zx), var(--zy)) scale(calc(var(--zs) * .93));
-  opacity: .85;
 }
-.lb-slide.is-active img { transition: transform .18s ease-out, opacity .3s ease; }
 
 .lb-spinner {
   position: absolute; top: 50%; left: 50%;
