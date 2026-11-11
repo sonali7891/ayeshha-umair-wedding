@@ -278,12 +278,30 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 /* The track is a horizontal strip of slides; swiping translates it.
    Each slide is positioned absolutely at its own index so that adding or
    removing slides can never shift the others. */
+/* A soft, darkened, blurred copy of the current photograph fills the
+   letterbox area, so a 3:2 picture on a tall phone still reads as a
+   full-screen image. The photograph itself is never cropped or stretched. */
+.lb-backdrop {
+  position: absolute; inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(30px) brightness(.34) saturate(1.2);
+  transform: scale(1.18);
+  opacity: 0;
+  transition: opacity .4s ease;
+  pointer-events: none;
+}
+.lb-backdrop.is-ready { opacity: 1; }
+
 .lb-track {
   position: absolute; inset: 0;
-  will-change: transform;
   transform: translate3d(0, 0, 0);
 }
-.lb-track.animating { transition: transform .42s cubic-bezier(.22,.68,.28,1); }
+.lb-track.animating {
+  transition: transform .42s cubic-bezier(.22,.68,.28,1);
+  will-change: transform;   /* only while the track is actually moving */
+}
 
 .lb-slide {
   position: absolute; left: 0; top: 0;
