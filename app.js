@@ -599,8 +599,13 @@
     var axisLocked = null;
 
     function onDown(e) {
+      window.__lbTrace = window.__lbTrace || [];
+      window.__lbTrace.push({ fn: 'down', clientX: e.clientX, clientY: e.clientY, current: current, target: e.target && e.target.className });
       if (current < 0) return;
-      if (e.target.closest && e.target.closest('.lb-btn, .lb-arrow, .lb-close')) return;
+      if (e.target.closest && e.target.closest('.lb-btn, .lb-arrow, .lb-close')) {
+        window.__lbTrace.push({ fn: 'down-skipped-control' });
+        return;
+      }
       drag = true;
       axisLocked = null;
       startX = e.clientX; startY = e.clientY;
@@ -615,6 +620,10 @@
     }
 
     function onMove(e) {
+      window.__lbTrace = window.__lbTrace || [];
+      if (window.__lbTrace.length < 8) {
+        window.__lbTrace.push({ fn: 'move', clientX: e.clientX, drag: drag, dx: e.clientX - startX, axis: axisLocked });
+      }
       if (!drag) return;
       var dx = e.clientX - startX;
       var dy = e.clientY - startY;
