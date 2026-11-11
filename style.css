@@ -318,6 +318,15 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 .lb-chrome.is-hidden { opacity: 0; }
 .lb-chrome.is-hidden * { pointer-events: none !important; }
 
+/* While the viewer is swiping, every control is hidden - the photograph is
+   the only thing on screen, on every device. */
+.lightbox.is-dragging .lb-chrome,
+.lightbox.is-dragging .lb-chrome * {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+.lightbox.is-dragging .lb-arrow { opacity: 0 !important; }
+
 .lb-close {
   position: absolute; top: max(14px, env(safe-area-inset-top)); right: 14px;
   width: 44px; height: 44px; border-radius: 50%;

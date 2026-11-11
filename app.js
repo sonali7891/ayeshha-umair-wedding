@@ -351,11 +351,20 @@
     return s;
   }
 
-  // Keep a small window of slides around the current one so swiping is
+  // Prefetch the neighbouring previews so a swipe never waits on the network.
+  var prefetched = {};
+  function prefetch(i) {
+    if (i < 0 || i >= view.length || prefetched[i]) return;
+    prefetched[i] = 1;
+    var im = new Image();
+    im.src = PREV_DIR + view[i].preview;
+  }
+
+  // Keep a window of slides around the current one so swiping is
   // instant and memory stays bounded.
   function ensureSlides(center) {
-    var lo = Math.max(0, center - 2);
-    var hi = Math.min(view.length - 1, center + 2);
+    var lo = Math.max(0, center - 3);
+    var hi = Math.min(view.length - 1, center + 3);
     for (var i in slideEls) {
       var k = Number(i);
       if (k < lo || k > hi) {
@@ -366,19 +375,33 @@
     for (var j = lo; j <= hi; j++) {
       if (!slideEls[j]) {
         var s = slideFor(j);
-        el.lbTrack.appendChild(s);
+        // Insert in index order without re-appending existing slides
+        // (moving nodes restarts their CSS transitions and causes flicker).
+        var before = null;
+        for (var k in slideEls) {
+          if (Number(k) > j) { before = slideEls[k]; break; }
+        }
+        el.lbTrack.insertBefore(s, before);
+        slideEls[j] = s;
       }
     }
-    // Keep DOM order aligned with index order.
-    var ordered = [];
-    for (var m = lo; m <= hi; m++) if (slideEls[m]) ordered.push(slideEls[m]);
-    ordered.forEach(function (n) { el.lbTrack.appendChild(n); });
-    slidesRendered = ordered;
+    slidesRendered = [];
+    for (var m2 = lo; m2 <= hi; m2++) if (slideEls[m2]) slidesRendered.push(slideEls[m2]);
+    prefetch(center - 1); prefetch(center + 1);
+    prefetch(center - 2); prefetch(center + 2);
     return lo;
   }
 
   function trackOffsetFor(index, lo) {
     return -(index - lo) * window.innerWidth;
+  }
+
+  // Read the current X offset of the track. NOTE: a naive
+  // parseFloat(el.style.transform) returns 3 for "translate3d(...)"
+  // because of the digit in "translate3d" - so extract it properly.
+  function currentOffset() {
+    var m = /translate(?:3d|X)?\(\s*(-?[\d.]+)px/.exec(el.lbTrack.style.transform || '');
+    return m ? parseFloat(m[1]) : 0;
   }
 
   function applyTrack(offset, animate) {
@@ -410,7 +433,9 @@
       clearTimeout(chromeTimer);
       chromeTimer = setTimeout(function () {
         if (!drag) el.lbChrome.classList.add('is-hidden');
-      }, 3200);
+      }, 2400);
+    } else {
+      clearTimeout(chromeTimer);
     }
   }
 
@@ -574,11 +599,7 @@
 
 
 
-    el.lb.addEventListener('click', function (e) {
-      if (e.target === el.lb || e.target === el.lbViewport) {
-        showChrome(el.lbChrome.classList.contains('is-hidden'));
-      }
-    });
+
 
     $('favClose').addEventListener('click', closeFavDrawer);
 
@@ -596,17 +617,14 @@
 
     // ---- Drag-to-swipe: the current photo is carried toward the next ----
     var startX = 0, startY = 0, startOffset = 0, lastX = 0, lastT = 0, velocity = 0;
+    var wasDrag = false;
     var axisLocked = null;
 
     function onDown(e) {
-      window.__lbTrace = window.__lbTrace || [];
-      window.__lbTrace.push({ fn: 'down', clientX: e.clientX, clientY: e.clientY, current: current, target: e.target && e.target.className });
       if (current < 0) return;
-      if (e.target.closest && e.target.closest('.lb-btn, .lb-arrow, .lb-close')) {
-        window.__lbTrace.push({ fn: 'down-skipped-control' });
-        return;
-      }
+      if (e.target.closest && e.target.closest('.lb-btn, .lb-arrow, .lb-close')) return;
       drag = true;
+      wasDrag = false;
       axisLocked = null;
       startX = e.clientX; startY = e.clientY;
       lastX = e.clientX; lastT = Date.now();
@@ -615,15 +633,14 @@
       var lo = ensureSlides(current);
       startOffset = trackOffsetFor(current, lo);
       el.lbTrack.classList.remove('animating');
+      // Hide every control for the duration of the gesture so only the
+      // photograph is visible while the viewer is swiping.
+      el.lb.classList.add('is-dragging');
       showChrome(false);
-      el.lb.setPointerCapture && el.lb.setPointerCapture(e.pointerId);
+      try { el.lb.setPointerCapture(e.pointerId); } catch (err) {}
     }
 
     function onMove(e) {
-      window.__lbTrace = window.__lbTrace || [];
-      if (window.__lbTrace.length < 8) {
-        window.__lbTrace.push({ fn: 'move', clientX: e.clientX, drag: drag, dx: e.clientX - startX, axis: axisLocked });
-      }
       if (!drag) return;
       var dx = e.clientX - startX;
       var dy = e.clientY - startY;
@@ -631,8 +648,9 @@
       if (!axisLocked) {
         if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
         axisLocked = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
-        if (axisLocked === 'y') { drag = false; showChrome(true); return; }
+        if (axisLocked === 'y') { drag = false; el.lb.classList.remove('is-dragging'); return; }
       }
+      if (Math.abs(dx) > 8) wasDrag = true;
 
       // Rubber-band at the ends of the album.
       var w = window.innerWidth;
@@ -643,49 +661,43 @@
 
       var now = Date.now();
       var dt = now - lastT;
-      if (dt > 0) velocity = (e.clientX - lastX) / dt;
+      // Only trust the velocity sample when it is recent (ignore the long
+      // gaps a throttled/background tab can produce).
+      if (dt > 0 && dt < 120) velocity = (e.clientX - lastX) / dt;
       lastX = e.clientX; lastT = now;
-      window.__lbDebug = {
-        phase: 'move', clientX: e.clientX, lastX: lastX, dt: dt,
-        velocity: velocity, dx: dx, offset: offset, startOffset: startOffset,
-      };
 
       applyTrack(offset, false);
-      e.preventDefault();
+      if (e.cancelable) e.preventDefault();
     }
 
     function onUp() {
       if (!drag) return;
       drag = false;
+      el.lb.classList.remove('is-dragging');
 
       // How far the track actually moved (positive = dragged towards the next).
-      var now = parseFloat(el.lbTrack.style.transform.replace(/[^-\d.]/g, '')) || 0;
-      var delta = startOffset - now;
+      var delta = startOffset - currentOffset();
 
-      var threshold = window.innerWidth * 0.18;
+      var threshold = window.innerWidth * 0.16;
       var target = current;
 
-      if (velocity < -0.45) target = current + 1;
-      else if (velocity > 0.45) target = current - 1;
+      if (velocity < -0.5) target = current + 1;
+      else if (velocity > 0.5) target = current - 1;
       else if (delta > threshold) target = current + 1;
       else if (delta < -threshold) target = current - 1;
-
-      window.__lbDebug = {
-        phase: 'up', velocity: velocity, delta: delta, threshold: threshold,
-        startOffset: startOffset, now: now, current: current, target: target,
-        innerWidth: window.innerWidth,
-      };
 
       if (target < 0) target = 0;
       if (target > view.length - 1) target = view.length - 1;
 
       if (target === current) {
+        // Not far enough to change photo: snap back, keep the chrome hidden.
         var lo = ensureSlides(current);
         applyTrack(trackOffsetFor(current, lo), true);
-        showChrome(true);
       } else {
         goTo(target);
       }
+      // The controls stay hidden after a swipe - the viewer sees only the photo.
+      showChrome(false);
     }
 
     el.lb.addEventListener('pointerdown', onDown, { passive: true });
@@ -693,19 +705,20 @@
     el.lb.addEventListener('pointerup', onUp, { passive: true });
     el.lb.addEventListener('pointercancel', onUp, { passive: true });
 
-    // Double-tap toggles between filling the screen and showing the whole photo.
-    var lastTap = 0, tapTimer = null;
+    // A tap (as opposed to a swipe) toggles the controls.
+    // A double tap switches between filling the screen and the whole photo.
+    var lastTap = 0;
     el.lb.addEventListener('pointerup', function (e) {
       if (e.target.closest && e.target.closest('.lb-btn, .lb-arrow, .lb-close')) return;
+      if (wasDrag) { wasDrag = false; return; }
       var now = Date.now();
       if (now - lastTap < 320) {
-        clearTimeout(tapTimer);
         lastTap = 0;
         toggleFit();
       } else {
         lastTap = now;
-        tapTimer = setTimeout(function () { lastTap = 0; }, 320);
       }
+      showChrome(el.lbChrome.classList.contains('is-hidden'));
     });
 
     window.addEventListener('resize', function () {
