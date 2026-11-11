@@ -104,7 +104,8 @@
 
   /* ---------- Manifest ---------- */
   function loadManifest() {
-    return fetch(BASE + 'manifest.json', { cache: 'no-cache' })
+    // Cache-busted so a stale manifest can never be served after an update.
+    return fetch(BASE + 'manifest.json?v=' + BUILD, { cache: 'no-cache' })
       .then(function (r) {
         if (!r.ok) throw new Error('manifest ' + r.status);
         return r.json();
