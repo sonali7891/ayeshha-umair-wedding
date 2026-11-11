@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayesha Mansuri &middot; Wedding Album &middot; 07 November 2026</title>
+<meta name="description" content="The wedding album of Ayesha Mansuri and family, 07 November 2026. 462 photographs at full original resolution.">
+<meta name="theme-color" content="#12100e">
+<meta property="og:title" content="Ayesha Mansuri &middot; Wedding Album">
+<meta property="og:description" content="07 November 2026 &mdash; 462 photographs at full resolution.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%8D%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<div id="loader" class="loader">
+  <div class="loader-ring"></div>
+  <p class="loader-text">Preparing your album&hellip;</p>
+</div>
+
+<header class="hero" id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-veil"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">The Wedding Of</p>
+    <h1 class="names">
+      <span class="name">Ayesha</span>
+      <span class="amp">&amp;</span>
+      <span class="name">Mansuri</span>
+    </h1>
+    <p class="divider"><span></span><i>&#10022;</i><span></span></p>
+    <p class="date">07 &middot; 11 &middot; 2026</p>
+    <p class="venue">Mumbai, India</p>
+    <button class="scroll-cue" id="scrollCue" aria-label="Scroll to album">
+      <span></span>
+    </button>
+  </div>
+  <div class="hero-count">
+    <strong id="heroCount">&mdash;</strong>
+    <span>photographs &middot; full resolution</span>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <p class="section-eyebrow">The Collection</p>
+    <h2 class="section-title">Every moment, in full fidelity</h2>
+    <p class="section-text">
+      This album holds all <strong id="introCount">462</strong> photographs captured on the day,
+      served straight from the original 24&nbsp;megapixel files &mdash; nothing downscaled,
+      nothing re-compressed. Tap any photograph to view it full screen, or download the
+      untouched original.
+    </p>
+  </section>
+
+  <section class="toolbar" id="toolbar">
+    <div class="toolbar-inner">
+      <div class="seg" role="group" aria-label="Layout">
+        <button class="seg-btn is-active" data-layout="masonry" title="Masonry grid">&#9638;</button>
+        <button class="seg-btn" data-layout="grid" title="Uniform grid">&#9635;</button>
+      </div>
+      <div class="spacer"></div>
+      <label class="toggle">
+        <input type="checkbox" id="favToggle">
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+        <span class="toggle-label">Favourites</span>
+      </label>
+      <div class="counter" id="counter"></div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery" aria-label="Wedding photographs"></section>
+
+  <div class="sentinel" id="sentinel"></div>
+
+  <section class="outro">
+    <p class="section-eyebrow">Thank You</p>
+    <h2 class="section-title">With love &amp; blessings</h2>
+    <p class="section-text">
+      Ayesha Mansuri &mdash; Wedding, 07 November 2026.<br>
+      Photographs preserved at full original resolution.
+    </p>
+    <p class="credit">Album hosted on Oracle Cloud &middot; Originals available to download</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Ayesha Mansuri &middot; 07 November 2026</p>
+  <p class="footer-sub">All images are the original camera files.</p>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
+
+  <figure class="lb-stage" id="lbStage">
+    <img id="lbImg" alt="">
+    <div class="lb-spinner" id="lbSpinner"></div>
+  </figure>
+
+  <div class="lb-bar">
+    <div class="lb-meta">
+      <span class="lb-counter" id="lbCounter"></span>
+      <span class="lb-dim" id="lbDims"></span>
+    </div>
+    <div class="lb-actions">
+      <button class="lb-btn" id="lbFull" title="View the untouched original file">
+        <span>&#9673;</span> <span id="lbFullLabel">Full resolution</span>
+      </button>
+      <button class="lb-btn" id="lbFav" title="Add to favourites">
+        <span class="heart">&#9829;</span> <span id="lbFavLabel">Favourite</span>
+      </button>
+      <a class="lb-btn lb-download" id="lbDownload" download>
+        <span>&#8595;</span> Download original
+      </a>
+    </div>
+  </div>
+
+  <button class="lb-play" id="lbPlay" aria-label="Start slideshow" title="Slideshow">&#9654;</button>
+</div>
+
+<!-- Favourites drawer -->
+<div class="fav-drawer" id="favDrawer">
+  <div class="fav-head">
+    <h3>Your favourites</h3>
+    <button id="favClose" aria-label="Close">&times;</button>
+  </div>
+  <div class="fav-grid" id="favGrid"></div>
+  <p class="fav-empty" id="favEmpty">No favourites yet &mdash; tap the heart on any photo.</p>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
