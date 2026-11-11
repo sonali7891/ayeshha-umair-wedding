@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%8D%3C/text%3E%3C/svg%3E">
 </head>
 <body>
@@ -93,36 +93,61 @@
   <p class="footer-sub">All images are the original camera files.</p>
 </footer>
 
-<!-- Lightbox -->
+<!-- Immersive full-screen viewer -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
-  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
-  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
-  <button class="lb-nav lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
-
-  <figure class="lb-stage" id="lbStage">
-    <img id="lbImg" alt="">
+  <div class="lb-viewport" id="lbViewport">
+    <div class="lb-track" id="lbTrack"></div>
     <div class="lb-spinner" id="lbSpinner"></div>
-  </figure>
+  </div>
 
-  <div class="lb-bar">
-    <div class="lb-meta">
+  <!-- Chrome overlays the photo; auto-hides so only the image is seen. -->
+  <div class="lb-chrome" id="lbChrome">
+    <button class="lb-close" id="lbClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <div class="lb-topmeta" id="lbTopMeta">
       <span class="lb-counter" id="lbCounter"></span>
       <span class="lb-dim" id="lbDims"></span>
     </div>
-    <div class="lb-actions">
-      <button class="lb-btn" id="lbFull" title="View the untouched original file">
-        <span>&#9673;</span> <span id="lbFullLabel">Full resolution</span>
-      </button>
-      <button class="lb-btn" id="lbFav" title="Add to favourites">
-        <span class="heart">&#9829;</span> <span id="lbFavLabel">Favourite</span>
-      </button>
-      <a class="lb-btn lb-download" id="lbDownload" download>
-        <span>&#8595;</span> Download original
-      </a>
+
+    <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+        <path d="M15 4L7 12l8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="lb-arrow lb-next" id="lbNext" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+        <path d="M9 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <button class="lb-play" id="lbPlay" aria-label="Start slideshow" title="Slideshow">
+      <svg class="lb-play-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+        <path d="M7 4l12 8-12 8z" fill="currentColor"/>
+      </svg>
+      <svg class="lb-pause-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" style="display:none">
+        <path d="M8 4h3v16H8zM13 4h3v16h-3z" fill="currentColor"/>
+      </svg>
+    </button>
+
+    <div class="lb-bottom">
+      <div class="lb-progress"><span id="lbProgressFill"></span></div>
+      <div class="lb-actions">
+        <button class="lb-btn" id="lbFull" title="View the untouched original file">
+          <span>&#9673;</span> <span id="lbFullLabel">Full resolution</span>
+        </button>
+        <button class="lb-btn" id="lbFav" title="Add to favourites">
+          <span class="heart">&#9829;</span> <span id="lbFavLabel">Favourite</span>
+        </button>
+        <a class="lb-btn lb-download" id="lbDownload" download>
+          <span>&#8595;</span> Download original
+        </a>
+      </div>
     </div>
   </div>
-
-  <button class="lb-play" id="lbPlay" aria-label="Start slideshow" title="Slideshow">&#9654;</button>
 </div>
 
 <!-- Favourites drawer -->
@@ -135,7 +160,7 @@
   <p class="fav-empty" id="favEmpty">No favourites yet &mdash; tap the heart on any photo.</p>
 </div>
 
-<script src="config.js?v=6"></script>
-<script src="app.js?v=6"></script>
+<script src="config.js?v=7"></script>
+<script src="app.js?v=7"></script>
 </body>
 </html>

@@ -56,10 +56,12 @@
     loader: $('loader'), gallery: $('gallery'), sentinel: $('sentinel'),
     counter: $('counter'), heroCount: $('heroCount'), heroBg: $('heroBg'),
     introCount: $('introCount'), toolbar: $('toolbar'),
-    lb: $('lightbox'), lbImg: $('lbImg'), lbStage: $('lbStage'),
+    lb: $('lightbox'), lbTrack: $('lbTrack'), lbChrome: $('lbChrome'),
     lbCounter: $('lbCounter'), lbDims: $('lbDims'), lbDownload: $('lbDownload'),
-    lbFav: $('lbFav'), lbFavLabel: $('lbFavLabel'), lbPlay: $('lbPlay'),
+    lbFav: $('lbFav'), lbFavLabel: $('lbFavLabel'),
     lbFull: $('lbFull'), lbFullLabel: $('lbFullLabel'),
+    lbProgressFill: $('lbProgressFill'), lbHint: null,
+    lbPlay: $('lbPlay'), lbViewport: $('lbViewport'),
     favDrawer: $('favDrawer'), favGrid: $('favGrid'), favEmpty: $('favEmpty'),
     favToggle: $('favToggle')
   };
@@ -279,84 +281,205 @@
     });
   }
 
-  /* ---------- Lightbox ---------- */
+  /* ---------- Immersive swipe viewer ---------- */
   var showingFull = false;
+  var slideEls = {};        // index -> slide element
+  var drag = null;          // active pointer drag state
+  var chromeTimer = null;
+  var slidesRendered = [];
 
-  function openLightbox(i) {
-    if (i < 0 || i >= view.length) return;
-    current = i;
+  function slideFor(i) {
+    if (slideEls[i]) return slideEls[i];
     var p = view[i];
+    var s = document.createElement('div');
+    s.className = 'lb-slide';
+    s.dataset.idx = String(i);
 
-    el.lb.classList.add('is-open');
-    el.lb.classList.add('is-loading');
-    el.lbImg.style.opacity = '0';
+    var img = document.createElement('img');
+    img.alt = 'Wedding photograph ' + (i + 1) + ' of ' + view.length;
+    img.decoding = 'async';
+    img.src = showingFull ? PHOTO_DIR + encodeURIComponent(p.src) : PREV_DIR + p.preview;
+    img.addEventListener('load', function () {
+      if (Number(s.dataset.idx) === current) el.lb.classList.remove('is-loading');
+    });
+    img.addEventListener('error', function () {
+      if (Number(s.dataset.idx) === current) el.lb.classList.remove('is-loading');
+    });
 
-    el.lbImg.src = PREV_DIR + p.preview;
-    el.lbImg.alt = 'Wedding photograph ' + (i + 1) + ' of ' + view.length;
+    s.appendChild(img);
+    slideEls[i] = s;
+    return s;
+  }
 
+  // Keep a small window of slides around the current one so swiping is
+  // instant and memory stays bounded.
+  function ensureSlides(center) {
+    var lo = Math.max(0, center - 2);
+    var hi = Math.min(view.length - 1, center + 2);
+    for (var i in slideEls) {
+      var k = Number(i);
+      if (k < lo || k > hi) {
+        if (slideEls[k] && slideEls[k].parentNode) slideEls[k].parentNode.removeChild(slideEls[k]);
+        delete slideEls[i];
+      }
+    }
+    for (var j = lo; j <= hi; j++) {
+      if (!slideEls[j]) {
+        var s = slideFor(j);
+        el.lbTrack.appendChild(s);
+      }
+    }
+    // Keep DOM order aligned with index order.
+    var ordered = [];
+    for (var m = lo; m <= hi; m++) if (slideEls[m]) ordered.push(slideEls[m]);
+    ordered.forEach(function (n) { el.lbTrack.appendChild(n); });
+    slidesRendered = ordered;
+    return lo;
+  }
+
+  function trackOffsetFor(index, lo) {
+    return -(index - lo) * window.innerWidth;
+  }
+
+  function applyTrack(offset, animate) {
+    el.lbTrack.classList.toggle('animating', !!animate);
+    el.lbTrack.style.transform = 'translate3d(' + offset + 'px,0,0)';
+  }
+
+  function markActive(i) {
+    for (var k in slideEls) {
+      slideEls[k].classList.toggle('is-active', Number(k) === i);
+    }
+  }
+
+  function updateMeta(i) {
+    var p = view[i];
+    if (!p) return;
     el.lbCounter.textContent = (i + 1) + ' / ' + view.length;
     el.lbDims.textContent = p.w + ' × ' + p.h + '  ·  ' + humanBytes(p.bytes) +
       (p.date ? '  ·  ' + formatDate(p.date) : '');
     el.lbDownload.href = DL_DIR + encodeURIComponent(p.src);
     el.lbDownload.setAttribute('download', p.src);
-
+    el.lbProgressFill.style.width = (((i + 1) / view.length) * 100) + '%';
     syncLbFav();
-    syncFullToggle();
-    document.body.style.overflow = 'hidden';
   }
 
-  // Toggle between the fast preview and the untouched 24MP original.
-  function syncFullToggle() {
+  function showChrome(show) {
+    el.lbChrome.classList.toggle('is-hidden', !show);
+    if (show) {
+      clearTimeout(chromeTimer);
+      chromeTimer = setTimeout(function () {
+        if (!drag) el.lbChrome.classList.add('is-hidden');
+      }, 3200);
+    }
+  }
+
+  function openLightbox(i) {
+    if (i < 0 || i >= view.length) return;
+    current = i;
     showingFull = false;
+
+    el.lb.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+
+    var lo = ensureSlides(i);
+    markActive(i);
+    applyTrack(trackOffsetFor(i, lo), false);
+    updateMeta(i);
+
     el.lbFull.classList.remove('is-on');
     el.lbFullLabel.textContent = 'Full resolution';
-  }
 
-  function toggleFullRes() {
-    if (current < 0) return;
-    var p = view[current];
-    el.lb.classList.add('is-loading');
-    el.lbImg.style.opacity = '0';
+    var img = slideEls[i].querySelector('img');
+    if (img && !img.complete) el.lb.classList.add('is-loading');
 
-    if (showingFull) {
-      el.lbImg.src = PREV_DIR + p.preview;
-      el.lbFull.classList.remove('is-on');
-      el.lbFullLabel.textContent = 'Full resolution';
-      showingFull = false;
-    } else {
-      el.lbImg.src = PHOTO_DIR + encodeURIComponent(p.src);
-      el.lbFull.classList.add('is-on');
-      el.lbFullLabel.textContent = 'Showing original';
-      showingFull = true;
+    showChrome(true);
+    if (!el.lbHint) {
+      el.lbHint = document.createElement('div');
+      el.lbHint.className = 'lb-hint';
+      el.lbHint.textContent = 'Swipe to browse  ·  tap to hide';
+      el.lbChrome.appendChild(el.lbHint);
     }
   }
 
   function closeLightbox() {
     el.lb.classList.remove('is-open');
     el.lb.classList.remove('is-loading');
-    el.lbImg.src = '';
     stopSlideshow();
+    slideEls = {};
+    el.lbTrack.innerHTML = '';
     document.body.style.overflow = '';
     current = -1;
   }
 
-  function step(d) {
-    if (current < 0) return;
-    var n = (current + d + view.length) % view.length;
-    openLightbox(n);
+  function goTo(n) {
+    if (n < 0 || n >= view.length) return;
+    current = n;
+    var lo = ensureSlides(n);
+    markActive(n);
+    applyTrack(trackOffsetFor(n, lo), true);
+    updateMeta(n);
+
+    var img = slideEls[n] && slideEls[n].querySelector('img');
+    if (img && !img.complete) el.lb.classList.add('is-loading');
+    showChrome(true);
   }
+
+  function step(d) { goTo(current + d); }
+
+  /* ---------- Slideshow (3 second default) ---------- */
+  var SLIDE_MS = 3000;
+
   function startSlideshow() {
     if (playing) return;
     playing = true;
     el.lbPlay.classList.add('is-playing');
-    el.lbPlay.innerHTML = '&#10074;&#10074;';
-    slideTimer = setInterval(function () { step(1); }, 4200);
+    el.lbPlay.setAttribute('aria-label', 'Pause slideshow');
+    var icon = el.lbPlay.querySelector('.lb-play-icon');
+    var pause = el.lbPlay.querySelector('.lb-pause-icon');
+    if (icon) icon.style.display = 'none';
+    if (pause) pause.style.display = '';
+    slideTimer = setInterval(function () {
+      if (current >= view.length - 1) {
+        // Loop back to the first photo when the album ends.
+        goTo(0);
+      } else {
+        step(1);
+      }
+    }, SLIDE_MS);
+    showChrome(true);
   }
+
   function stopSlideshow() {
     playing = false;
     el.lbPlay.classList.remove('is-playing');
-    el.lbPlay.innerHTML = '&#9654;';
+    el.lbPlay.setAttribute('aria-label', 'Start slideshow');
+    var icon = el.lbPlay.querySelector('.lb-play-icon');
+    var pause = el.lbPlay.querySelector('.lb-pause-icon');
+    if (icon) icon.style.display = '';
+    if (pause) pause.style.display = 'none';
     if (slideTimer) { clearInterval(slideTimer); slideTimer = null; }
+  }
+
+  // Swap the active slide between the fast preview and the original file.
+  function toggleFullRes() {
+    if (current < 0) return;
+    var p = view[current];
+    var s = slideEls[current];
+    if (!s) return;
+    var img = s.querySelector('img');
+
+    el.lb.classList.add('is-loading');
+    showingFull = !showingFull;
+    img.src = showingFull ? PHOTO_DIR + encodeURIComponent(p.src) : PREV_DIR + p.preview;
+
+    if (showingFull) {
+      el.lbFull.classList.add('is-on');
+      el.lbFullLabel.textContent = 'Showing original';
+    } else {
+      el.lbFull.classList.remove('is-on');
+      el.lbFullLabel.textContent = 'Full resolution';
+    }
   }
 
   /* ---------- Drawer ---------- */
@@ -406,24 +529,20 @@
     });
 
     $('lbClose').addEventListener('click', closeLightbox);
-    $('lbPrev').addEventListener('click', function () { step(-1); });
-    $('lbNext').addEventListener('click', function () { step(1); });
-    el.lbPlay.addEventListener('click', function () { playing ? stopSlideshow() : startSlideshow(); });
+    $('lbPrev').addEventListener('click', function () { stopSlideshow(); step(-1); });
+    $('lbNext').addEventListener('click', function () { stopSlideshow(); step(1); });
+    el.lbPlay.addEventListener('click', function () {
+      if (playing) { stopSlideshow(); } else { startSlideshow(); }
+    });
     el.lbFav.addEventListener('click', function () { if (current >= 0) toggleFav(view[current]); });
     el.lbFull.addEventListener('click', toggleFullRes);
 
-    // Reveal the image once it has actually decoded.
-    el.lbImg.addEventListener('load', function () {
-      el.lb.classList.remove('is-loading');
-      el.lbImg.style.opacity = '1';
-    });
-    el.lbImg.addEventListener('error', function () {
-      el.lb.classList.remove('is-loading');
-      el.lbImg.style.opacity = '1';
-    });
+
 
     el.lb.addEventListener('click', function (e) {
-      if (e.target === el.lb || e.target === el.lbStage) closeLightbox();
+      if (e.target === el.lb || e.target === el.lbViewport) {
+        showChrome(el.lbChrome.classList.contains('is-hidden'));
+      }
     });
 
     $('favClose').addEventListener('click', closeFavDrawer);
@@ -437,20 +556,98 @@
       if (!el.lb.classList.contains('is-open')) return;
       if (e.key === 'ArrowLeft') step(-1);
       if (e.key === 'ArrowRight') step(1);
-      if (e.key === ' ') { e.preventDefault(); playing ? stopSlideshow() : startSlideshow(); }
       if (e.key.toLowerCase() === 'f' && current >= 0) toggleFav(view[current]);
     });
 
-    // Swipe on touch devices
-    var tx = 0, ty = 0;
-    el.lb.addEventListener('touchstart', function (e) {
-      tx = e.changedTouches[0].clientX; ty = e.changedTouches[0].clientY;
-    }, { passive: true });
-    el.lb.addEventListener('touchend', function (e) {
-      var dx = e.changedTouches[0].clientX - tx;
-      var dy = e.changedTouches[0].clientY - ty;
-      if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy)) step(dx < 0 ? 1 : -1);
-    }, { passive: true });
+    // ---- Drag-to-swipe: the current photo is carried toward the next ----
+    var startX = 0, startY = 0, startOffset = 0, lastX = 0, lastT = 0, velocity = 0;
+    var axisLocked = null;
+
+    function onDown(e) {
+      if (current < 0) return;
+      if (e.target.closest && e.target.closest('.lb-btn, .lb-arrow, .lb-close')) return;
+      drag = true;
+      axisLocked = null;
+      startX = e.clientX; startY = e.clientY;
+      lastX = e.clientX; lastT = Date.now();
+      velocity = 0;
+      stopSlideshow();
+      var lo = ensureSlides(current);
+      startOffset = trackOffsetFor(current, lo);
+      el.lbTrack.classList.remove('animating');
+      showChrome(false);
+      el.lb.setPointerCapture && el.lb.setPointerCapture(e.pointerId);
+    }
+
+    function onMove(e) {
+      if (!drag) return;
+      var dx = e.clientX - startX;
+      var dy = e.clientY - startY;
+
+      if (!axisLocked) {
+        if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+        axisLocked = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+        if (axisLocked === 'y') { drag = false; showChrome(true); return; }
+      }
+
+      // Rubber-band at the ends of the album.
+      var w = window.innerWidth;
+      var next = current + 1, prev = current - 1;
+      var offset = startOffset + dx;
+      if (dx > 0 && prev < 0) offset = startOffset + dx * 0.32;
+      if (dx < 0 && next > view.length - 1) offset = startOffset + dx * 0.32;
+
+      var now = Date.now();
+      var dt = now - lastT;
+      if (dt > 0) velocity = (e.clientX - lastX) / dt;
+      lastX = e.clientX; lastT = now;
+
+      applyTrack(offset, false);
+      e.preventDefault();
+    }
+
+    function onUp() {
+      if (!drag) return;
+      drag = false;
+      var w = window.innerWidth;
+      var dx = startOffset - trackOffsetFor(current, ensureSlides(current));
+
+      // Decide which photo to land on: velocity wins, then distance.
+      var moved = startOffset - parseFloat(el.lbTrack.style.transform.replace(/[^-\d.]/g, ''));
+      void moved;
+      var threshold = w * 0.22;
+      var target = current;
+
+      if (velocity < -0.45) target = current + 1;
+      else if (velocity > 0.45) target = current - 1;
+      else {
+        var delta = -dx;
+        if (delta < -threshold) target = current + 1;
+        else if (delta > threshold) target = current - 1;
+      }
+
+      if (target < 0) target = 0;
+      if (target > view.length - 1) target = view.length - 1;
+
+      if (target === current) {
+        var lo = ensureSlides(current);
+        applyTrack(trackOffsetFor(current, lo), true);
+        showChrome(true);
+      } else {
+        goTo(target);
+      }
+    }
+
+    el.lb.addEventListener('pointerdown', onDown, { passive: true });
+    el.lb.addEventListener('pointermove', onMove, { passive: false });
+    el.lb.addEventListener('pointerup', onUp, { passive: true });
+    el.lb.addEventListener('pointercancel', onUp, { passive: true });
+
+    window.addEventListener('resize', function () {
+      if (current < 0) return;
+      var lo = ensureSlides(current);
+      applyTrack(trackOffsetFor(current, lo), false);
+    });
 
     var cue = $('scrollCue');
     if (cue) cue.addEventListener('click', function () {
