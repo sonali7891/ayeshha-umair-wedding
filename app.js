@@ -287,6 +287,45 @@
   var drag = null;          // active pointer drag state
   var chromeTimer = null;
   var slidesRendered = [];
+  var fitOverride = null;   // null = follow the ideal fit for the device
+
+  // Decide how a photo should fill the screen for the current device.
+  //  - Portrait screen + landscape photo: fill the screen (cover), otherwise
+  //    a 3:2 photo would sit tiny in the middle of a tall phone.
+  //  - Everything else: show the whole photo (contain).
+  function idealFit(p) {
+    var portraitScreen = window.innerHeight > window.innerWidth;
+    var landscapePhoto = p.w >= p.h;
+    return (portraitScreen && landscapePhoto) ? 'cover' : 'contain';
+  }
+
+  function applyFit(img, p) {
+    if (!img || !p) return;
+    img.style.objectFit = fitOverride || idealFit(p);
+  }
+
+  function toggleFit() {
+    var s = slideEls[current];
+    if (!s) return;
+    var p = view[current];
+    var img = s.querySelector('img');
+    var cur = img.style.objectFit || idealFit(p);
+    fitOverride = (cur === 'cover') ? 'contain' : 'cover';
+    img.style.objectFit = fitOverride;
+    flashHint(fitOverride === 'cover' ? 'Fill screen' : 'Fit whole photo');
+  }
+
+  function flashHint(text) {
+    if (!el.lbHint) {
+      el.lbHint = document.createElement('div');
+      el.lbHint.className = 'lb-hint';
+      el.lb.appendChild(el.lbHint);
+    }
+    el.lbHint.textContent = text;
+    el.lbHint.style.animation = 'none';
+    void el.lbHint.offsetHeight;
+    el.lbHint.style.animation = 'hintFade 2.6s ease forwards';
+  }
 
   function slideFor(i) {
     if (slideEls[i]) return slideEls[i];
@@ -299,6 +338,7 @@
     img.alt = 'Wedding photograph ' + (i + 1) + ' of ' + view.length;
     img.decoding = 'async';
     img.src = showingFull ? PHOTO_DIR + encodeURIComponent(p.src) : PREV_DIR + p.preview;
+    applyFit(img, p);
     img.addEventListener('load', function () {
       if (Number(s.dataset.idx) === current) el.lb.classList.remove('is-loading');
     });
@@ -394,12 +434,7 @@
     if (img && !img.complete) el.lb.classList.add('is-loading');
 
     showChrome(true);
-    if (!el.lbHint) {
-      el.lbHint = document.createElement('div');
-      el.lbHint.className = 'lb-hint';
-      el.lbHint.textContent = 'Swipe to browse  ·  tap to hide';
-      el.lbChrome.appendChild(el.lbHint);
-    }
+    flashHint('Swipe to browse  ·  double-tap to fit');
   }
 
   function closeLightbox() {
@@ -609,22 +644,18 @@
     function onUp() {
       if (!drag) return;
       drag = false;
-      var w = window.innerWidth;
-      var dx = startOffset - trackOffsetFor(current, ensureSlides(current));
 
-      // Decide which photo to land on: velocity wins, then distance.
-      var moved = startOffset - parseFloat(el.lbTrack.style.transform.replace(/[^-\d.]/g, ''));
-      void moved;
-      var threshold = w * 0.22;
+      // How far the track actually moved (positive = dragged towards the next).
+      var now = parseFloat(el.lbTrack.style.transform.replace(/[^-\d.]/g, '')) || 0;
+      var delta = startOffset - now;
+
+      var threshold = window.innerWidth * 0.18;
       var target = current;
 
       if (velocity < -0.45) target = current + 1;
       else if (velocity > 0.45) target = current - 1;
-      else {
-        var delta = -dx;
-        if (delta < -threshold) target = current + 1;
-        else if (delta > threshold) target = current - 1;
-      }
+      else if (delta > threshold) target = current + 1;
+      else if (delta < -threshold) target = current - 1;
 
       if (target < 0) target = 0;
       if (target > view.length - 1) target = view.length - 1;
@@ -643,10 +674,30 @@
     el.lb.addEventListener('pointerup', onUp, { passive: true });
     el.lb.addEventListener('pointercancel', onUp, { passive: true });
 
+    // Double-tap toggles between filling the screen and showing the whole photo.
+    var lastTap = 0, tapTimer = null;
+    el.lb.addEventListener('pointerup', function (e) {
+      if (e.target.closest && e.target.closest('.lb-btn, .lb-arrow, .lb-close')) return;
+      var now = Date.now();
+      if (now - lastTap < 320) {
+        clearTimeout(tapTimer);
+        lastTap = 0;
+        toggleFit();
+      } else {
+        lastTap = now;
+        tapTimer = setTimeout(function () { lastTap = 0; }, 320);
+      }
+    });
+
     window.addEventListener('resize', function () {
       if (current < 0) return;
       var lo = ensureSlides(current);
       applyTrack(trackOffsetFor(current, lo), false);
+      for (var k in slideEls) {
+        var s = slideEls[k];
+        var im = s.querySelector('img');
+        if (im) applyFit(im, view[Number(k)]);
+      }
     });
 
     var cue = $('scrollCue');
