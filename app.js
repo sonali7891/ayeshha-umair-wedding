@@ -636,6 +636,10 @@
       var dt = now - lastT;
       if (dt > 0) velocity = (e.clientX - lastX) / dt;
       lastX = e.clientX; lastT = now;
+      window.__lbDebug = {
+        phase: 'move', clientX: e.clientX, lastX: lastX, dt: dt,
+        velocity: velocity, dx: dx, offset: offset, startOffset: startOffset,
+      };
 
       applyTrack(offset, false);
       e.preventDefault();
@@ -656,6 +660,12 @@
       else if (velocity > 0.45) target = current - 1;
       else if (delta > threshold) target = current + 1;
       else if (delta < -threshold) target = current - 1;
+
+      window.__lbDebug = {
+        phase: 'up', velocity: velocity, delta: delta, threshold: threshold,
+        startOffset: startOffset, now: now, current: current, target: target,
+        innerWidth: window.innerWidth,
+      };
 
       if (target < 0) target = 0;
       if (target > view.length - 1) target = view.length - 1;
