@@ -287,16 +287,23 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
   overflow: hidden;
 }
 .lb-slide img {
+  --zx: 0px; --zy: 0px; --zs: 1;
   width: 100%;
   height: 100%;
   max-width: 100%; max-height: 100%;
   object-fit: contain;
   display: block;
   will-change: transform, opacity;
-  transition: transform .42s cubic-bezier(.22,.68,.28,1), opacity .3s ease;
+  transform: translate(var(--zx), var(--zy)) scale(var(--zs));
+  transition: transform .34s cubic-bezier(.22,.68,.28,1), opacity .3s ease;
 }
-/* Neighbouring slides sit slightly back, giving depth while swiping. */
-.lb-slide:not(.is-active) img { transform: scale(.93); opacity: .85; }
+/* Neighbouring slides sit slightly back, giving depth while swiping.
+   The zoom variables keep the true aspect ratio at every zoom level. */
+.lb-slide:not(.is-active) img {
+  transform: translate(var(--zx), var(--zy)) scale(calc(var(--zs) * .93));
+  opacity: .85;
+}
+.lb-slide.is-active img { transition: transform .18s ease-out, opacity .3s ease; }
 
 .lb-spinner {
   position: absolute; top: 50%; left: 50%;

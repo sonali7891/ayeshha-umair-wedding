@@ -287,32 +287,63 @@
   var drag = null;          // active pointer drag state
   var chromeTimer = null;
   var slidesRendered = [];
-  var fitOverride = null;   // null = follow the ideal fit for the device
+  var zoom = { on: false, scale: 1, x: 0, y: 0 };
 
-  // Decide how a photo should fill the screen for the current device.
-  //  - Portrait screen + landscape photo: fill the screen (cover), otherwise
-  //    a 3:2 photo would sit tiny in the middle of a tall phone.
-  //  - Everything else: show the whole photo (contain).
-  function idealFit(p) {
-    var portraitScreen = window.innerHeight > window.innerWidth;
-    var landscapePhoto = p.w >= p.h;
-    return (portraitScreen && landscapePhoto) ? 'cover' : 'contain';
-  }
-
-  function applyFit(img, p) {
+  // Size the image box to the photo's own aspect ratio so the picture is
+  // never cropped or stretched - it is shown exactly as it was taken.
+  function sizeSlideImage(img, p) {
     if (!img || !p) return;
-    img.style.objectFit = fitOverride || idealFit(p);
+    var sw = window.innerWidth;
+    var sh = window.innerHeight;
+    var photoAspect = p.w / p.h;
+    var screenAspect = sw / sh;
+    if (photoAspect >= screenAspect) {
+      img.style.width = '100%';
+      img.style.height = 'auto';
+    } else {
+      img.style.height = '100%';
+      img.style.width = 'auto';
+    }
+    img.style.objectFit = 'contain';
   }
 
-  function toggleFit() {
+  function applyZoom(img) {
+    if (!img) return;
+    img.style.setProperty('--zx', zoom.x.toFixed(1) + 'px');
+    img.style.setProperty('--zy', zoom.y.toFixed(1) + 'px');
+    img.style.setProperty('--zs', zoom.scale.toFixed(3));
+  }
+
+  function resetZoom() {
+    zoom.on = false; zoom.scale = 1; zoom.x = 0; zoom.y = 0;
+    var s = slideEls[current];
+    if (s) applyZoom(s.querySelector('img'));
+  }
+
+  // Double tap: zoom in on the photo (uniform scale, aspect ratio kept) or
+  // zoom back out to the whole picture.
+  function toggleFit(e) {
     var s = slideEls[current];
     if (!s) return;
-    var p = view[current];
     var img = s.querySelector('img');
-    var cur = img.style.objectFit || idealFit(p);
-    fitOverride = (cur === 'cover') ? 'contain' : 'cover';
-    img.style.objectFit = fitOverride;
-    flashHint(fitOverride === 'cover' ? 'Fill screen' : 'Fit whole photo');
+    if (!img) return;
+
+    if (!zoom.on) {
+      var rect = img.getBoundingClientRect();
+      var px = (e && e.clientX != null) ? e.clientX : rect.left + rect.width / 2;
+      var py = (e && e.clientY != null) ? e.clientY : rect.top + rect.height / 2;
+      var cx = px - (rect.left + rect.width / 2);
+      var cy = py - (rect.top + rect.height / 2);
+      zoom.on = true;
+      zoom.scale = 2.4;
+      zoom.x = -cx * (zoom.scale - 1);
+      zoom.y = -cy * (zoom.scale - 1);
+      flashHint('Zoomed  ·  drag to pan');
+    } else {
+      resetZoom();
+      flashHint('Whole photo');
+    }
+    applyZoom(img);
   }
 
   function flashHint(text) {
@@ -338,7 +369,8 @@
     img.alt = 'Wedding photograph ' + (i + 1) + ' of ' + view.length;
     img.decoding = 'async';
     img.src = showingFull ? PHOTO_DIR + encodeURIComponent(p.src) : PREV_DIR + p.preview;
-    applyFit(img, p);
+    sizeSlideImage(img, p);
+    applyZoom(img);
     img.addEventListener('load', function () {
       if (Number(s.dataset.idx) === current) el.lb.classList.remove('is-loading');
     });
@@ -443,6 +475,7 @@
     if (i < 0 || i >= view.length) return;
     current = i;
     showingFull = false;
+    zoom.on = false; zoom.scale = 1; zoom.x = 0; zoom.y = 0;
 
     el.lb.classList.add('is-open');
     document.body.style.overflow = 'hidden';
@@ -459,7 +492,7 @@
     if (img && !img.complete) el.lb.classList.add('is-loading');
 
     showChrome(true);
-    flashHint('Swipe to browse  ·  double-tap to fit');
+    flashHint('Swipe to browse  ·  double-tap to zoom');
   }
 
   function closeLightbox() {
@@ -532,6 +565,8 @@
     el.lb.classList.add('is-loading');
     showingFull = !showingFull;
     img.src = showingFull ? PHOTO_DIR + encodeURIComponent(p.src) : PREV_DIR + p.preview;
+    sizeSlideImage(img, p);
+    applyZoom(img);
 
     if (showingFull) {
       el.lbFull.classList.add('is-on');
@@ -618,6 +653,7 @@
     // ---- Drag-to-swipe: the current photo is carried toward the next ----
     var startX = 0, startY = 0, startOffset = 0, lastX = 0, lastT = 0, velocity = 0;
     var wasDrag = false;
+    var panStartX = 0, panStartY = 0;
     var axisLocked = null;
 
     function onDown(e) {
@@ -633,6 +669,7 @@
       var lo = ensureSlides(current);
       startOffset = trackOffsetFor(current, lo);
       el.lbTrack.classList.remove('animating');
+      panStartX = zoom.x; panStartY = zoom.y;
       // Hide every control for the duration of the gesture so only the
       // photograph is visible while the viewer is swiping.
       el.lb.classList.add('is-dragging');
@@ -644,6 +681,25 @@
       if (!drag) return;
       var dx = e.clientX - startX;
       var dy = e.clientY - startY;
+
+      if (zoom.on) {
+        // Zoomed in: pan the photo instead of swiping.
+        if (!axisLocked) {
+          if (Math.abs(dx) < 4 && Math.abs(dy) < 4) return;
+          axisLocked = 'xy';
+        }
+        wasDrag = true;
+        var s = slideEls[current];
+        var im = s && s.querySelector('img');
+        if (im) {
+          zoom.x = panStartX + dx;
+          zoom.y = panStartY + dy;
+          im.style.transition = 'none';   // pan must follow the finger exactly
+          applyZoom(im);
+        }
+        if (e.cancelable) e.preventDefault();
+        return;
+      }
 
       if (!axisLocked) {
         if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
@@ -674,6 +730,15 @@
       if (!drag) return;
       drag = false;
       el.lb.classList.remove('is-dragging');
+
+      if (zoom.on) {
+        // Panning a zoomed photo - stay on the same picture.
+        var zs = slideEls[current];
+        var zi = zs && zs.querySelector('img');
+        if (zi) zi.style.transition = '';
+        showChrome(false);
+        return;
+      }
 
       // How far the track actually moved (positive = dragged towards the next).
       var delta = startOffset - currentOffset();
@@ -714,7 +779,7 @@
       var now = Date.now();
       if (now - lastTap < 320) {
         lastTap = 0;
-        toggleFit();
+        toggleFit(e);
       } else {
         lastTap = now;
       }
@@ -726,9 +791,9 @@
       var lo = ensureSlides(current);
       applyTrack(trackOffsetFor(current, lo), false);
       for (var k in slideEls) {
-        var s = slideEls[k];
-        var im = s.querySelector('img');
-        if (im) applyFit(im, view[Number(k)]);
+        var s2 = slideEls[k];
+        var im2 = s2.querySelector('img');
+        if (im2) { sizeSlideImage(im2, view[Number(k)]); applyZoom(im2); }
       }
     });
 
