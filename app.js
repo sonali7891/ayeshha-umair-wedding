@@ -329,12 +329,23 @@
     el.lbHint.style.animation = 'hintFade 2.6s ease forwards';
   }
 
+  // Place a slide at its own index. Because every slide is absolutely
+  // positioned, adding or removing one never disturbs the others.
+  function positionSlide(s, i) {
+    var W = window.innerWidth;
+    var H = window.innerHeight;
+    s.style.width = W + 'px';
+    s.style.height = H + 'px';
+    s.style.transform = 'translate3d(' + (i * W) + 'px,0,0)';
+  }
+
   function slideFor(i) {
     if (slideEls[i]) return slideEls[i];
     var p = view[i];
     var s = document.createElement('div');
     s.className = 'lb-slide';
     s.dataset.idx = String(i);
+    positionSlide(s, i);
 
     // Show the small thumbnail straight away as a placeholder so the slide
     // is never empty, then fade the larger preview in over it.
@@ -388,24 +399,20 @@
     for (var j = lo; j <= hi; j++) {
       if (!slideEls[j]) {
         var s = slideFor(j);
-        // Insert in index order without re-appending existing slides
-        // (moving nodes restarts their CSS transitions and causes flicker).
-        var before = null;
-        for (var k in slideEls) {
-          if (Number(k) > j) { before = slideEls[k]; break; }
-        }
-        el.lbTrack.insertBefore(s, before);
+        // Absolute positioning means the DOM order is irrelevant, so a
+        // plain append is safe and never disturbs the other slides.
+        el.lbTrack.appendChild(s);
         slideEls[j] = s;
       }
     }
-    slidesRendered = [];
-    for (var m2 = lo; m2 <= hi; m2++) if (slideEls[m2]) slidesRendered.push(slideEls[m2]);
     prefetch(center - 1); prefetch(center + 1);
     return lo;
   }
 
-  function trackOffsetFor(index, lo) {
-    return -(index - lo) * window.innerWidth;
+  // The track offset depends only on the current index - never on which
+  // slides happen to be mounted - so it can never jump.
+  function trackOffsetFor(index) {
+    return -index * window.innerWidth;
   }
 
   // Read the current X offset of the track. NOTE: a naive
@@ -460,9 +467,9 @@
     el.lb.classList.add('is-open');
     document.body.style.overflow = 'hidden';
 
-    var lo = ensureSlides(i);
+    ensureSlides(i);
     markActive(i);
-    applyTrack(trackOffsetFor(i, lo), false);
+    applyTrack(trackOffsetFor(i), false);
     updateMeta(i);
 
     el.lbFull.classList.remove('is-on');
@@ -485,17 +492,19 @@
     current = -1;
   }
 
-  function goTo(n) {
+  function goTo(n, opts) {
+    if (drag) return;                 // never fight an in-flight gesture
     if (n < 0 || n >= view.length) return;
+    opts = opts || {};
     current = n;
-    var lo = ensureSlides(n);
+    ensureSlides(n);
     markActive(n);
-    applyTrack(trackOffsetFor(n, lo), true);
+    applyTrack(trackOffsetFor(n), opts.animate !== false);
     updateMeta(n);
 
     var img = slideEls[n] && slideEls[n].querySelector('img');
     if (img && !img.complete) el.lb.classList.add('is-loading');
-    showChrome(true);
+    // The controls are never revealed by an automatic/programmatic move.
   }
 
   function step(d) { goTo(current + d); }
@@ -513,14 +522,17 @@
     if (icon) icon.style.display = 'none';
     if (pause) pause.style.display = '';
     slideTimer = setInterval(function () {
+      if (document.hidden || drag) return;   // never advance mid-gesture
       if (current >= view.length - 1) {
-        // Loop back to the first photo when the album ends.
-        goTo(0);
+        // Loop back to the first photo instantly - an animated sweep
+        // across the whole album would be disorienting.
+        goTo(0, { animate: false });
       } else {
         step(1);
       }
     }, SLIDE_MS);
-    showChrome(true);
+    // A running slideshow shows the photograph and nothing else.
+    showChrome(false);
   }
 
   function stopSlideshow() {
@@ -626,8 +638,8 @@
         else if (el.favDrawer.classList.contains('is-open')) closeFavDrawer();
       }
       if (!el.lb.classList.contains('is-open')) return;
-      if (e.key === 'ArrowLeft') step(-1);
-      if (e.key === 'ArrowRight') step(1);
+      if (e.key === 'ArrowLeft') { stopSlideshow(); step(-1); }
+      if (e.key === 'ArrowRight') { stopSlideshow(); step(1); }
       if (e.key.toLowerCase() === 'f' && current >= 0) toggleFav(view[current]);
     });
 
@@ -647,8 +659,8 @@
       lastX = e.clientX; lastT = Date.now();
       velocity = 0;
       stopSlideshow();
-      var lo = ensureSlides(current);
-      startOffset = trackOffsetFor(current, lo);
+      ensureSlides(current);
+      startOffset = trackOffsetFor(current);
       el.lbTrack.classList.remove('animating');
       panStartX = zoom.x; panStartY = zoom.y;
       // Hide every control for the duration of the gesture so only the
@@ -738,7 +750,7 @@
       if (target === current) {
         // Not far enough to change photo: snap back, keep the chrome hidden.
         var lo = ensureSlides(current);
-        applyTrack(trackOffsetFor(current, lo), true);
+        applyTrack(trackOffsetFor(current), true);
       } else {
         goTo(target);
       }
@@ -769,14 +781,21 @@
 
     window.addEventListener('resize', function () {
       if (current < 0) return;
-      var lo = ensureSlides(current);
-      applyTrack(trackOffsetFor(current, lo), false);
       for (var k in slideEls) {
         var s2 = slideEls[k];
+        positionSlide(s2, Number(k));
         var im2 = s2.querySelector('img');
         if (im2) { sizeSlideImage(im2, view[Number(k)]); applyZoom(im2); }
       }
+      applyTrack(trackOffsetFor(current), false);
     });
+
+    // Do not keep advancing in a hidden tab.
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden && playing) stopSlideshow();
+    });
+    el.lbCounter.setAttribute('aria-live', 'polite');
+    el.lbCounter.setAttribute('aria-atomic', 'true');
 
     var cue = $('scrollCue');
     if (cue) cue.addEventListener('click', function () {

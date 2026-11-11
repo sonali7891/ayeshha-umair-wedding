@@ -275,18 +275,18 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
   touch-action: none;
 }
 
-/* The track is a horizontal strip of slides; swiping translates it. */
+/* The track is a horizontal strip of slides; swiping translates it.
+   Each slide is positioned absolutely at its own index so that adding or
+   removing slides can never shift the others. */
 .lb-track {
-  position: absolute; top: 0; left: 0;
-  height: 100%;
-  display: flex; align-items: stretch;
+  position: absolute; inset: 0;
   will-change: transform;
   transform: translate3d(0, 0, 0);
 }
 .lb-track.animating { transition: transform .42s cubic-bezier(.22,.68,.28,1); }
 
 .lb-slide {
-  flex: 0 0 100vw;
+  position: absolute; left: 0; top: 0;
   width: 100vw; height: 100%;
   display: grid; place-items: center;
   overflow: hidden;
@@ -307,11 +307,9 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
   transform: translate(var(--zx), var(--zy)) scale(var(--zs));
   transition: transform .34s cubic-bezier(.22,.68,.28,1), opacity .28s ease;
 }
-/* Neighbouring slides sit slightly back, giving depth while swiping.
-   The zoom variables keep the true aspect ratio at every zoom level. */
-.lb-slide:not(.is-active) img {
-  transform: translate(var(--zx), var(--zy)) scale(calc(var(--zs) * .93));
-}
+/* The photograph is always shown at 100% of its own size - never scaled
+   down - so it stays a true full-screen image throughout a transition.
+   The zoom variables keep the aspect ratio at every zoom level. */
 
 .lb-spinner {
   position: absolute; top: 50%; left: 50%;
