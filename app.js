@@ -186,19 +186,20 @@
   /* ---------- Lazy loading ---------- */
   var fadeObserver = null;
 
-  function initObserver() {
-    // Fade-in observer for cards as they scroll into view.
-    if ('IntersectionObserver' in window) {
-      fadeObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) {
-            e.target.classList.add('is-in');
-            fadeObserver.unobserve(e.target);
-          }
-        });
-      }, { rootMargin: '250px' });
-    }
+  // Must run before the first render so the initial cards are observed.
+  function setupFadeObserver() {
+    if (!('IntersectionObserver' in window)) return;
+    fadeObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-in');
+          fadeObserver.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '250px' });
+  }
 
+  function initObserver() {
     if (!('IntersectionObserver' in window)) {
       // No IO support: render everything and show it immediately.
       var pump = function () {
@@ -450,6 +451,7 @@
       photos = m.photos || [];
       el.heroCount.textContent = photos.length;
       el.introCount.textContent = photos.length;
+      setupFadeObserver();
       rebuild();
       initObserver();
       setupHero();
