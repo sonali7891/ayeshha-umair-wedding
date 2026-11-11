@@ -27,14 +27,16 @@
   var THUMBORIGIN   = origin(window.ALBUM_THUMB_ORIGIN);
   var PREVIEWORIGIN = origin(window.ALBUM_PREVIEW_ORIGIN);
 
-  var IMGBASE    = ORIGIN ? ORIGIN + '/' : BASE;
-  var THUMBBASE  = THUMBORIGIN   ? THUMBORIGIN   + '/' : (ORIGIN ? IMGBASE : BASE);
-  var PREVIEWBASE = PREVIEWORIGIN ? PREVIEWORIGIN + '/' : (ORIGIN ? IMGBASE : BASE);
+  // Each asset group resolves independently:
+  //   - an explicit absolute origin if configured, otherwise
+  //   - the app's own directory (same-origin deployment).
+  var LOCAL = BASE;
 
-  var PHOTO_DIR  = IMGBASE + 'photos/';
-  var THUMB_DIR  = THUMBBASE + 'thumbs/';
-  var PREV_DIR   = PREVIEWBASE + 'previews/';
-  var DL_DIR     = IMGBASE + 'download/';
+  var PHOTO_DIR  = (ORIGIN ? ORIGIN + '/' : LOCAL) + 'photos/';
+  var DL_DIR     = (ORIGIN ? ORIGIN + '/' : LOCAL) + 'download/';
+  var PREV_DIR   = (PREVIEWORIGIN ? PREVIEWORIGIN + '/'
+                    : (ORIGIN ? ORIGIN + '/' : LOCAL)) + 'previews/';
+  var THUMB_DIR  = (THUMBORIGIN ? THUMBORIGIN + '/' : LOCAL) + 'thumbs/';
 
   var photos = [];
   var favourites = {};
@@ -146,18 +148,19 @@
     if (!slice.length) return false;
 
     var frag = document.createDocumentFragment();
+    var created = [];
     slice.forEach(function (p, k) {
-      frag.appendChild(cardFor(p, rendered + k));
+      var c = cardFor(p, rendered + k);
+      created.push(c);
+      frag.appendChild(c);
     });
     rendered += slice.length;
     el.gallery.appendChild(frag);
 
-    // Fade in cards that are now visible.
-    requestAnimationFrame(function () {
-      el.gallery.querySelectorAll('.card:not(.is-in)').forEach(function (c) {
-        var r = c.getBoundingClientRect();
-        if (r.top < window.innerHeight + 400) c.classList.add('is-in');
-      });
+    // Observe every new card so it fades in when scrolled into view.
+    created.forEach(function (c) {
+      if (fadeObserver) fadeObserver.observe(c);
+      else c.classList.add('is-in');
     });
     return true;
   }
@@ -181,26 +184,37 @@
   }
 
   /* ---------- Lazy loading ---------- */
+  var fadeObserver = null;
+
   function initObserver() {
+    // Fade-in observer for cards as they scroll into view.
+    if ('IntersectionObserver' in window) {
+      fadeObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-in');
+            fadeObserver.unobserve(e.target);
+          }
+        });
+      }, { rootMargin: '250px' });
+    }
+
     if (!('IntersectionObserver' in window)) {
-      var pump = function () { while (renderChunk()) {} };
+      // No IO support: render everything and show it immediately.
+      var pump = function () {
+        while (renderChunk()) {}
+        el.gallery.querySelectorAll('.card').forEach(function (c) { c.classList.add('is-in'); });
+      };
       pump();
       return;
     }
+
     var io = new IntersectionObserver(function (entries) {
       if (entries.some(function (e) { return e.isIntersecting; })) {
         renderChunk();
       }
     }, { rootMargin: '900px 0px' });
     io.observe(el.sentinel);
-
-    // Fade-in observer for cards.
-    var fade = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('is-in'); fade.unobserve(e.target); }
-      });
-    }, { rootMargin: '200px' });
-    window.__fadeObserver = fade;
   }
 
   /* ---------- Favourites ---------- */
@@ -422,15 +436,6 @@
       var dy = e.changedTouches[0].clientY - ty;
       if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy)) step(dx < 0 ? 1 : -1);
     }, { passive: true });
-
-    // Fade-in observer hookup for newly appended cards
-    var mo = new MutationObserver(function () {
-      if (!window.__fadeObserver) return;
-      el.gallery.querySelectorAll('.card:not(.is-in)').forEach(function (c) {
-        window.__fadeObserver.observe(c);
-      });
-    });
-    mo.observe(el.gallery, { childList: true });
 
     var cue = $('scrollCue');
     if (cue) cue.addEventListener('click', function () {
