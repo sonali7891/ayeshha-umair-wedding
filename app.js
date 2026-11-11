@@ -47,6 +47,9 @@
   var slideTimer = null;
   var playing = false;
 
+  var BUILD = '2026.11.11-4';
+  window.ALBUM_BUILD = BUILD;
+
   var $ = function (id) { return document.getElementById(id); };
 
   var el = {
@@ -161,6 +164,17 @@
     created.forEach(function (c) {
       if (fadeObserver) fadeObserver.observe(c);
       else c.classList.add('is-in');
+    });
+
+    // Deterministic fallback: reveal anything already within (or above) the
+    // viewport right now, so the grid is never blank while the observer
+    // callback is still pending.
+    requestAnimationFrame(function () {
+      var vh = window.innerHeight;
+      created.forEach(function (c) {
+        var r = c.getBoundingClientRect();
+        if (r.top < vh + 250 && r.bottom > -250) c.classList.add('is-in');
+      });
     });
     return true;
   }
