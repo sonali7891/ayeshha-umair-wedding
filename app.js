@@ -823,6 +823,21 @@
       setupFadeObserver();
       rebuild();
       initObserver();
+
+      // Safety net: if the browser never delivers the observer callback (a
+      // backgrounded tab gets no rendering frames), make sure the grid still
+      // becomes visible instead of staying blank.
+      setTimeout(function () {
+        el.gallery.querySelectorAll('.card:not(.is-in)').forEach(function (c) {
+          var r = c.getBoundingClientRect();
+          if (r.top < window.innerHeight * 4) c.classList.add('is-in');
+        });
+      }, 1200);
+      setTimeout(function () {
+        el.gallery.querySelectorAll('.card:not(.is-in)').forEach(function (c) {
+          c.classList.add('is-in');
+        });
+      }, 8000);
       setupHero();
       bindEvents();
       setTimeout(function () { el.loader.classList.add('is-hidden'); }, 350);
