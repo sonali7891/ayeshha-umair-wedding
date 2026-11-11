@@ -367,6 +367,20 @@
     applyZoom(img);
     var reveal = function () {
       img.style.opacity = '1';
+      // Safety net: if the file's real aspect ratio disagrees with the
+      // manifest (a rotated photo, a stale entry), re-fit the box to the
+      // pixels the browser actually decoded so the picture is never
+      // squashed or cropped.
+      var nw = img.naturalWidth;
+      var nh = img.naturalHeight;
+      if (nw && nh) {
+        var box = img.getBoundingClientRect();
+        if (box.width > 1 && box.height > 1 &&
+            Math.abs((nw / nh) - (box.width / box.height)) > 0.005) {
+          sizeSlideImage(img, { w: nw, h: nh });
+          applyZoom(img);
+        }
+      }
       if (Number(s.dataset.idx) === current) el.lb.classList.remove('is-loading');
     };
     img.addEventListener('load', reveal);

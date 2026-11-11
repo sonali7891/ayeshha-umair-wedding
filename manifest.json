@@ -14,7 +14,8 @@
    "thumb": "C82A2996.jpg",
    "preview": "C82A2996.jpg",
    "tbytes": 38274,
-   "pbytes": 400872
+   "pbytes": 400872,
+   "ratio": 1.5
   },
   {
    "src": "C82A2997.JPG",
@@ -26,7 +27,8 @@
    "thumb": "C82A2997.jpg",
    "preview": "C82A2997.jpg",
    "tbytes": 40141,
-   "pbytes": 396034
+   "pbytes": 396034,
+   "ratio": 1.5
   },
   {
    "src": "C82A2998.JPG",
@@ -38,7 +40,8 @@
    "thumb": "C82A2998.jpg",
    "preview": "C82A2998.jpg",
    "tbytes": 39040,
-   "pbytes": 400032
+   "pbytes": 400032,
+   "ratio": 1.5
   },
   {
    "src": "C82A3005.JPG",
@@ -50,7 +53,8 @@
    "thumb": "C82A3005.jpg",
    "preview": "C82A3005.jpg",
    "tbytes": 31963,
-   "pbytes": 284360
+   "pbytes": 284360,
+   "ratio": 1.5
   },
   {
    "src": "C82A3006.JPG",
@@ -62,7 +66,8 @@
    "thumb": "C82A3006.jpg",
    "preview": "C82A3006.jpg",
    "tbytes": 25338,
-   "pbytes": 230469
+   "pbytes": 230469,
+   "ratio": 1.5
   },
   {
    "src": "C82A3007.JPG",
@@ -74,7 +79,8 @@
    "thumb": "C82A3007.jpg",
    "preview": "C82A3007.jpg",
    "tbytes": 25447,
-   "pbytes": 215140
+   "pbytes": 215140,
+   "ratio": 1.5
   },
   {
    "src": "C82A3018.JPG",
@@ -86,7 +92,8 @@
    "thumb": "C82A3018.jpg",
    "preview": "C82A3018.jpg",
    "tbytes": 28101,
-   "pbytes": 262422
+   "pbytes": 262422,
+   "ratio": 1.5
   },
   {
    "src": "C82A3019.JPG",
@@ -98,7 +105,8 @@
    "thumb": "C82A3019.jpg",
    "preview": "C82A3019.jpg",
    "tbytes": 31072,
-   "pbytes": 330363
+   "pbytes": 330363,
+   "ratio": 1.5
   },
   {
    "src": "C82A3020.JPG",
@@ -110,7 +118,8 @@
    "thumb": "C82A3020.jpg",
    "preview": "C82A3020.jpg",
    "tbytes": 29295,
-   "pbytes": 306802
+   "pbytes": 306802,
+   "ratio": 1.5
   },
   {
    "src": "C82A3021.JPG",
@@ -122,7 +131,8 @@
    "thumb": "C82A3021.jpg",
    "preview": "C82A3021.jpg",
    "tbytes": 32658,
-   "pbytes": 302973
+   "pbytes": 302973,
+   "ratio": 1.5
   },
   {
    "src": "C82A3023.JPG",
@@ -134,7 +144,8 @@
    "thumb": "C82A3023.jpg",
    "preview": "C82A3023.jpg",
    "tbytes": 30006,
-   "pbytes": 287950
+   "pbytes": 287950,
+   "ratio": 1.5
   },
   {
    "src": "C82A3024.JPG",
@@ -146,55 +157,60 @@
    "thumb": "C82A3024.jpg",
    "preview": "C82A3024.jpg",
    "tbytes": 29738,
-   "pbytes": 306168
+   "pbytes": 306168,
+   "ratio": 1.5
   },
   {
    "src": "C82A3025.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7107916,
    "date": "2026-11-07 10:38:49",
    "orient": 8,
    "thumb": "C82A3025.jpg",
    "preview": "C82A3025.jpg",
    "tbytes": 32658,
-   "pbytes": 297540
+   "pbytes": 297540,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3026.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7655475,
    "date": "2026-11-07 10:38:53",
    "orient": 8,
    "thumb": "C82A3026.jpg",
    "preview": "C82A3026.jpg",
    "tbytes": 38110,
-   "pbytes": 337202
+   "pbytes": 337202,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3027.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10374212,
    "date": "2026-11-07 10:39:24",
    "orient": 8,
    "thumb": "C82A3027.jpg",
    "preview": "C82A3027.jpg",
    "tbytes": 40406,
-   "pbytes": 407927
+   "pbytes": 407927,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3028.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8242419,
    "date": "2026-11-07 10:39:31",
    "orient": 8,
    "thumb": "C82A3028.jpg",
    "preview": "C82A3028.jpg",
    "tbytes": 37303,
-   "pbytes": 344541
+   "pbytes": 344541,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3029.JPG",
@@ -206,7 +222,8 @@
    "thumb": "C82A3029.jpg",
    "preview": "C82A3029.jpg",
    "tbytes": 34050,
-   "pbytes": 334105
+   "pbytes": 334105,
+   "ratio": 1.5
   },
   {
    "src": "C82A3030.JPG",
@@ -218,7 +235,8 @@
    "thumb": "C82A3030.jpg",
    "preview": "C82A3030.jpg",
    "tbytes": 34986,
-   "pbytes": 350287
+   "pbytes": 350287,
+   "ratio": 1.5
   },
   {
    "src": "C82A3031.JPG",
@@ -230,7 +248,8 @@
    "thumb": "C82A3031.jpg",
    "preview": "C82A3031.jpg",
    "tbytes": 38305,
-   "pbytes": 367658
+   "pbytes": 367658,
+   "ratio": 1.5
   },
   {
    "src": "C82A3032.JPG",
@@ -242,55 +261,60 @@
    "thumb": "C82A3032.jpg",
    "preview": "C82A3032.jpg",
    "tbytes": 35390,
-   "pbytes": 333323
+   "pbytes": 333323,
+   "ratio": 1.5
   },
   {
    "src": "C82A3033.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8068094,
    "date": "2026-11-07 10:40:18",
    "orient": 8,
    "thumb": "C82A3033.jpg",
    "preview": "C82A3033.jpg",
    "tbytes": 37018,
-   "pbytes": 341474
+   "pbytes": 341474,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3034.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8257725,
    "date": "2026-11-07 10:40:41",
    "orient": 8,
    "thumb": "C82A3034.jpg",
    "preview": "C82A3034.jpg",
    "tbytes": 41772,
-   "pbytes": 368201
+   "pbytes": 368201,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3035.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8357761,
    "date": "2026-11-07 10:40:45",
    "orient": 8,
    "thumb": "C82A3035.jpg",
    "preview": "C82A3035.jpg",
    "tbytes": 38609,
-   "pbytes": 347522
+   "pbytes": 347522,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3036.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9078108,
    "date": "2026-11-07 10:40:50",
    "orient": 8,
    "thumb": "C82A3036.jpg",
    "preview": "C82A3036.jpg",
    "tbytes": 38642,
-   "pbytes": 369963
+   "pbytes": 369963,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3037.JPG",
@@ -302,31 +326,34 @@
    "thumb": "C82A3037.jpg",
    "preview": "C82A3037.jpg",
    "tbytes": 27283,
-   "pbytes": 267852
+   "pbytes": 267852,
+   "ratio": 1.5
   },
   {
    "src": "C82A3038.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7371853,
    "date": "2026-11-07 10:41:19",
    "orient": 8,
    "thumb": "C82A3038.jpg",
    "preview": "C82A3038.jpg",
    "tbytes": 39198,
-   "pbytes": 331853
+   "pbytes": 331853,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3039.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9652143,
    "date": "2026-11-07 10:41:23",
    "orient": 8,
    "thumb": "C82A3039.jpg",
    "preview": "C82A3039.jpg",
    "tbytes": 40168,
-   "pbytes": 395150
+   "pbytes": 395150,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3040.JPG",
@@ -338,43 +365,47 @@
    "thumb": "C82A3040.jpg",
    "preview": "C82A3040.jpg",
    "tbytes": 34338,
-   "pbytes": 331788
+   "pbytes": 331788,
+   "ratio": 1.5
   },
   {
    "src": "C82A3041.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8270986,
    "date": "2026-11-07 10:42:13",
    "orient": 8,
    "thumb": "C82A3041.jpg",
    "preview": "C82A3041.jpg",
    "tbytes": 32325,
-   "pbytes": 330875
+   "pbytes": 330875,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3042.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 11004524,
    "date": "2026-11-07 10:42:23",
    "orient": 8,
    "thumb": "C82A3042.jpg",
    "preview": "C82A3042.jpg",
    "tbytes": 37898,
-   "pbytes": 422218
+   "pbytes": 422218,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3043.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10146962,
    "date": "2026-11-07 10:42:50",
    "orient": 8,
    "thumb": "C82A3043.jpg",
    "preview": "C82A3043.jpg",
    "tbytes": 34158,
-   "pbytes": 382579
+   "pbytes": 382579,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3044.JPG",
@@ -386,55 +417,60 @@
    "thumb": "C82A3044.jpg",
    "preview": "C82A3044.jpg",
    "tbytes": 22458,
-   "pbytes": 236825
+   "pbytes": 236825,
+   "ratio": 1.5
   },
   {
    "src": "C82A3045.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7771901,
    "date": "2026-11-07 10:43:08",
    "orient": 8,
    "thumb": "C82A3045.jpg",
    "preview": "C82A3045.jpg",
    "tbytes": 33190,
-   "pbytes": 317102
+   "pbytes": 317102,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3046.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8973724,
    "date": "2026-11-07 10:43:12",
    "orient": 8,
    "thumb": "C82A3046.jpg",
    "preview": "C82A3046.jpg",
    "tbytes": 34125,
-   "pbytes": 360298
+   "pbytes": 360298,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3047.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9106641,
    "date": "2026-11-07 10:44:19",
    "orient": 8,
    "thumb": "C82A3047.jpg",
    "preview": "C82A3047.jpg",
    "tbytes": 33956,
-   "pbytes": 354836
+   "pbytes": 354836,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3048.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9195872,
    "date": "2026-11-07 10:44:28",
    "orient": 8,
    "thumb": "C82A3048.jpg",
    "preview": "C82A3048.jpg",
    "tbytes": 32943,
-   "pbytes": 348221
+   "pbytes": 348221,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3049.JPG",
@@ -446,7 +482,8 @@
    "thumb": "C82A3049.jpg",
    "preview": "C82A3049.jpg",
    "tbytes": 24176,
-   "pbytes": 243154
+   "pbytes": 243154,
+   "ratio": 1.5
   },
   {
    "src": "C82A3050.JPG",
@@ -458,19 +495,21 @@
    "thumb": "C82A3050.jpg",
    "preview": "C82A3050.jpg",
    "tbytes": 25818,
-   "pbytes": 272446
+   "pbytes": 272446,
+   "ratio": 1.5
   },
   {
    "src": "C82A3051.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9216978,
    "date": "2026-11-07 10:45:25",
    "orient": 8,
    "thumb": "C82A3051.jpg",
    "preview": "C82A3051.jpg",
    "tbytes": 34799,
-   "pbytes": 380545
+   "pbytes": 380545,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3052.JPG",
@@ -482,7 +521,8 @@
    "thumb": "C82A3052.jpg",
    "preview": "C82A3052.jpg",
    "tbytes": 23855,
-   "pbytes": 245853
+   "pbytes": 245853,
+   "ratio": 1.5
   },
   {
    "src": "C82A3053.JPG",
@@ -494,7 +534,8 @@
    "thumb": "C82A3053.jpg",
    "preview": "C82A3053.jpg",
    "tbytes": 23762,
-   "pbytes": 258014
+   "pbytes": 258014,
+   "ratio": 1.5
   },
   {
    "src": "C82A3054.JPG",
@@ -506,19 +547,21 @@
    "thumb": "C82A3054.jpg",
    "preview": "C82A3054.jpg",
    "tbytes": 22748,
-   "pbytes": 230877
+   "pbytes": 230877,
+   "ratio": 1.5
   },
   {
    "src": "C82A3055.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9491609,
    "date": "2026-11-07 10:46:13",
    "orient": 8,
    "thumb": "C82A3055.jpg",
    "preview": "C82A3055.jpg",
    "tbytes": 39663,
-   "pbytes": 408088
+   "pbytes": 408088,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3056.JPG",
@@ -530,19 +573,21 @@
    "thumb": "C82A3056.jpg",
    "preview": "C82A3056.jpg",
    "tbytes": 31768,
-   "pbytes": 345633
+   "pbytes": 345633,
+   "ratio": 1.5
   },
   {
    "src": "C82A3059.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 12277592,
    "date": "2026-11-07 10:47:55",
    "orient": 8,
    "thumb": "C82A3059.jpg",
    "preview": "C82A3059.jpg",
    "tbytes": 42276,
-   "pbytes": 485639
+   "pbytes": 485639,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3060.JPG",
@@ -554,7 +599,8 @@
    "thumb": "C82A3060.jpg",
    "preview": "C82A3060.jpg",
    "tbytes": 30409,
-   "pbytes": 286951
+   "pbytes": 286951,
+   "ratio": 1.5
   },
   {
    "src": "C82A3061.JPG",
@@ -566,55 +612,60 @@
    "thumb": "C82A3061.jpg",
    "preview": "C82A3061.jpg",
    "tbytes": 26160,
-   "pbytes": 250520
+   "pbytes": 250520,
+   "ratio": 1.5
   },
   {
    "src": "C82A3062.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8297597,
    "date": "2026-11-07 10:48:42",
    "orient": 8,
    "thumb": "C82A3062.jpg",
    "preview": "C82A3062.jpg",
    "tbytes": 33686,
-   "pbytes": 330137
+   "pbytes": 330137,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3063.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7977497,
    "date": "2026-11-07 10:49:16",
    "orient": 8,
    "thumb": "C82A3063.jpg",
    "preview": "C82A3063.jpg",
    "tbytes": 30267,
-   "pbytes": 318051
+   "pbytes": 318051,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3064.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8097716,
    "date": "2026-11-07 10:49:38",
    "orient": 8,
    "thumb": "C82A3064.jpg",
    "preview": "C82A3064.jpg",
    "tbytes": 30092,
-   "pbytes": 315833
+   "pbytes": 315833,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3065.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8289122,
    "date": "2026-11-07 10:49:44",
    "orient": 8,
    "thumb": "C82A3065.jpg",
    "preview": "C82A3065.jpg",
    "tbytes": 31692,
-   "pbytes": 333748
+   "pbytes": 333748,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3067.JPG",
@@ -626,7 +677,8 @@
    "thumb": "C82A3067.jpg",
    "preview": "C82A3067.jpg",
    "tbytes": 28135,
-   "pbytes": 277087
+   "pbytes": 277087,
+   "ratio": 1.5
   },
   {
    "src": "C82A3068.JPG",
@@ -638,7 +690,8 @@
    "thumb": "C82A3068.jpg",
    "preview": "C82A3068.jpg",
    "tbytes": 26705,
-   "pbytes": 276631
+   "pbytes": 276631,
+   "ratio": 1.5
   },
   {
    "src": "C82A3069.JPG",
@@ -650,115 +703,125 @@
    "thumb": "C82A3069.jpg",
    "preview": "C82A3069.jpg",
    "tbytes": 24477,
-   "pbytes": 250562
+   "pbytes": 250562,
+   "ratio": 1.5
   },
   {
    "src": "C82A3071.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7385692,
    "date": "2026-11-07 10:53:28",
    "orient": 8,
    "thumb": "C82A3071.jpg",
    "preview": "C82A3071.jpg",
    "tbytes": 27379,
-   "pbytes": 293816
+   "pbytes": 293816,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3072.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7358928,
    "date": "2026-11-07 10:53:33",
    "orient": 8,
    "thumb": "C82A3072.jpg",
    "preview": "C82A3072.jpg",
    "tbytes": 26637,
-   "pbytes": 293406
+   "pbytes": 293406,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3073.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7422986,
    "date": "2026-11-07 10:53:36",
    "orient": 8,
    "thumb": "C82A3073.jpg",
    "preview": "C82A3073.jpg",
    "tbytes": 26246,
-   "pbytes": 300846
+   "pbytes": 300846,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3074.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6286171,
    "date": "2026-11-07 10:53:45",
    "orient": 8,
    "thumb": "C82A3074.jpg",
    "preview": "C82A3074.jpg",
    "tbytes": 24726,
-   "pbytes": 271858
+   "pbytes": 271858,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3075.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6422771,
    "date": "2026-11-07 10:53:49",
    "orient": 8,
    "thumb": "C82A3075.jpg",
    "preview": "C82A3075.jpg",
    "tbytes": 25101,
-   "pbytes": 276783
+   "pbytes": 276783,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3076.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7613194,
    "date": "2026-11-07 10:54:02",
    "orient": 8,
    "thumb": "C82A3076.jpg",
    "preview": "C82A3076.jpg",
    "tbytes": 24138,
-   "pbytes": 255837
+   "pbytes": 255837,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3077.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7601345,
    "date": "2026-11-07 10:54:05",
    "orient": 8,
    "thumb": "C82A3077.jpg",
    "preview": "C82A3077.jpg",
    "tbytes": 23684,
-   "pbytes": 249944
+   "pbytes": 249944,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3078.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6126536,
    "date": "2026-11-07 10:54:12",
    "orient": 8,
    "thumb": "C82A3078.jpg",
    "preview": "C82A3078.jpg",
    "tbytes": 23448,
-   "pbytes": 232625
+   "pbytes": 232625,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3079.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5582584,
    "date": "2026-11-07 10:54:15",
    "orient": 8,
    "thumb": "C82A3079.jpg",
    "preview": "C82A3079.jpg",
    "tbytes": 22437,
-   "pbytes": 213279
+   "pbytes": 213279,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3085.JPG",
@@ -770,7 +833,8 @@
    "thumb": "C82A3085.jpg",
    "preview": "C82A3085.jpg",
    "tbytes": 35323,
-   "pbytes": 357672
+   "pbytes": 357672,
+   "ratio": 1.5
   },
   {
    "src": "C82A3086.JPG",
@@ -782,7 +846,8 @@
    "thumb": "C82A3086.jpg",
    "preview": "C82A3086.jpg",
    "tbytes": 39431,
-   "pbytes": 386902
+   "pbytes": 386902,
+   "ratio": 1.5
   },
   {
    "src": "C82A3087.JPG",
@@ -794,7 +859,8 @@
    "thumb": "C82A3087.jpg",
    "preview": "C82A3087.jpg",
    "tbytes": 33472,
-   "pbytes": 345137
+   "pbytes": 345137,
+   "ratio": 1.5
   },
   {
    "src": "C82A3088.JPG",
@@ -806,7 +872,8 @@
    "thumb": "C82A3088.jpg",
    "preview": "C82A3088.jpg",
    "tbytes": 33814,
-   "pbytes": 350062
+   "pbytes": 350062,
+   "ratio": 1.5
   },
   {
    "src": "C82A3089.JPG",
@@ -818,19 +885,21 @@
    "thumb": "C82A3089.jpg",
    "preview": "C82A3089.jpg",
    "tbytes": 38315,
-   "pbytes": 398332
+   "pbytes": 398332,
+   "ratio": 1.5
   },
   {
    "src": "C82A3090.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8233552,
    "date": "2026-11-07 11:01:39",
    "orient": 8,
    "thumb": "C82A3090.jpg",
    "preview": "C82A3090.jpg",
    "tbytes": 34999,
-   "pbytes": 345929
+   "pbytes": 345929,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3091.JPG",
@@ -842,19 +911,21 @@
    "thumb": "C82A3091.jpg",
    "preview": "C82A3091.jpg",
    "tbytes": 34306,
-   "pbytes": 351643
+   "pbytes": 351643,
+   "ratio": 1.5
   },
   {
    "src": "C82A3092.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8448010,
    "date": "2026-11-07 11:01:47",
    "orient": 8,
    "thumb": "C82A3092.jpg",
    "preview": "C82A3092.jpg",
    "tbytes": 35085,
-   "pbytes": 371125
+   "pbytes": 371125,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3093.JPG",
@@ -866,7 +937,8 @@
    "thumb": "C82A3093.jpg",
    "preview": "C82A3093.jpg",
    "tbytes": 38411,
-   "pbytes": 436598
+   "pbytes": 436598,
+   "ratio": 1.5
   },
   {
    "src": "C82A3094.JPG",
@@ -878,7 +950,8 @@
    "thumb": "C82A3094.jpg",
    "preview": "C82A3094.jpg",
    "tbytes": 37493,
-   "pbytes": 424915
+   "pbytes": 424915,
+   "ratio": 1.5
   },
   {
    "src": "C82A3095.JPG",
@@ -890,31 +963,34 @@
    "thumb": "C82A3095.jpg",
    "preview": "C82A3095.jpg",
    "tbytes": 37466,
-   "pbytes": 430783
+   "pbytes": 430783,
+   "ratio": 1.5
   },
   {
    "src": "C82A3097.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10417982,
    "date": "2026-11-07 11:03:10",
    "orient": 8,
    "thumb": "C82A3097.jpg",
    "preview": "C82A3097.jpg",
    "tbytes": 40180,
-   "pbytes": 463252
+   "pbytes": 463252,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3098.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10864052,
    "date": "2026-11-07 11:03:13",
    "orient": 8,
    "thumb": "C82A3098.jpg",
    "preview": "C82A3098.jpg",
    "tbytes": 38826,
-   "pbytes": 469135
+   "pbytes": 469135,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3099.JPG",
@@ -926,7 +1002,8 @@
    "thumb": "C82A3099.jpg",
    "preview": "C82A3099.jpg",
    "tbytes": 43536,
-   "pbytes": 490087
+   "pbytes": 490087,
+   "ratio": 1.5
   },
   {
    "src": "C82A3100.JPG",
@@ -938,7 +1015,8 @@
    "thumb": "C82A3100.jpg",
    "preview": "C82A3100.jpg",
    "tbytes": 33761,
-   "pbytes": 373144
+   "pbytes": 373144,
+   "ratio": 1.5
   },
   {
    "src": "C82A3104.JPG",
@@ -950,7 +1028,8 @@
    "thumb": "C82A3104.jpg",
    "preview": "C82A3104.jpg",
    "tbytes": 31151,
-   "pbytes": 234969
+   "pbytes": 234969,
+   "ratio": 1.5
   },
   {
    "src": "C82A3105.JPG",
@@ -962,67 +1041,73 @@
    "thumb": "C82A3105.jpg",
    "preview": "C82A3105.jpg",
    "tbytes": 27711,
-   "pbytes": 207518
+   "pbytes": 207518,
+   "ratio": 1.5
   },
   {
    "src": "C82A3106.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5637356,
    "date": "2026-11-07 11:06:19",
    "orient": 8,
    "thumb": "C82A3106.jpg",
    "preview": "C82A3106.jpg",
    "tbytes": 29816,
-   "pbytes": 228826
+   "pbytes": 228826,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3107.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6439438,
    "date": "2026-11-07 11:06:24",
    "orient": 8,
    "thumb": "C82A3107.jpg",
    "preview": "C82A3107.jpg",
    "tbytes": 34979,
-   "pbytes": 278098
+   "pbytes": 278098,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3108.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8465181,
    "date": "2026-11-07 11:06:28",
    "orient": 8,
    "thumb": "C82A3108.jpg",
    "preview": "C82A3108.jpg",
    "tbytes": 38771,
-   "pbytes": 375295
+   "pbytes": 375295,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3109.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5328398,
    "date": "2026-11-07 11:06:37",
    "orient": 8,
    "thumb": "C82A3109.jpg",
    "preview": "C82A3109.jpg",
    "tbytes": 26243,
-   "pbytes": 198736
+   "pbytes": 198736,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3110.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5220158,
    "date": "2026-11-07 11:06:42",
    "orient": 8,
    "thumb": "C82A3110.jpg",
    "preview": "C82A3110.jpg",
    "tbytes": 25147,
-   "pbytes": 191771
+   "pbytes": 191771,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3111.JPG",
@@ -1034,43 +1119,47 @@
    "thumb": "C82A3111.jpg",
    "preview": "C82A3111.jpg",
    "tbytes": 28346,
-   "pbytes": 289793
+   "pbytes": 289793,
+   "ratio": 1.5
   },
   {
    "src": "C82A3112.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8491893,
    "date": "2026-11-07 11:07:29",
    "orient": 8,
    "thumb": "C82A3112.jpg",
    "preview": "C82A3112.jpg",
    "tbytes": 35536,
-   "pbytes": 344519
+   "pbytes": 344519,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3113.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9468493,
    "date": "2026-11-07 11:07:35",
    "orient": 8,
    "thumb": "C82A3113.jpg",
    "preview": "C82A3113.jpg",
    "tbytes": 35937,
-   "pbytes": 373847
+   "pbytes": 373847,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3114.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9402129,
    "date": "2026-11-07 11:07:41",
    "orient": 8,
    "thumb": "C82A3114.jpg",
    "preview": "C82A3114.jpg",
    "tbytes": 36483,
-   "pbytes": 376460
+   "pbytes": 376460,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3115.JPG",
@@ -1082,7 +1171,8 @@
    "thumb": "C82A3115.jpg",
    "preview": "C82A3115.jpg",
    "tbytes": 28009,
-   "pbytes": 258066
+   "pbytes": 258066,
+   "ratio": 1.5
   },
   {
    "src": "C82A3116.JPG",
@@ -1094,31 +1184,34 @@
    "thumb": "C82A3116.jpg",
    "preview": "C82A3116.jpg",
    "tbytes": 28512,
-   "pbytes": 261629
+   "pbytes": 261629,
+   "ratio": 1.5
   },
   {
    "src": "C82A3117.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8326630,
    "date": "2026-11-07 11:08:52",
    "orient": 8,
    "thumb": "C82A3117.jpg",
    "preview": "C82A3117.jpg",
    "tbytes": 39427,
-   "pbytes": 366880
+   "pbytes": 366880,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3119.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10464793,
    "date": "2026-11-07 11:08:59",
    "orient": 8,
    "thumb": "C82A3119.jpg",
    "preview": "C82A3119.jpg",
    "tbytes": 40494,
-   "pbytes": 443139
+   "pbytes": 443139,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3120.JPG",
@@ -1130,7 +1223,8 @@
    "thumb": "C82A3120.jpg",
    "preview": "C82A3120.jpg",
    "tbytes": 29296,
-   "pbytes": 274679
+   "pbytes": 274679,
+   "ratio": 1.5
   },
   {
    "src": "C82A3121.JPG",
@@ -1142,55 +1236,60 @@
    "thumb": "C82A3121.jpg",
    "preview": "C82A3121.jpg",
    "tbytes": 29915,
-   "pbytes": 292050
+   "pbytes": 292050,
+   "ratio": 1.5
   },
   {
    "src": "C82A3122.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9744617,
    "date": "2026-11-07 11:09:32",
    "orient": 8,
    "thumb": "C82A3122.jpg",
    "preview": "C82A3122.jpg",
    "tbytes": 41018,
-   "pbytes": 410583
+   "pbytes": 410583,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3123.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9374650,
    "date": "2026-11-07 11:09:38",
    "orient": 8,
    "thumb": "C82A3123.jpg",
    "preview": "C82A3123.jpg",
    "tbytes": 40590,
-   "pbytes": 406163
+   "pbytes": 406163,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3124.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9121079,
    "date": "2026-11-07 11:09:44",
    "orient": 8,
    "thumb": "C82A3124.jpg",
    "preview": "C82A3124.jpg",
    "tbytes": 37621,
-   "pbytes": 384263
+   "pbytes": 384263,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3125.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9405290,
    "date": "2026-11-07 11:09:49",
    "orient": 8,
    "thumb": "C82A3125.jpg",
    "preview": "C82A3125.jpg",
    "tbytes": 37147,
-   "pbytes": 394131
+   "pbytes": 394131,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3126.JPG",
@@ -1202,7 +1301,8 @@
    "thumb": "C82A3126.jpg",
    "preview": "C82A3126.jpg",
    "tbytes": 37085,
-   "pbytes": 421858
+   "pbytes": 421858,
+   "ratio": 1.5
   },
   {
    "src": "C82A3127.JPG",
@@ -1214,7 +1314,8 @@
    "thumb": "C82A3127.jpg",
    "preview": "C82A3127.jpg",
    "tbytes": 40155,
-   "pbytes": 444516
+   "pbytes": 444516,
+   "ratio": 1.5
   },
   {
    "src": "C82A3128.JPG",
@@ -1226,7 +1327,8 @@
    "thumb": "C82A3128.jpg",
    "preview": "C82A3128.jpg",
    "tbytes": 39056,
-   "pbytes": 446298
+   "pbytes": 446298,
+   "ratio": 1.5
   },
   {
    "src": "C82A3129.JPG",
@@ -1238,7 +1340,8 @@
    "thumb": "C82A3129.jpg",
    "preview": "C82A3129.jpg",
    "tbytes": 39510,
-   "pbytes": 454463
+   "pbytes": 454463,
+   "ratio": 1.5
   },
   {
    "src": "C82A3130.JPG",
@@ -1250,7 +1353,8 @@
    "thumb": "C82A3130.jpg",
    "preview": "C82A3130.jpg",
    "tbytes": 39276,
-   "pbytes": 451345
+   "pbytes": 451345,
+   "ratio": 1.5
   },
   {
    "src": "C82A3131.JPG",
@@ -1262,7 +1366,8 @@
    "thumb": "C82A3131.jpg",
    "preview": "C82A3131.jpg",
    "tbytes": 36004,
-   "pbytes": 414486
+   "pbytes": 414486,
+   "ratio": 1.5
   },
   {
    "src": "C82A3132.JPG",
@@ -1274,7 +1379,8 @@
    "thumb": "C82A3132.jpg",
    "preview": "C82A3132.jpg",
    "tbytes": 36211,
-   "pbytes": 417680
+   "pbytes": 417680,
+   "ratio": 1.5
   },
   {
    "src": "C82A3133.JPG",
@@ -1286,7 +1392,8 @@
    "thumb": "C82A3133.jpg",
    "preview": "C82A3133.jpg",
    "tbytes": 34028,
-   "pbytes": 389387
+   "pbytes": 389387,
+   "ratio": 1.5
   },
   {
    "src": "C82A3134.JPG",
@@ -1298,7 +1405,8 @@
    "thumb": "C82A3134.jpg",
    "preview": "C82A3134.jpg",
    "tbytes": 37663,
-   "pbytes": 438385
+   "pbytes": 438385,
+   "ratio": 1.5
   },
   {
    "src": "C82A3135.JPG",
@@ -1310,7 +1418,8 @@
    "thumb": "C82A3135.jpg",
    "preview": "C82A3135.jpg",
    "tbytes": 37156,
-   "pbytes": 428487
+   "pbytes": 428487,
+   "ratio": 1.5
   },
   {
    "src": "C82A3136.JPG",
@@ -1322,7 +1431,8 @@
    "thumb": "C82A3136.jpg",
    "preview": "C82A3136.jpg",
    "tbytes": 37113,
-   "pbytes": 424040
+   "pbytes": 424040,
+   "ratio": 1.5
   },
   {
    "src": "C82A3137.JPG",
@@ -1334,7 +1444,8 @@
    "thumb": "C82A3137.jpg",
    "preview": "C82A3137.jpg",
    "tbytes": 36552,
-   "pbytes": 417443
+   "pbytes": 417443,
+   "ratio": 1.5
   },
   {
    "src": "C82A3138.JPG",
@@ -1346,7 +1457,8 @@
    "thumb": "C82A3138.jpg",
    "preview": "C82A3138.jpg",
    "tbytes": 38863,
-   "pbytes": 451285
+   "pbytes": 451285,
+   "ratio": 1.5
   },
   {
    "src": "C82A3139.JPG",
@@ -1358,7 +1470,8 @@
    "thumb": "C82A3139.jpg",
    "preview": "C82A3139.jpg",
    "tbytes": 37762,
-   "pbytes": 445793
+   "pbytes": 445793,
+   "ratio": 1.5
   },
   {
    "src": "C82A3140.JPG",
@@ -1370,7 +1483,8 @@
    "thumb": "C82A3140.jpg",
    "preview": "C82A3140.jpg",
    "tbytes": 26227,
-   "pbytes": 236074
+   "pbytes": 236074,
+   "ratio": 1.5
   },
   {
    "src": "C82A3141.JPG",
@@ -1382,7 +1496,8 @@
    "thumb": "C82A3141.jpg",
    "preview": "C82A3141.jpg",
    "tbytes": 33606,
-   "pbytes": 348127
+   "pbytes": 348127,
+   "ratio": 1.5
   },
   {
    "src": "C82A3142.JPG",
@@ -1394,7 +1509,8 @@
    "thumb": "C82A3142.jpg",
    "preview": "C82A3142.jpg",
    "tbytes": 38998,
-   "pbytes": 446805
+   "pbytes": 446805,
+   "ratio": 1.5
   },
   {
    "src": "C82A3143.JPG",
@@ -1406,7 +1522,8 @@
    "thumb": "C82A3143.jpg",
    "preview": "C82A3143.jpg",
    "tbytes": 37978,
-   "pbytes": 430984
+   "pbytes": 430984,
+   "ratio": 1.5
   },
   {
    "src": "C82A3144.JPG",
@@ -1418,7 +1535,8 @@
    "thumb": "C82A3144.jpg",
    "preview": "C82A3144.jpg",
    "tbytes": 35694,
-   "pbytes": 423101
+   "pbytes": 423101,
+   "ratio": 1.5
   },
   {
    "src": "C82A3145.JPG",
@@ -1430,19 +1548,21 @@
    "thumb": "C82A3145.jpg",
    "preview": "C82A3145.jpg",
    "tbytes": 39986,
-   "pbytes": 461591
+   "pbytes": 461591,
+   "ratio": 1.5
   },
   {
    "src": "C82A3146.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10374255,
    "date": "2026-11-07 11:13:46",
    "orient": 8,
    "thumb": "C82A3146.jpg",
    "preview": "C82A3146.jpg",
    "tbytes": 41717,
-   "pbytes": 486258
+   "pbytes": 486258,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3147.JPG",
@@ -1454,43 +1574,47 @@
    "thumb": "C82A3147.jpg",
    "preview": "C82A3147.jpg",
    "tbytes": 34235,
-   "pbytes": 403474
+   "pbytes": 403474,
+   "ratio": 1.5
   },
   {
    "src": "C82A3148.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 11371754,
    "date": "2026-11-07 11:14:09",
    "orient": 8,
    "thumb": "C82A3148.jpg",
    "preview": "C82A3148.jpg",
    "tbytes": 43480,
-   "pbytes": 472419
+   "pbytes": 472419,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3150.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10809673,
    "date": "2026-11-07 11:14:17",
    "orient": 8,
    "thumb": "C82A3150.jpg",
    "preview": "C82A3150.jpg",
    "tbytes": 41873,
-   "pbytes": 475137
+   "pbytes": 475137,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3151.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9730234,
    "date": "2026-11-07 11:14:41",
    "orient": 8,
    "thumb": "C82A3151.jpg",
    "preview": "C82A3151.jpg",
    "tbytes": 39922,
-   "pbytes": 422357
+   "pbytes": 422357,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3152.JPG",
@@ -1502,7 +1626,8 @@
    "thumb": "C82A3152.jpg",
    "preview": "C82A3152.jpg",
    "tbytes": 34137,
-   "pbytes": 380163
+   "pbytes": 380163,
+   "ratio": 1.5
   },
   {
    "src": "C82A3153.JPG",
@@ -1514,7 +1639,8 @@
    "thumb": "C82A3153.jpg",
    "preview": "C82A3153.jpg",
    "tbytes": 37884,
-   "pbytes": 411676
+   "pbytes": 411676,
+   "ratio": 1.5
   },
   {
    "src": "C82A3154.JPG",
@@ -1526,7 +1652,8 @@
    "thumb": "C82A3154.jpg",
    "preview": "C82A3154.jpg",
    "tbytes": 35877,
-   "pbytes": 397435
+   "pbytes": 397435,
+   "ratio": 1.5
   },
   {
    "src": "C82A3155.JPG",
@@ -1538,7 +1665,8 @@
    "thumb": "C82A3155.jpg",
    "preview": "C82A3155.jpg",
    "tbytes": 36912,
-   "pbytes": 405274
+   "pbytes": 405274,
+   "ratio": 1.5
   },
   {
    "src": "C82A3156.JPG",
@@ -1550,31 +1678,34 @@
    "thumb": "C82A3156.jpg",
    "preview": "C82A3156.jpg",
    "tbytes": 31066,
-   "pbytes": 303037
+   "pbytes": 303037,
+   "ratio": 1.5
   },
   {
    "src": "C82A3157.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8594377,
    "date": "2026-11-07 11:16:53",
    "orient": 8,
    "thumb": "C82A3157.jpg",
    "preview": "C82A3157.jpg",
    "tbytes": 35239,
-   "pbytes": 341878
+   "pbytes": 341878,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3158.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8413359,
    "date": "2026-11-07 11:16:56",
    "orient": 8,
    "thumb": "C82A3158.jpg",
    "preview": "C82A3158.jpg",
    "tbytes": 35515,
-   "pbytes": 345579
+   "pbytes": 345579,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3159.JPG",
@@ -1586,7 +1717,8 @@
    "thumb": "C82A3159.jpg",
    "preview": "C82A3159.jpg",
    "tbytes": 32075,
-   "pbytes": 284482
+   "pbytes": 284482,
+   "ratio": 1.5
   },
   {
    "src": "C82A3160.JPG",
@@ -1598,7 +1730,8 @@
    "thumb": "C82A3160.jpg",
    "preview": "C82A3160.jpg",
    "tbytes": 31988,
-   "pbytes": 328524
+   "pbytes": 328524,
+   "ratio": 1.5
   },
   {
    "src": "C82A3163.JPG",
@@ -1610,7 +1743,8 @@
    "thumb": "C82A3163.jpg",
    "preview": "C82A3163.jpg",
    "tbytes": 35733,
-   "pbytes": 373394
+   "pbytes": 373394,
+   "ratio": 1.5
   },
   {
    "src": "C82A3164.JPG",
@@ -1622,7 +1756,8 @@
    "thumb": "C82A3164.jpg",
    "preview": "C82A3164.jpg",
    "tbytes": 33370,
-   "pbytes": 353729
+   "pbytes": 353729,
+   "ratio": 1.5
   },
   {
    "src": "C82A3165.JPG",
@@ -1634,7 +1769,8 @@
    "thumb": "C82A3165.jpg",
    "preview": "C82A3165.jpg",
    "tbytes": 34392,
-   "pbytes": 375330
+   "pbytes": 375330,
+   "ratio": 1.5
   },
   {
    "src": "C82A3166.JPG",
@@ -1646,7 +1782,8 @@
    "thumb": "C82A3166.jpg",
    "preview": "C82A3166.jpg",
    "tbytes": 33397,
-   "pbytes": 365007
+   "pbytes": 365007,
+   "ratio": 1.5
   },
   {
    "src": "C82A3167.JPG",
@@ -1658,7 +1795,8 @@
    "thumb": "C82A3167.jpg",
    "preview": "C82A3167.jpg",
    "tbytes": 37602,
-   "pbytes": 442919
+   "pbytes": 442919,
+   "ratio": 1.5
   },
   {
    "src": "C82A3168.JPG",
@@ -1670,19 +1808,21 @@
    "thumb": "C82A3168.jpg",
    "preview": "C82A3168.jpg",
    "tbytes": 36791,
-   "pbytes": 428442
+   "pbytes": 428442,
+   "ratio": 1.5
   },
   {
    "src": "C82A3169.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9886125,
    "date": "2026-11-07 11:19:57",
    "orient": 8,
    "thumb": "C82A3169.jpg",
    "preview": "C82A3169.jpg",
    "tbytes": 37434,
-   "pbytes": 427971
+   "pbytes": 427971,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3170.JPG",
@@ -1694,7 +1834,8 @@
    "thumb": "C82A3170.jpg",
    "preview": "C82A3170.jpg",
    "tbytes": 35549,
-   "pbytes": 414432
+   "pbytes": 414432,
+   "ratio": 1.5
   },
   {
    "src": "C82A3171.JPG",
@@ -1706,7 +1847,8 @@
    "thumb": "C82A3171.jpg",
    "preview": "C82A3171.jpg",
    "tbytes": 41236,
-   "pbytes": 461405
+   "pbytes": 461405,
+   "ratio": 1.5
   },
   {
    "src": "C82A3172.JPG",
@@ -1718,31 +1860,34 @@
    "thumb": "C82A3172.jpg",
    "preview": "C82A3172.jpg",
    "tbytes": 41340,
-   "pbytes": 417070
+   "pbytes": 417070,
+   "ratio": 1.5
   },
   {
    "src": "C82A3173.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10447003,
    "date": "2026-11-07 11:20:18",
    "orient": 8,
    "thumb": "C82A3173.jpg",
    "preview": "C82A3173.jpg",
    "tbytes": 39812,
-   "pbytes": 452911
+   "pbytes": 452911,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3174.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9394249,
    "date": "2026-11-07 11:20:21",
    "orient": 8,
    "thumb": "C82A3174.jpg",
    "preview": "C82A3174.jpg",
    "tbytes": 39156,
-   "pbytes": 428653
+   "pbytes": 428653,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3175.JPG",
@@ -1754,7 +1899,8 @@
    "thumb": "C82A3175.jpg",
    "preview": "C82A3175.jpg",
    "tbytes": 15897,
-   "pbytes": 129519
+   "pbytes": 129519,
+   "ratio": 1.5
   },
   {
    "src": "C82A3176.JPG",
@@ -1766,7 +1912,8 @@
    "thumb": "C82A3176.jpg",
    "preview": "C82A3176.jpg",
    "tbytes": 25864,
-   "pbytes": 267690
+   "pbytes": 267690,
+   "ratio": 1.5
   },
   {
    "src": "C82A3177.JPG",
@@ -1778,7 +1925,8 @@
    "thumb": "C82A3177.jpg",
    "preview": "C82A3177.jpg",
    "tbytes": 26143,
-   "pbytes": 262351
+   "pbytes": 262351,
+   "ratio": 1.5
   },
   {
    "src": "C82A3178.JPG",
@@ -1790,7 +1938,8 @@
    "thumb": "C82A3178.jpg",
    "preview": "C82A3178.jpg",
    "tbytes": 33760,
-   "pbytes": 372142
+   "pbytes": 372142,
+   "ratio": 1.5
   },
   {
    "src": "C82A3179.JPG",
@@ -1802,7 +1951,8 @@
    "thumb": "C82A3179.jpg",
    "preview": "C82A3179.jpg",
    "tbytes": 34176,
-   "pbytes": 373371
+   "pbytes": 373371,
+   "ratio": 1.5
   },
   {
    "src": "C82A3180.JPG",
@@ -1814,7 +1964,8 @@
    "thumb": "C82A3180.jpg",
    "preview": "C82A3180.jpg",
    "tbytes": 34225,
-   "pbytes": 361473
+   "pbytes": 361473,
+   "ratio": 1.5
   },
   {
    "src": "C82A3181.JPG",
@@ -1826,7 +1977,8 @@
    "thumb": "C82A3181.jpg",
    "preview": "C82A3181.jpg",
    "tbytes": 37716,
-   "pbytes": 405519
+   "pbytes": 405519,
+   "ratio": 1.5
   },
   {
    "src": "C82A3182.JPG",
@@ -1838,7 +1990,8 @@
    "thumb": "C82A3182.jpg",
    "preview": "C82A3182.jpg",
    "tbytes": 34966,
-   "pbytes": 387132
+   "pbytes": 387132,
+   "ratio": 1.5
   },
   {
    "src": "C82A3183.JPG",
@@ -1850,7 +2003,8 @@
    "thumb": "C82A3183.jpg",
    "preview": "C82A3183.jpg",
    "tbytes": 35430,
-   "pbytes": 388091
+   "pbytes": 388091,
+   "ratio": 1.5
   },
   {
    "src": "C82A3184.JPG",
@@ -1862,7 +2016,8 @@
    "thumb": "C82A3184.jpg",
    "preview": "C82A3184.jpg",
    "tbytes": 34821,
-   "pbytes": 386469
+   "pbytes": 386469,
+   "ratio": 1.5
   },
   {
    "src": "C82A3185.JPG",
@@ -1874,7 +2029,8 @@
    "thumb": "C82A3185.jpg",
    "preview": "C82A3185.jpg",
    "tbytes": 33970,
-   "pbytes": 385644
+   "pbytes": 385644,
+   "ratio": 1.5
   },
   {
    "src": "C82A3186.JPG",
@@ -1886,7 +2042,8 @@
    "thumb": "C82A3186.jpg",
    "preview": "C82A3186.jpg",
    "tbytes": 36181,
-   "pbytes": 419939
+   "pbytes": 419939,
+   "ratio": 1.5
   },
   {
    "src": "C82A3187.JPG",
@@ -1898,31 +2055,34 @@
    "thumb": "C82A3187.jpg",
    "preview": "C82A3187.jpg",
    "tbytes": 36048,
-   "pbytes": 410315
+   "pbytes": 410315,
+   "ratio": 1.5
   },
   {
    "src": "C82A3188.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10116361,
    "date": "2026-11-07 11:27:04",
    "orient": 8,
    "thumb": "C82A3188.jpg",
    "preview": "C82A3188.jpg",
    "tbytes": 44791,
-   "pbytes": 499725
+   "pbytes": 499725,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3189.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8590757,
    "date": "2026-11-07 11:27:08",
    "orient": 8,
    "thumb": "C82A3189.jpg",
    "preview": "C82A3189.jpg",
    "tbytes": 37945,
-   "pbytes": 421471
+   "pbytes": 421471,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3190.JPG",
@@ -1934,19 +2094,21 @@
    "thumb": "C82A3190.jpg",
    "preview": "C82A3190.jpg",
    "tbytes": 37385,
-   "pbytes": 450039
+   "pbytes": 450039,
+   "ratio": 1.5
   },
   {
    "src": "C82A3191.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 11703427,
    "date": "2026-11-07 11:27:34",
    "orient": 8,
    "thumb": "C82A3191.jpg",
    "preview": "C82A3191.jpg",
    "tbytes": 40798,
-   "pbytes": 494346
+   "pbytes": 494346,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3192.JPG",
@@ -1958,7 +2120,8 @@
    "thumb": "C82A3192.jpg",
    "preview": "C82A3192.jpg",
    "tbytes": 29385,
-   "pbytes": 320520
+   "pbytes": 320520,
+   "ratio": 1.5
   },
   {
    "src": "C82A3193.JPG",
@@ -1970,7 +2133,8 @@
    "thumb": "C82A3193.jpg",
    "preview": "C82A3193.jpg",
    "tbytes": 32709,
-   "pbytes": 363580
+   "pbytes": 363580,
+   "ratio": 1.5
   },
   {
    "src": "C82A3194.JPG",
@@ -1982,7 +2146,8 @@
    "thumb": "C82A3194.jpg",
    "preview": "C82A3194.jpg",
    "tbytes": 32849,
-   "pbytes": 386929
+   "pbytes": 386929,
+   "ratio": 1.5
   },
   {
    "src": "C82A3195.JPG",
@@ -1994,31 +2159,34 @@
    "thumb": "C82A3195.jpg",
    "preview": "C82A3195.jpg",
    "tbytes": 29393,
-   "pbytes": 337516
+   "pbytes": 337516,
+   "ratio": 1.5
   },
   {
    "src": "C82A3202.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5883424,
    "date": "2026-11-07 12:02:01",
    "orient": 8,
    "thumb": "C82A3202.jpg",
    "preview": "C82A3202.jpg",
    "tbytes": 24964,
-   "pbytes": 216609
+   "pbytes": 216609,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3203.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6686648,
    "date": "2026-11-07 12:02:05",
    "orient": 8,
    "thumb": "C82A3203.jpg",
    "preview": "C82A3203.jpg",
    "tbytes": 25153,
-   "pbytes": 243236
+   "pbytes": 243236,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3204.JPG",
@@ -2030,19 +2198,21 @@
    "thumb": "C82A3204.jpg",
    "preview": "C82A3204.jpg",
    "tbytes": 42086,
-   "pbytes": 450538
+   "pbytes": 450538,
+   "ratio": 1.5
   },
   {
    "src": "C82A3205.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10001636,
    "date": "2026-11-07 12:11:44",
    "orient": 8,
    "thumb": "C82A3205.jpg",
    "preview": "C82A3205.jpg",
    "tbytes": 43871,
-   "pbytes": 458211
+   "pbytes": 458211,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3206.JPG",
@@ -2054,7 +2224,8 @@
    "thumb": "C82A3206.jpg",
    "preview": "C82A3206.jpg",
    "tbytes": 40860,
-   "pbytes": 423532
+   "pbytes": 423532,
+   "ratio": 1.5
   },
   {
    "src": "C82A3211.JPG",
@@ -2066,7 +2237,8 @@
    "thumb": "C82A3211.jpg",
    "preview": "C82A3211.jpg",
    "tbytes": 30310,
-   "pbytes": 331684
+   "pbytes": 331684,
+   "ratio": 1.5
   },
   {
    "src": "C82A3213.JPG",
@@ -2078,7 +2250,8 @@
    "thumb": "C82A3213.jpg",
    "preview": "C82A3213.jpg",
    "tbytes": 32554,
-   "pbytes": 342341
+   "pbytes": 342341,
+   "ratio": 1.5
   },
   {
    "src": "C82A3224.JPG",
@@ -2090,7 +2263,8 @@
    "thumb": "C82A3224.jpg",
    "preview": "C82A3224.jpg",
    "tbytes": 40028,
-   "pbytes": 388583
+   "pbytes": 388583,
+   "ratio": 1.5
   },
   {
    "src": "C82A3225.JPG",
@@ -2102,7 +2276,8 @@
    "thumb": "C82A3225.jpg",
    "preview": "C82A3225.jpg",
    "tbytes": 40872,
-   "pbytes": 413126
+   "pbytes": 413126,
+   "ratio": 1.5
   },
   {
    "src": "C82A3226.JPG",
@@ -2114,7 +2289,8 @@
    "thumb": "C82A3226.jpg",
    "preview": "C82A3226.jpg",
    "tbytes": 41684,
-   "pbytes": 413203
+   "pbytes": 413203,
+   "ratio": 1.5
   },
   {
    "src": "C82A3229.JPG",
@@ -2126,7 +2302,8 @@
    "thumb": "C82A3229.jpg",
    "preview": "C82A3229.jpg",
    "tbytes": 36802,
-   "pbytes": 346506
+   "pbytes": 346506,
+   "ratio": 1.5
   },
   {
    "src": "C82A3230.JPG",
@@ -2138,7 +2315,8 @@
    "thumb": "C82A3230.jpg",
    "preview": "C82A3230.jpg",
    "tbytes": 42659,
-   "pbytes": 427080
+   "pbytes": 427080,
+   "ratio": 1.5
   },
   {
    "src": "C82A3231.JPG",
@@ -2150,7 +2328,8 @@
    "thumb": "C82A3231.jpg",
    "preview": "C82A3231.jpg",
    "tbytes": 42516,
-   "pbytes": 469111
+   "pbytes": 469111,
+   "ratio": 1.5
   },
   {
    "src": "C82A3232.JPG",
@@ -2162,7 +2341,8 @@
    "thumb": "C82A3232.jpg",
    "preview": "C82A3232.jpg",
    "tbytes": 43205,
-   "pbytes": 482856
+   "pbytes": 482856,
+   "ratio": 1.5
   },
   {
    "src": "C82A3233.JPG",
@@ -2174,7 +2354,8 @@
    "thumb": "C82A3233.jpg",
    "preview": "C82A3233.jpg",
    "tbytes": 43693,
-   "pbytes": 494522
+   "pbytes": 494522,
+   "ratio": 1.5
   },
   {
    "src": "C82A3234.JPG",
@@ -2186,7 +2367,8 @@
    "thumb": "C82A3234.jpg",
    "preview": "C82A3234.jpg",
    "tbytes": 47532,
-   "pbytes": 513063
+   "pbytes": 513063,
+   "ratio": 1.5
   },
   {
    "src": "C82A3239.JPG",
@@ -2198,19 +2380,21 @@
    "thumb": "C82A3239.jpg",
    "preview": "C82A3239.jpg",
    "tbytes": 36593,
-   "pbytes": 421722
+   "pbytes": 421722,
+   "ratio": 1.5
   },
   {
    "src": "C82A3240.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9885998,
    "date": "2026-11-07 12:54:30",
    "orient": 8,
    "thumb": "C82A3240.jpg",
    "preview": "C82A3240.jpg",
    "tbytes": 31714,
-   "pbytes": 360805
+   "pbytes": 360805,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3244.JPG",
@@ -2222,7 +2406,8 @@
    "thumb": "C82A3244.jpg",
    "preview": "C82A3244.jpg",
    "tbytes": 32650,
-   "pbytes": 332402
+   "pbytes": 332402,
+   "ratio": 1.5
   },
   {
    "src": "C82A3245.JPG",
@@ -2234,7 +2419,8 @@
    "thumb": "C82A3245.jpg",
    "preview": "C82A3245.jpg",
    "tbytes": 33800,
-   "pbytes": 340507
+   "pbytes": 340507,
+   "ratio": 1.5
   },
   {
    "src": "C82A3247.JPG",
@@ -2246,7 +2432,8 @@
    "thumb": "C82A3247.jpg",
    "preview": "C82A3247.jpg",
    "tbytes": 36469,
-   "pbytes": 358973
+   "pbytes": 358973,
+   "ratio": 1.5
   },
   {
    "src": "C82A3249.JPG",
@@ -2258,7 +2445,8 @@
    "thumb": "C82A3249.jpg",
    "preview": "C82A3249.jpg",
    "tbytes": 41485,
-   "pbytes": 431939
+   "pbytes": 431939,
+   "ratio": 1.5
   },
   {
    "src": "C82A3250.JPG",
@@ -2270,7 +2458,8 @@
    "thumb": "C82A3250.jpg",
    "preview": "C82A3250.jpg",
    "tbytes": 40938,
-   "pbytes": 431181
+   "pbytes": 431181,
+   "ratio": 1.5
   },
   {
    "src": "C82A3251.JPG",
@@ -2282,7 +2471,8 @@
    "thumb": "C82A3251.jpg",
    "preview": "C82A3251.jpg",
    "tbytes": 41903,
-   "pbytes": 436784
+   "pbytes": 436784,
+   "ratio": 1.5
   },
   {
    "src": "C82A3252.JPG",
@@ -2294,7 +2484,8 @@
    "thumb": "C82A3252.jpg",
    "preview": "C82A3252.jpg",
    "tbytes": 39856,
-   "pbytes": 423243
+   "pbytes": 423243,
+   "ratio": 1.5
   },
   {
    "src": "C82A3253.JPG",
@@ -2306,7 +2497,8 @@
    "thumb": "C82A3253.jpg",
    "preview": "C82A3253.jpg",
    "tbytes": 39502,
-   "pbytes": 411715
+   "pbytes": 411715,
+   "ratio": 1.5
   },
   {
    "src": "C82A3258.JPG",
@@ -2318,7 +2510,8 @@
    "thumb": "C82A3258.jpg",
    "preview": "C82A3258.jpg",
    "tbytes": 42378,
-   "pbytes": 441316
+   "pbytes": 441316,
+   "ratio": 1.5
   },
   {
    "src": "C82A3259.JPG",
@@ -2330,7 +2523,8 @@
    "thumb": "C82A3259.jpg",
    "preview": "C82A3259.jpg",
    "tbytes": 48513,
-   "pbytes": 489649
+   "pbytes": 489649,
+   "ratio": 1.5
   },
   {
    "src": "C82A3261.JPG",
@@ -2342,7 +2536,8 @@
    "thumb": "C82A3261.jpg",
    "preview": "C82A3261.jpg",
    "tbytes": 41190,
-   "pbytes": 426093
+   "pbytes": 426093,
+   "ratio": 1.5
   },
   {
    "src": "C82A3263.JPG",
@@ -2354,7 +2549,8 @@
    "thumb": "C82A3263.jpg",
    "preview": "C82A3263.jpg",
    "tbytes": 36665,
-   "pbytes": 394376
+   "pbytes": 394376,
+   "ratio": 1.5
   },
   {
    "src": "C82A3264.JPG",
@@ -2366,7 +2562,8 @@
    "thumb": "C82A3264.jpg",
    "preview": "C82A3264.jpg",
    "tbytes": 29467,
-   "pbytes": 300244
+   "pbytes": 300244,
+   "ratio": 1.5
   },
   {
    "src": "C82A3265.JPG",
@@ -2378,7 +2575,8 @@
    "thumb": "C82A3265.jpg",
    "preview": "C82A3265.jpg",
    "tbytes": 33561,
-   "pbytes": 357735
+   "pbytes": 357735,
+   "ratio": 1.5
   },
   {
    "src": "C82A3266.JPG",
@@ -2390,7 +2588,8 @@
    "thumb": "C82A3266.jpg",
    "preview": "C82A3266.jpg",
    "tbytes": 37607,
-   "pbytes": 408651
+   "pbytes": 408651,
+   "ratio": 1.5
   },
   {
    "src": "C82A3267.JPG",
@@ -2402,7 +2601,8 @@
    "thumb": "C82A3267.jpg",
    "preview": "C82A3267.jpg",
    "tbytes": 34090,
-   "pbytes": 369901
+   "pbytes": 369901,
+   "ratio": 1.5
   },
   {
    "src": "C82A3268.JPG",
@@ -2414,7 +2614,8 @@
    "thumb": "C82A3268.jpg",
    "preview": "C82A3268.jpg",
    "tbytes": 31122,
-   "pbytes": 320390
+   "pbytes": 320390,
+   "ratio": 1.5
   },
   {
    "src": "C82A3269.JPG",
@@ -2426,7 +2627,8 @@
    "thumb": "C82A3269.jpg",
    "preview": "C82A3269.jpg",
    "tbytes": 32664,
-   "pbytes": 335906
+   "pbytes": 335906,
+   "ratio": 1.5
   },
   {
    "src": "C82A3270.JPG",
@@ -2438,7 +2640,8 @@
    "thumb": "C82A3270.jpg",
    "preview": "C82A3270.jpg",
    "tbytes": 32606,
-   "pbytes": 333005
+   "pbytes": 333005,
+   "ratio": 1.5
   },
   {
    "src": "C82A3271.JPG",
@@ -2450,7 +2653,8 @@
    "thumb": "C82A3271.jpg",
    "preview": "C82A3271.jpg",
    "tbytes": 35167,
-   "pbytes": 364276
+   "pbytes": 364276,
+   "ratio": 1.5
   },
   {
    "src": "C82A3272.JPG",
@@ -2462,7 +2666,8 @@
    "thumb": "C82A3272.jpg",
    "preview": "C82A3272.jpg",
    "tbytes": 34394,
-   "pbytes": 359874
+   "pbytes": 359874,
+   "ratio": 1.5
   },
   {
    "src": "C82A3274.JPG",
@@ -2474,19 +2679,21 @@
    "thumb": "C82A3274.jpg",
    "preview": "C82A3274.jpg",
    "tbytes": 31238,
-   "pbytes": 309493
+   "pbytes": 309493,
+   "ratio": 1.5
   },
   {
    "src": "C82A3276.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8342849,
    "date": "2026-11-07 13:07:18",
    "orient": 8,
    "thumb": "C82A3276.jpg",
    "preview": "C82A3276.jpg",
    "tbytes": 32378,
-   "pbytes": 333975
+   "pbytes": 333975,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3277.JPG",
@@ -2498,7 +2705,8 @@
    "thumb": "C82A3277.jpg",
    "preview": "C82A3277.jpg",
    "tbytes": 29603,
-   "pbytes": 316112
+   "pbytes": 316112,
+   "ratio": 1.5
   },
   {
    "src": "C82A3278.JPG",
@@ -2510,7 +2718,8 @@
    "thumb": "C82A3278.jpg",
    "preview": "C82A3278.jpg",
    "tbytes": 23784,
-   "pbytes": 197408
+   "pbytes": 197408,
+   "ratio": 1.5
   },
   {
    "src": "C82A3280.JPG",
@@ -2522,7 +2731,8 @@
    "thumb": "C82A3280.jpg",
    "preview": "C82A3280.jpg",
    "tbytes": 23306,
-   "pbytes": 218340
+   "pbytes": 218340,
+   "ratio": 1.5
   },
   {
    "src": "C82A3281.JPG",
@@ -2534,7 +2744,8 @@
    "thumb": "C82A3281.jpg",
    "preview": "C82A3281.jpg",
    "tbytes": 25130,
-   "pbytes": 246296
+   "pbytes": 246296,
+   "ratio": 1.5
   },
   {
    "src": "C82A3286.JPG",
@@ -2546,7 +2757,8 @@
    "thumb": "C82A3286.jpg",
    "preview": "C82A3286.jpg",
    "tbytes": 35863,
-   "pbytes": 395279
+   "pbytes": 395279,
+   "ratio": 1.5
   },
   {
    "src": "C82A3287.JPG",
@@ -2558,7 +2770,8 @@
    "thumb": "C82A3287.jpg",
    "preview": "C82A3287.jpg",
    "tbytes": 30137,
-   "pbytes": 322811
+   "pbytes": 322811,
+   "ratio": 1.5
   },
   {
    "src": "C82A3288.JPG",
@@ -2570,7 +2783,8 @@
    "thumb": "C82A3288.jpg",
    "preview": "C82A3288.jpg",
    "tbytes": 31824,
-   "pbytes": 340228
+   "pbytes": 340228,
+   "ratio": 1.5
   },
   {
    "src": "C82A3290.JPG",
@@ -2582,7 +2796,8 @@
    "thumb": "C82A3290.jpg",
    "preview": "C82A3290.jpg",
    "tbytes": 41046,
-   "pbytes": 474230
+   "pbytes": 474230,
+   "ratio": 1.5
   },
   {
    "src": "C82A3292.JPG",
@@ -2594,7 +2809,8 @@
    "thumb": "C82A3292.jpg",
    "preview": "C82A3292.jpg",
    "tbytes": 47875,
-   "pbytes": 558486
+   "pbytes": 558486,
+   "ratio": 1.5
   },
   {
    "src": "C82A3294.JPG",
@@ -2606,7 +2822,8 @@
    "thumb": "C82A3294.jpg",
    "preview": "C82A3294.jpg",
    "tbytes": 36006,
-   "pbytes": 414000
+   "pbytes": 414000,
+   "ratio": 1.5
   },
   {
    "src": "C82A3295.JPG",
@@ -2618,7 +2835,8 @@
    "thumb": "C82A3295.jpg",
    "preview": "C82A3295.jpg",
    "tbytes": 37132,
-   "pbytes": 432248
+   "pbytes": 432248,
+   "ratio": 1.5
   },
   {
    "src": "C82A3296.JPG",
@@ -2630,7 +2848,8 @@
    "thumb": "C82A3296.jpg",
    "preview": "C82A3296.jpg",
    "tbytes": 32436,
-   "pbytes": 369684
+   "pbytes": 369684,
+   "ratio": 1.5
   },
   {
    "src": "C82A3297.JPG",
@@ -2642,19 +2861,21 @@
    "thumb": "C82A3297.jpg",
    "preview": "C82A3297.jpg",
    "tbytes": 32770,
-   "pbytes": 374359
+   "pbytes": 374359,
+   "ratio": 1.5
   },
   {
    "src": "C82A3298.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10704797,
    "date": "2026-11-07 13:17:33",
    "orient": 8,
    "thumb": "C82A3298.jpg",
    "preview": "C82A3298.jpg",
    "tbytes": 33335,
-   "pbytes": 393434
+   "pbytes": 393434,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3299.JPG",
@@ -2666,7 +2887,8 @@
    "thumb": "C82A3299.jpg",
    "preview": "C82A3299.jpg",
    "tbytes": 29666,
-   "pbytes": 325223
+   "pbytes": 325223,
+   "ratio": 1.5
   },
   {
    "src": "C82A3300.JPG",
@@ -2678,7 +2900,8 @@
    "thumb": "C82A3300.jpg",
    "preview": "C82A3300.jpg",
    "tbytes": 31019,
-   "pbytes": 344334
+   "pbytes": 344334,
+   "ratio": 1.5
   },
   {
    "src": "C82A3301.JPG",
@@ -2690,7 +2913,8 @@
    "thumb": "C82A3301.jpg",
    "preview": "C82A3301.jpg",
    "tbytes": 29050,
-   "pbytes": 313235
+   "pbytes": 313235,
+   "ratio": 1.5
   },
   {
    "src": "C82A3302.JPG",
@@ -2702,7 +2926,8 @@
    "thumb": "C82A3302.jpg",
    "preview": "C82A3302.jpg",
    "tbytes": 28330,
-   "pbytes": 305181
+   "pbytes": 305181,
+   "ratio": 1.5
   },
   {
    "src": "C82A3304.JPG",
@@ -2714,7 +2939,8 @@
    "thumb": "C82A3304.jpg",
    "preview": "C82A3304.jpg",
    "tbytes": 33268,
-   "pbytes": 368569
+   "pbytes": 368569,
+   "ratio": 1.5
   },
   {
    "src": "C82A3305.JPG",
@@ -2726,7 +2952,8 @@
    "thumb": "C82A3305.jpg",
    "preview": "C82A3305.jpg",
    "tbytes": 34173,
-   "pbytes": 371036
+   "pbytes": 371036,
+   "ratio": 1.5
   },
   {
    "src": "C82A3306.JPG",
@@ -2738,7 +2965,8 @@
    "thumb": "C82A3306.jpg",
    "preview": "C82A3306.jpg",
    "tbytes": 34687,
-   "pbytes": 380997
+   "pbytes": 380997,
+   "ratio": 1.5
   },
   {
    "src": "C82A3310.JPG",
@@ -2750,7 +2978,8 @@
    "thumb": "C82A3310.jpg",
    "preview": "C82A3310.jpg",
    "tbytes": 38350,
-   "pbytes": 420584
+   "pbytes": 420584,
+   "ratio": 1.5
   },
   {
    "src": "C82A3311.JPG",
@@ -2762,7 +2991,8 @@
    "thumb": "C82A3311.jpg",
    "preview": "C82A3311.jpg",
    "tbytes": 38111,
-   "pbytes": 410390
+   "pbytes": 410390,
+   "ratio": 1.5
   },
   {
    "src": "C82A3316.JPG",
@@ -2774,7 +3004,8 @@
    "thumb": "C82A3316.jpg",
    "preview": "C82A3316.jpg",
    "tbytes": 28449,
-   "pbytes": 307816
+   "pbytes": 307816,
+   "ratio": 1.5
   },
   {
    "src": "C82A3319.JPG",
@@ -2786,151 +3017,164 @@
    "thumb": "C82A3319.jpg",
    "preview": "C82A3319.jpg",
    "tbytes": 28518,
-   "pbytes": 310879
+   "pbytes": 310879,
+   "ratio": 1.5
   },
   {
    "src": "C82A3321.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6489507,
    "date": "2026-11-07 13:36:43",
    "orient": 8,
    "thumb": "C82A3321.jpg",
    "preview": "C82A3321.jpg",
    "tbytes": 28859,
-   "pbytes": 239962
+   "pbytes": 239962,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3322.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6542110,
    "date": "2026-11-07 13:36:43",
    "orient": 8,
    "thumb": "C82A3322.jpg",
    "preview": "C82A3322.jpg",
    "tbytes": 29037,
-   "pbytes": 241719
+   "pbytes": 241719,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3323.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6171278,
    "date": "2026-11-07 13:37:22",
    "orient": 8,
    "thumb": "C82A3323.jpg",
    "preview": "C82A3323.jpg",
    "tbytes": 30082,
-   "pbytes": 246436
+   "pbytes": 246436,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3324.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6158023,
    "date": "2026-11-07 13:37:22",
    "orient": 8,
    "thumb": "C82A3324.jpg",
    "preview": "C82A3324.jpg",
    "tbytes": 30219,
-   "pbytes": 247733
+   "pbytes": 247733,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3325.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6591728,
    "date": "2026-11-07 13:37:32",
    "orient": 8,
    "thumb": "C82A3325.jpg",
    "preview": "C82A3325.jpg",
    "tbytes": 29101,
-   "pbytes": 259180
+   "pbytes": 259180,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3326.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7675045,
    "date": "2026-11-07 13:37:38",
    "orient": 8,
    "thumb": "C82A3326.jpg",
    "preview": "C82A3326.jpg",
    "tbytes": 41242,
-   "pbytes": 350026
+   "pbytes": 350026,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3327.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8549309,
    "date": "2026-11-07 13:37:50",
    "orient": 8,
    "thumb": "C82A3327.jpg",
    "preview": "C82A3327.jpg",
    "tbytes": 38728,
-   "pbytes": 368418
+   "pbytes": 368418,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3328.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 4011248,
    "date": "2026-11-07 13:37:50",
    "orient": 8,
    "thumb": "C82A3328.jpg",
    "preview": "C82A3328.jpg",
    "tbytes": 15974,
-   "pbytes": 141540
+   "pbytes": 141540,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3329.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7961307,
    "date": "2026-11-07 13:37:55",
    "orient": 8,
    "thumb": "C82A3329.jpg",
    "preview": "C82A3329.jpg",
    "tbytes": 39137,
-   "pbytes": 347662
+   "pbytes": 347662,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3330.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9876817,
    "date": "2026-11-07 13:38:04",
    "orient": 8,
    "thumb": "C82A3330.jpg",
    "preview": "C82A3330.jpg",
    "tbytes": 42935,
-   "pbytes": 448173
+   "pbytes": 448173,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3332.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8922494,
    "date": "2026-11-07 13:38:08",
    "orient": 8,
    "thumb": "C82A3332.jpg",
    "preview": "C82A3332.jpg",
    "tbytes": 41272,
-   "pbytes": 395329
+   "pbytes": 395329,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3336.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9899079,
    "date": "2026-11-07 13:38:47",
    "orient": 8,
    "thumb": "C82A3336.jpg",
    "preview": "C82A3336.jpg",
    "tbytes": 44172,
-   "pbytes": 435811
+   "pbytes": 435811,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3338.JPG",
@@ -2942,7 +3186,8 @@
    "thumb": "C82A3338.jpg",
    "preview": "C82A3338.jpg",
    "tbytes": 37778,
-   "pbytes": 371027
+   "pbytes": 371027,
+   "ratio": 1.5
   },
   {
    "src": "C82A3339.JPG",
@@ -2954,67 +3199,73 @@
    "thumb": "C82A3339.jpg",
    "preview": "C82A3339.jpg",
    "tbytes": 38695,
-   "pbytes": 380407
+   "pbytes": 380407,
+   "ratio": 1.5
   },
   {
    "src": "C82A3340.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8961882,
    "date": "2026-11-07 13:39:11",
    "orient": 8,
    "thumb": "C82A3340.jpg",
    "preview": "C82A3340.jpg",
    "tbytes": 36972,
-   "pbytes": 377421
+   "pbytes": 377421,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3341.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9897938,
    "date": "2026-11-07 13:39:15",
    "orient": 8,
    "thumb": "C82A3341.jpg",
    "preview": "C82A3341.jpg",
    "tbytes": 43367,
-   "pbytes": 435028
+   "pbytes": 435028,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3342.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10064948,
    "date": "2026-11-07 13:39:19",
    "orient": 8,
    "thumb": "C82A3342.jpg",
    "preview": "C82A3342.jpg",
    "tbytes": 43218,
-   "pbytes": 440057
+   "pbytes": 440057,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3343.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8966917,
    "date": "2026-11-07 13:39:25",
    "orient": 8,
    "thumb": "C82A3343.jpg",
    "preview": "C82A3343.jpg",
    "tbytes": 38638,
-   "pbytes": 384908
+   "pbytes": 384908,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3344.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10227008,
    "date": "2026-11-07 13:40:19",
    "orient": 8,
    "thumb": "C82A3344.jpg",
    "preview": "C82A3344.jpg",
    "tbytes": 39645,
-   "pbytes": 426532
+   "pbytes": 426532,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3345.JPG",
@@ -3026,43 +3277,47 @@
    "thumb": "C82A3345.jpg",
    "preview": "C82A3345.jpg",
    "tbytes": 23246,
-   "pbytes": 245367
+   "pbytes": 245367,
+   "ratio": 1.5
   },
   {
    "src": "C82A3346.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7285231,
    "date": "2026-11-07 13:40:52",
    "orient": 8,
    "thumb": "C82A3346.jpg",
    "preview": "C82A3346.jpg",
    "tbytes": 33682,
-   "pbytes": 301955
+   "pbytes": 301955,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3347.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7676620,
    "date": "2026-11-07 13:40:56",
    "orient": 8,
    "thumb": "C82A3347.jpg",
    "preview": "C82A3347.jpg",
    "tbytes": 35729,
-   "pbytes": 322639
+   "pbytes": 322639,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3348.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7328778,
    "date": "2026-11-07 13:40:58",
    "orient": 8,
    "thumb": "C82A3348.jpg",
    "preview": "C82A3348.jpg",
    "tbytes": 34801,
-   "pbytes": 307519
+   "pbytes": 307519,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3349.JPG",
@@ -3074,79 +3329,86 @@
    "thumb": "C82A3349.jpg",
    "preview": "C82A3349.jpg",
    "tbytes": 23988,
-   "pbytes": 208640
+   "pbytes": 208640,
+   "ratio": 1.5
   },
   {
    "src": "C82A3350.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8997852,
    "date": "2026-11-07 13:41:26",
    "orient": 8,
    "thumb": "C82A3350.jpg",
    "preview": "C82A3350.jpg",
    "tbytes": 33410,
-   "pbytes": 371053
+   "pbytes": 371053,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3351.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9863656,
    "date": "2026-11-07 13:42:23",
    "orient": 8,
    "thumb": "C82A3351.jpg",
    "preview": "C82A3351.jpg",
    "tbytes": 36135,
-   "pbytes": 411634
+   "pbytes": 411634,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3352.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10391132,
    "date": "2026-11-07 13:42:28",
    "orient": 8,
    "thumb": "C82A3352.jpg",
    "preview": "C82A3352.jpg",
    "tbytes": 37868,
-   "pbytes": 435124
+   "pbytes": 435124,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3353.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10249816,
    "date": "2026-11-07 13:42:32",
    "orient": 8,
    "thumb": "C82A3353.jpg",
    "preview": "C82A3353.jpg",
    "tbytes": 37783,
-   "pbytes": 431821
+   "pbytes": 431821,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3354.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9745642,
    "date": "2026-11-07 13:43:27",
    "orient": 8,
    "thumb": "C82A3354.jpg",
    "preview": "C82A3354.jpg",
    "tbytes": 33515,
-   "pbytes": 387080
+   "pbytes": 387080,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3355.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9829822,
    "date": "2026-11-07 13:43:32",
    "orient": 8,
    "thumb": "C82A3355.jpg",
    "preview": "C82A3355.jpg",
    "tbytes": 33821,
-   "pbytes": 392855
+   "pbytes": 392855,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3356.JPG",
@@ -3158,7 +3420,8 @@
    "thumb": "C82A3356.jpg",
    "preview": "C82A3356.jpg",
    "tbytes": 24447,
-   "pbytes": 224714
+   "pbytes": 224714,
+   "ratio": 1.5
   },
   {
    "src": "C82A3357.JPG",
@@ -3170,7 +3433,8 @@
    "thumb": "C82A3357.jpg",
    "preview": "C82A3357.jpg",
    "tbytes": 32785,
-   "pbytes": 315157
+   "pbytes": 315157,
+   "ratio": 1.5
   },
   {
    "src": "C82A3358.JPG",
@@ -3182,7 +3446,8 @@
    "thumb": "C82A3358.jpg",
    "preview": "C82A3358.jpg",
    "tbytes": 28370,
-   "pbytes": 273053
+   "pbytes": 273053,
+   "ratio": 1.5
   },
   {
    "src": "C82A3359.JPG",
@@ -3194,7 +3459,8 @@
    "thumb": "C82A3359.jpg",
    "preview": "C82A3359.jpg",
    "tbytes": 22807,
-   "pbytes": 213903
+   "pbytes": 213903,
+   "ratio": 1.5
   },
   {
    "src": "C82A3360.JPG",
@@ -3206,7 +3472,8 @@
    "thumb": "C82A3360.jpg",
    "preview": "C82A3360.jpg",
    "tbytes": 23321,
-   "pbytes": 220679
+   "pbytes": 220679,
+   "ratio": 1.5
   },
   {
    "src": "C82A3361.JPG",
@@ -3218,7 +3485,8 @@
    "thumb": "C82A3361.jpg",
    "preview": "C82A3361.jpg",
    "tbytes": 24738,
-   "pbytes": 236123
+   "pbytes": 236123,
+   "ratio": 1.5
   },
   {
    "src": "C82A3364.JPG",
@@ -3230,7 +3498,8 @@
    "thumb": "C82A3364.jpg",
    "preview": "C82A3364.jpg",
    "tbytes": 30865,
-   "pbytes": 301593
+   "pbytes": 301593,
+   "ratio": 1.5
   },
   {
    "src": "C82A3365.JPG",
@@ -3242,7 +3511,8 @@
    "thumb": "C82A3365.jpg",
    "preview": "C82A3365.jpg",
    "tbytes": 32886,
-   "pbytes": 320516
+   "pbytes": 320516,
+   "ratio": 1.5
   },
   {
    "src": "C82A3366.JPG",
@@ -3254,7 +3524,8 @@
    "thumb": "C82A3366.jpg",
    "preview": "C82A3366.jpg",
    "tbytes": 31685,
-   "pbytes": 303602
+   "pbytes": 303602,
+   "ratio": 1.5
   },
   {
    "src": "C82A3368.JPG",
@@ -3266,7 +3537,8 @@
    "thumb": "C82A3368.jpg",
    "preview": "C82A3368.jpg",
    "tbytes": 28868,
-   "pbytes": 291008
+   "pbytes": 291008,
+   "ratio": 1.5
   },
   {
    "src": "C82A3369.JPG",
@@ -3278,19 +3550,21 @@
    "thumb": "C82A3369.jpg",
    "preview": "C82A3369.jpg",
    "tbytes": 27949,
-   "pbytes": 272084
+   "pbytes": 272084,
+   "ratio": 1.5
   },
   {
    "src": "C82A3370.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9223921,
    "date": "2026-11-07 13:54:56",
    "orient": 8,
    "thumb": "C82A3370.jpg",
    "preview": "C82A3370.jpg",
    "tbytes": 32845,
-   "pbytes": 356577
+   "pbytes": 356577,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3378.JPG",
@@ -3302,7 +3576,8 @@
    "thumb": "C82A3378.jpg",
    "preview": "C82A3378.jpg",
    "tbytes": 24309,
-   "pbytes": 258707
+   "pbytes": 258707,
+   "ratio": 1.5
   },
   {
    "src": "C82A3380.JPG",
@@ -3314,7 +3589,8 @@
    "thumb": "C82A3380.jpg",
    "preview": "C82A3380.jpg",
    "tbytes": 25617,
-   "pbytes": 271490
+   "pbytes": 271490,
+   "ratio": 1.5
   },
   {
    "src": "C82A3382.JPG",
@@ -3326,7 +3602,8 @@
    "thumb": "C82A3382.jpg",
    "preview": "C82A3382.jpg",
    "tbytes": 19827,
-   "pbytes": 185588
+   "pbytes": 185588,
+   "ratio": 1.5
   },
   {
    "src": "C82A3383.JPG",
@@ -3338,7 +3615,8 @@
    "thumb": "C82A3383.jpg",
    "preview": "C82A3383.jpg",
    "tbytes": 24983,
-   "pbytes": 246565
+   "pbytes": 246565,
+   "ratio": 1.5
   },
   {
    "src": "C82A3385.JPG",
@@ -3350,7 +3628,8 @@
    "thumb": "C82A3385.jpg",
    "preview": "C82A3385.jpg",
    "tbytes": 27596,
-   "pbytes": 285513
+   "pbytes": 285513,
+   "ratio": 1.5
   },
   {
    "src": "C82A3386.JPG",
@@ -3362,7 +3641,8 @@
    "thumb": "C82A3386.jpg",
    "preview": "C82A3386.jpg",
    "tbytes": 26016,
-   "pbytes": 264922
+   "pbytes": 264922,
+   "ratio": 1.5
   },
   {
    "src": "C82A3387.JPG",
@@ -3374,7 +3654,8 @@
    "thumb": "C82A3387.jpg",
    "preview": "C82A3387.jpg",
    "tbytes": 24381,
-   "pbytes": 250711
+   "pbytes": 250711,
+   "ratio": 1.5
   },
   {
    "src": "C82A3389.JPG",
@@ -3386,7 +3667,8 @@
    "thumb": "C82A3389.jpg",
    "preview": "C82A3389.jpg",
    "tbytes": 24947,
-   "pbytes": 258762
+   "pbytes": 258762,
+   "ratio": 1.5
   },
   {
    "src": "C82A3390.JPG",
@@ -3398,7 +3680,8 @@
    "thumb": "C82A3390.jpg",
    "preview": "C82A3390.jpg",
    "tbytes": 25288,
-   "pbytes": 257973
+   "pbytes": 257973,
+   "ratio": 1.5
   },
   {
    "src": "C82A3391.JPG",
@@ -3410,7 +3693,8 @@
    "thumb": "C82A3391.jpg",
    "preview": "C82A3391.jpg",
    "tbytes": 24603,
-   "pbytes": 252460
+   "pbytes": 252460,
+   "ratio": 1.5
   },
   {
    "src": "C82A3392.JPG",
@@ -3422,7 +3706,8 @@
    "thumb": "C82A3392.jpg",
    "preview": "C82A3392.jpg",
    "tbytes": 25242,
-   "pbytes": 258346
+   "pbytes": 258346,
+   "ratio": 1.5
   },
   {
    "src": "C82A3393.JPG",
@@ -3434,7 +3719,8 @@
    "thumb": "C82A3393.jpg",
    "preview": "C82A3393.jpg",
    "tbytes": 26309,
-   "pbytes": 270194
+   "pbytes": 270194,
+   "ratio": 1.5
   },
   {
    "src": "C82A3394.JPG",
@@ -3446,19 +3732,21 @@
    "thumb": "C82A3394.jpg",
    "preview": "C82A3394.jpg",
    "tbytes": 26567,
-   "pbytes": 273517
+   "pbytes": 273517,
+   "ratio": 1.5
   },
   {
    "src": "C82A3395.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8919838,
    "date": "2026-11-07 14:06:18",
    "orient": 8,
    "thumb": "C82A3395.jpg",
    "preview": "C82A3395.jpg",
    "tbytes": 31838,
-   "pbytes": 348616
+   "pbytes": 348616,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3396.JPG",
@@ -3470,7 +3758,8 @@
    "thumb": "C82A3396.jpg",
    "preview": "C82A3396.jpg",
    "tbytes": 25144,
-   "pbytes": 255392
+   "pbytes": 255392,
+   "ratio": 1.5
   },
   {
    "src": "C82A3397.JPG",
@@ -3482,7 +3771,8 @@
    "thumb": "C82A3397.jpg",
    "preview": "C82A3397.jpg",
    "tbytes": 26041,
-   "pbytes": 265692
+   "pbytes": 265692,
+   "ratio": 1.5
   },
   {
    "src": "C82A3398.JPG",
@@ -3494,7 +3784,8 @@
    "thumb": "C82A3398.jpg",
    "preview": "C82A3398.jpg",
    "tbytes": 28707,
-   "pbytes": 292341
+   "pbytes": 292341,
+   "ratio": 1.5
   },
   {
    "src": "C82A3399.JPG",
@@ -3506,7 +3797,8 @@
    "thumb": "C82A3399.jpg",
    "preview": "C82A3399.jpg",
    "tbytes": 26091,
-   "pbytes": 265007
+   "pbytes": 265007,
+   "ratio": 1.5
   },
   {
    "src": "C82A3400.JPG",
@@ -3518,7 +3810,8 @@
    "thumb": "C82A3400.jpg",
    "preview": "C82A3400.jpg",
    "tbytes": 28671,
-   "pbytes": 278310
+   "pbytes": 278310,
+   "ratio": 1.5
   },
   {
    "src": "C82A3401.JPG",
@@ -3530,7 +3823,8 @@
    "thumb": "C82A3401.jpg",
    "preview": "C82A3401.jpg",
    "tbytes": 25252,
-   "pbytes": 247061
+   "pbytes": 247061,
+   "ratio": 1.5
   },
   {
    "src": "C82A3402.JPG",
@@ -3542,7 +3836,8 @@
    "thumb": "C82A3402.jpg",
    "preview": "C82A3402.jpg",
    "tbytes": 25072,
-   "pbytes": 247671
+   "pbytes": 247671,
+   "ratio": 1.5
   },
   {
    "src": "C82A3403.JPG",
@@ -3554,7 +3849,8 @@
    "thumb": "C82A3403.jpg",
    "preview": "C82A3403.jpg",
    "tbytes": 26030,
-   "pbytes": 257375
+   "pbytes": 257375,
+   "ratio": 1.5
   },
   {
    "src": "C82A3404.JPG",
@@ -3566,7 +3862,8 @@
    "thumb": "C82A3404.jpg",
    "preview": "C82A3404.jpg",
    "tbytes": 26059,
-   "pbytes": 257529
+   "pbytes": 257529,
+   "ratio": 1.5
   },
   {
    "src": "C82A3406.JPG",
@@ -3578,7 +3875,8 @@
    "thumb": "C82A3406.jpg",
    "preview": "C82A3406.jpg",
    "tbytes": 29811,
-   "pbytes": 340084
+   "pbytes": 340084,
+   "ratio": 1.5
   },
   {
    "src": "C82A3407.JPG",
@@ -3590,7 +3888,8 @@
    "thumb": "C82A3407.jpg",
    "preview": "C82A3407.jpg",
    "tbytes": 27576,
-   "pbytes": 309797
+   "pbytes": 309797,
+   "ratio": 1.5
   },
   {
    "src": "C82A3413.JPG",
@@ -3602,7 +3901,8 @@
    "thumb": "C82A3413.jpg",
    "preview": "C82A3413.jpg",
    "tbytes": 31834,
-   "pbytes": 288312
+   "pbytes": 288312,
+   "ratio": 1.5
   },
   {
    "src": "C82A3415.JPG",
@@ -3614,7 +3914,8 @@
    "thumb": "C82A3415.jpg",
    "preview": "C82A3415.jpg",
    "tbytes": 32560,
-   "pbytes": 298600
+   "pbytes": 298600,
+   "ratio": 1.5
   },
   {
    "src": "C82A3416.JPG",
@@ -3626,7 +3927,8 @@
    "thumb": "C82A3416.jpg",
    "preview": "C82A3416.jpg",
    "tbytes": 34619,
-   "pbytes": 312746
+   "pbytes": 312746,
+   "ratio": 1.5
   },
   {
    "src": "C82A3422.JPG",
@@ -3638,7 +3940,8 @@
    "thumb": "C82A3422.jpg",
    "preview": "C82A3422.jpg",
    "tbytes": 32209,
-   "pbytes": 282535
+   "pbytes": 282535,
+   "ratio": 1.5
   },
   {
    "src": "C82A3423.JPG",
@@ -3650,7 +3953,8 @@
    "thumb": "C82A3423.jpg",
    "preview": "C82A3423.jpg",
    "tbytes": 29496,
-   "pbytes": 263843
+   "pbytes": 263843,
+   "ratio": 1.5
   },
   {
    "src": "C82A3424.JPG",
@@ -3662,31 +3966,34 @@
    "thumb": "C82A3424.jpg",
    "preview": "C82A3424.jpg",
    "tbytes": 26879,
-   "pbytes": 235620
+   "pbytes": 235620,
+   "ratio": 1.5
   },
   {
    "src": "C82A3425.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5956897,
    "date": "2026-11-07 14:40:00",
    "orient": 8,
    "thumb": "C82A3425.jpg",
    "preview": "C82A3425.jpg",
    "tbytes": 28327,
-   "pbytes": 245295
+   "pbytes": 245295,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3427.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6663648,
    "date": "2026-11-07 14:40:59",
    "orient": 8,
    "thumb": "C82A3427.jpg",
    "preview": "C82A3427.jpg",
    "tbytes": 28732,
-   "pbytes": 252705
+   "pbytes": 252705,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3428.JPG",
@@ -3698,7 +4005,8 @@
    "thumb": "C82A3428.jpg",
    "preview": "C82A3428.jpg",
    "tbytes": 21633,
-   "pbytes": 180582
+   "pbytes": 180582,
+   "ratio": 1.5
   },
   {
    "src": "C82A3430.JPG",
@@ -3710,31 +4018,34 @@
    "thumb": "C82A3430.jpg",
    "preview": "C82A3430.jpg",
    "tbytes": 21023,
-   "pbytes": 174371
+   "pbytes": 174371,
+   "ratio": 1.5
   },
   {
    "src": "C82A3431.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5752392,
    "date": "2026-11-07 14:42:19",
    "orient": 8,
    "thumb": "C82A3431.jpg",
    "preview": "C82A3431.jpg",
    "tbytes": 22458,
-   "pbytes": 204841
+   "pbytes": 204841,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3432.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6122029,
    "date": "2026-11-07 14:42:23",
    "orient": 8,
    "thumb": "C82A3432.jpg",
    "preview": "C82A3432.jpg",
    "tbytes": 22614,
-   "pbytes": 209613
+   "pbytes": 209613,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3433.JPG",
@@ -3746,19 +4057,21 @@
    "thumb": "C82A3433.jpg",
    "preview": "C82A3433.jpg",
    "tbytes": 20954,
-   "pbytes": 187372
+   "pbytes": 187372,
+   "ratio": 1.5
   },
   {
    "src": "C82A3434.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5567390,
    "date": "2026-11-07 14:43:00",
    "orient": 8,
    "thumb": "C82A3434.jpg",
    "preview": "C82A3434.jpg",
    "tbytes": 25245,
-   "pbytes": 204764
+   "pbytes": 204764,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3435.JPG",
@@ -3770,79 +4083,86 @@
    "thumb": "C82A3435.jpg",
    "preview": "C82A3435.jpg",
    "tbytes": 19716,
-   "pbytes": 166883
+   "pbytes": 166883,
+   "ratio": 1.5
   },
   {
    "src": "C82A3436.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5740885,
    "date": "2026-11-07 14:43:10",
    "orient": 8,
    "thumb": "C82A3436.jpg",
    "preview": "C82A3436.jpg",
    "tbytes": 26475,
-   "pbytes": 213957
+   "pbytes": 213957,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3437.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5637554,
    "date": "2026-11-07 14:43:13",
    "orient": 8,
    "thumb": "C82A3437.jpg",
    "preview": "C82A3437.jpg",
    "tbytes": 25632,
-   "pbytes": 207527
+   "pbytes": 207527,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3438.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5759083,
    "date": "2026-11-07 14:43:50",
    "orient": 8,
    "thumb": "C82A3438.jpg",
    "preview": "C82A3438.jpg",
    "tbytes": 24417,
-   "pbytes": 208084
+   "pbytes": 208084,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3439.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5669233,
    "date": "2026-11-07 14:43:51",
    "orient": 8,
    "thumb": "C82A3439.jpg",
    "preview": "C82A3439.jpg",
    "tbytes": 24119,
-   "pbytes": 203782
+   "pbytes": 203782,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3440.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5912389,
    "date": "2026-11-07 14:43:56",
    "orient": 8,
    "thumb": "C82A3440.jpg",
    "preview": "C82A3440.jpg",
    "tbytes": 27181,
-   "pbytes": 222414
+   "pbytes": 222414,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3441.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5901750,
    "date": "2026-11-07 14:43:58",
    "orient": 8,
    "thumb": "C82A3441.jpg",
    "preview": "C82A3441.jpg",
    "tbytes": 26669,
-   "pbytes": 220248
+   "pbytes": 220248,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3442.JPG",
@@ -3854,19 +4174,21 @@
    "thumb": "C82A3442.jpg",
    "preview": "C82A3442.jpg",
    "tbytes": 22218,
-   "pbytes": 182165
+   "pbytes": 182165,
+   "ratio": 1.5
   },
   {
    "src": "C82A3443.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6072852,
    "date": "2026-11-07 14:47:31",
    "orient": 8,
    "thumb": "C82A3443.jpg",
    "preview": "C82A3443.jpg",
    "tbytes": 25061,
-   "pbytes": 224190
+   "pbytes": 224190,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3444.JPG",
@@ -3878,7 +4200,8 @@
    "thumb": "C82A3444.jpg",
    "preview": "C82A3444.jpg",
    "tbytes": 29846,
-   "pbytes": 291969
+   "pbytes": 291969,
+   "ratio": 1.5
   },
   {
    "src": "C82A3445.JPG",
@@ -3890,7 +4213,8 @@
    "thumb": "C82A3445.jpg",
    "preview": "C82A3445.jpg",
    "tbytes": 26695,
-   "pbytes": 270114
+   "pbytes": 270114,
+   "ratio": 1.5
   },
   {
    "src": "C82A3447.JPG",
@@ -3902,7 +4226,8 @@
    "thumb": "C82A3447.jpg",
    "preview": "C82A3447.jpg",
    "tbytes": 31558,
-   "pbytes": 313507
+   "pbytes": 313507,
+   "ratio": 1.5
   },
   {
    "src": "C82A3448.JPG",
@@ -3914,7 +4239,8 @@
    "thumb": "C82A3448.jpg",
    "preview": "C82A3448.jpg",
    "tbytes": 25591,
-   "pbytes": 256871
+   "pbytes": 256871,
+   "ratio": 1.5
   },
   {
    "src": "C82A3449.JPG",
@@ -3926,7 +4252,8 @@
    "thumb": "C82A3449.jpg",
    "preview": "C82A3449.jpg",
    "tbytes": 35204,
-   "pbytes": 329711
+   "pbytes": 329711,
+   "ratio": 1.5
   },
   {
    "src": "C82A3450.JPG",
@@ -3938,7 +4265,8 @@
    "thumb": "C82A3450.jpg",
    "preview": "C82A3450.jpg",
    "tbytes": 41075,
-   "pbytes": 376141
+   "pbytes": 376141,
+   "ratio": 1.5
   },
   {
    "src": "C82A3451.JPG",
@@ -3950,7 +4278,8 @@
    "thumb": "C82A3451.jpg",
    "preview": "C82A3451.jpg",
    "tbytes": 39946,
-   "pbytes": 383488
+   "pbytes": 383488,
+   "ratio": 1.5
   },
   {
    "src": "C82A3452.JPG",
@@ -3962,7 +4291,8 @@
    "thumb": "C82A3452.jpg",
    "preview": "C82A3452.jpg",
    "tbytes": 42165,
-   "pbytes": 405536
+   "pbytes": 405536,
+   "ratio": 1.5
   },
   {
    "src": "C82A3453.JPG",
@@ -3974,7 +4304,8 @@
    "thumb": "C82A3453.jpg",
    "preview": "C82A3453.jpg",
    "tbytes": 40475,
-   "pbytes": 395255
+   "pbytes": 395255,
+   "ratio": 1.5
   },
   {
    "src": "C82A3454.JPG",
@@ -3986,7 +4317,8 @@
    "thumb": "C82A3454.jpg",
    "preview": "C82A3454.jpg",
    "tbytes": 41106,
-   "pbytes": 398384
+   "pbytes": 398384,
+   "ratio": 1.5
   },
   {
    "src": "C82A3455.JPG",
@@ -3998,19 +4330,21 @@
    "thumb": "C82A3455.jpg",
    "preview": "C82A3455.jpg",
    "tbytes": 30962,
-   "pbytes": 304072
+   "pbytes": 304072,
+   "ratio": 1.5
   },
   {
    "src": "C82A3456.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6966371,
    "date": "2026-11-07 14:49:45",
    "orient": 8,
    "thumb": "C82A3456.jpg",
    "preview": "C82A3456.jpg",
    "tbytes": 28239,
-   "pbytes": 275855
+   "pbytes": 275855,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3459.JPG",
@@ -4022,7 +4356,8 @@
    "thumb": "C82A3459.jpg",
    "preview": "C82A3459.jpg",
    "tbytes": 42561,
-   "pbytes": 424028
+   "pbytes": 424028,
+   "ratio": 1.5
   },
   {
    "src": "C82A3460.JPG",
@@ -4034,7 +4369,8 @@
    "thumb": "C82A3460.jpg",
    "preview": "C82A3460.jpg",
    "tbytes": 41104,
-   "pbytes": 405882
+   "pbytes": 405882,
+   "ratio": 1.5
   },
   {
    "src": "C82A3461.JPG",
@@ -4046,7 +4382,8 @@
    "thumb": "C82A3461.jpg",
    "preview": "C82A3461.jpg",
    "tbytes": 40237,
-   "pbytes": 395665
+   "pbytes": 395665,
+   "ratio": 1.5
   },
   {
    "src": "C82A3462.JPG",
@@ -4058,7 +4395,8 @@
    "thumb": "C82A3462.jpg",
    "preview": "C82A3462.jpg",
    "tbytes": 42893,
-   "pbytes": 421448
+   "pbytes": 421448,
+   "ratio": 1.5
   },
   {
    "src": "C82A3467.JPG",
@@ -4070,7 +4408,8 @@
    "thumb": "C82A3467.jpg",
    "preview": "C82A3467.jpg",
    "tbytes": 40697,
-   "pbytes": 386073
+   "pbytes": 386073,
+   "ratio": 1.5
   },
   {
    "src": "C82A3468.JPG",
@@ -4082,7 +4421,8 @@
    "thumb": "C82A3468.jpg",
    "preview": "C82A3468.jpg",
    "tbytes": 41869,
-   "pbytes": 396279
+   "pbytes": 396279,
+   "ratio": 1.5
   },
   {
    "src": "C82A3469.JPG",
@@ -4094,7 +4434,8 @@
    "thumb": "C82A3469.jpg",
    "preview": "C82A3469.jpg",
    "tbytes": 41164,
-   "pbytes": 386588
+   "pbytes": 386588,
+   "ratio": 1.5
   },
   {
    "src": "C82A3471.JPG",
@@ -4106,7 +4447,8 @@
    "thumb": "C82A3471.jpg",
    "preview": "C82A3471.jpg",
    "tbytes": 37191,
-   "pbytes": 369732
+   "pbytes": 369732,
+   "ratio": 1.5
   },
   {
    "src": "C82A3472.JPG",
@@ -4118,7 +4460,8 @@
    "thumb": "C82A3472.jpg",
    "preview": "C82A3472.jpg",
    "tbytes": 37443,
-   "pbytes": 373293
+   "pbytes": 373293,
+   "ratio": 1.5
   },
   {
    "src": "C82A3475.JPG",
@@ -4130,7 +4473,8 @@
    "thumb": "C82A3475.jpg",
    "preview": "C82A3475.jpg",
    "tbytes": 35622,
-   "pbytes": 342090
+   "pbytes": 342090,
+   "ratio": 1.5
   },
   {
    "src": "C82A3476.JPG",
@@ -4142,7 +4486,8 @@
    "thumb": "C82A3476.jpg",
    "preview": "C82A3476.jpg",
    "tbytes": 37835,
-   "pbytes": 381087
+   "pbytes": 381087,
+   "ratio": 1.5
   },
   {
    "src": "C82A3479.JPG",
@@ -4154,7 +4499,8 @@
    "thumb": "C82A3479.jpg",
    "preview": "C82A3479.jpg",
    "tbytes": 43217,
-   "pbytes": 468523
+   "pbytes": 468523,
+   "ratio": 1.5
   },
   {
    "src": "C82A3480.JPG",
@@ -4166,7 +4512,8 @@
    "thumb": "C82A3480.jpg",
    "preview": "C82A3480.jpg",
    "tbytes": 43173,
-   "pbytes": 447135
+   "pbytes": 447135,
+   "ratio": 1.5
   },
   {
    "src": "C82A3481.JPG",
@@ -4178,7 +4525,8 @@
    "thumb": "C82A3481.jpg",
    "preview": "C82A3481.jpg",
    "tbytes": 43583,
-   "pbytes": 443640
+   "pbytes": 443640,
+   "ratio": 1.5
   },
   {
    "src": "C82A3482.JPG",
@@ -4190,7 +4538,8 @@
    "thumb": "C82A3482.jpg",
    "preview": "C82A3482.jpg",
    "tbytes": 44989,
-   "pbytes": 467664
+   "pbytes": 467664,
+   "ratio": 1.5
   },
   {
    "src": "C82A3483.JPG",
@@ -4202,7 +4551,8 @@
    "thumb": "C82A3483.jpg",
    "preview": "C82A3483.jpg",
    "tbytes": 37959,
-   "pbytes": 374871
+   "pbytes": 374871,
+   "ratio": 1.5
   },
   {
    "src": "C82A3486.JPG",
@@ -4214,7 +4564,8 @@
    "thumb": "C82A3486.jpg",
    "preview": "C82A3486.jpg",
    "tbytes": 40199,
-   "pbytes": 410952
+   "pbytes": 410952,
+   "ratio": 1.5
   },
   {
    "src": "C82A3487.JPG",
@@ -4226,7 +4577,8 @@
    "thumb": "C82A3487.jpg",
    "preview": "C82A3487.jpg",
    "tbytes": 38614,
-   "pbytes": 402663
+   "pbytes": 402663,
+   "ratio": 1.5
   },
   {
    "src": "C82A3489.JPG",
@@ -4238,7 +4590,8 @@
    "thumb": "C82A3489.jpg",
    "preview": "C82A3489.jpg",
    "tbytes": 39653,
-   "pbytes": 410793
+   "pbytes": 410793,
+   "ratio": 1.5
   },
   {
    "src": "C82A3490.JPG",
@@ -4250,7 +4603,8 @@
    "thumb": "C82A3490.jpg",
    "preview": "C82A3490.jpg",
    "tbytes": 38890,
-   "pbytes": 395655
+   "pbytes": 395655,
+   "ratio": 1.5
   },
   {
    "src": "C82A3491.JPG",
@@ -4262,7 +4616,8 @@
    "thumb": "C82A3491.jpg",
    "preview": "C82A3491.jpg",
    "tbytes": 35752,
-   "pbytes": 363659
+   "pbytes": 363659,
+   "ratio": 1.5
   },
   {
    "src": "C82A3494.JPG",
@@ -4274,7 +4629,8 @@
    "thumb": "C82A3494.jpg",
    "preview": "C82A3494.jpg",
    "tbytes": 36996,
-   "pbytes": 354871
+   "pbytes": 354871,
+   "ratio": 1.5
   },
   {
    "src": "C82A3495.JPG",
@@ -4286,7 +4642,8 @@
    "thumb": "C82A3495.jpg",
    "preview": "C82A3495.jpg",
    "tbytes": 38448,
-   "pbytes": 368219
+   "pbytes": 368219,
+   "ratio": 1.5
   },
   {
    "src": "C82A3496.JPG",
@@ -4298,7 +4655,8 @@
    "thumb": "C82A3496.jpg",
    "preview": "C82A3496.jpg",
    "tbytes": 36473,
-   "pbytes": 362618
+   "pbytes": 362618,
+   "ratio": 1.5
   },
   {
    "src": "C82A3497.JPG",
@@ -4310,7 +4668,8 @@
    "thumb": "C82A3497.jpg",
    "preview": "C82A3497.jpg",
    "tbytes": 35826,
-   "pbytes": 359485
+   "pbytes": 359485,
+   "ratio": 1.5
   },
   {
    "src": "C82A3499.JPG",
@@ -4322,7 +4681,8 @@
    "thumb": "C82A3499.jpg",
    "preview": "C82A3499.jpg",
    "tbytes": 37368,
-   "pbytes": 379527
+   "pbytes": 379527,
+   "ratio": 1.5
   },
   {
    "src": "C82A3502.JPG",
@@ -4334,7 +4694,8 @@
    "thumb": "C82A3502.jpg",
    "preview": "C82A3502.jpg",
    "tbytes": 35986,
-   "pbytes": 387643
+   "pbytes": 387643,
+   "ratio": 1.5
   },
   {
    "src": "C82A3503.JPG",
@@ -4346,19 +4707,21 @@
    "thumb": "C82A3503.jpg",
    "preview": "C82A3503.jpg",
    "tbytes": 35358,
-   "pbytes": 381688
+   "pbytes": 381688,
+   "ratio": 1.5
   },
   {
    "src": "C82A3504.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9175084,
    "date": "2026-11-07 15:17:50",
    "orient": 8,
    "thumb": "C82A3504.jpg",
    "preview": "C82A3504.jpg",
    "tbytes": 37548,
-   "pbytes": 387218
+   "pbytes": 387218,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3505.JPG",
@@ -4370,19 +4733,21 @@
    "thumb": "C82A3505.jpg",
    "preview": "C82A3505.jpg",
    "tbytes": 33239,
-   "pbytes": 327460
+   "pbytes": 327460,
+   "ratio": 1.5
   },
   {
    "src": "C82A3506.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8845483,
    "date": "2026-11-07 15:18:02",
    "orient": 8,
    "thumb": "C82A3506.jpg",
    "preview": "C82A3506.jpg",
    "tbytes": 37400,
-   "pbytes": 373075
+   "pbytes": 373075,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3508.JPG",
@@ -4394,7 +4759,8 @@
    "thumb": "C82A3508.jpg",
    "preview": "C82A3508.jpg",
    "tbytes": 39390,
-   "pbytes": 397304
+   "pbytes": 397304,
+   "ratio": 1.5
   },
   {
    "src": "C82A3509.JPG",
@@ -4406,7 +4772,8 @@
    "thumb": "C82A3509.jpg",
    "preview": "C82A3509.jpg",
    "tbytes": 39965,
-   "pbytes": 400765
+   "pbytes": 400765,
+   "ratio": 1.5
   },
   {
    "src": "C82A3510.JPG",
@@ -4418,7 +4785,8 @@
    "thumb": "C82A3510.jpg",
    "preview": "C82A3510.jpg",
    "tbytes": 38618,
-   "pbytes": 384372
+   "pbytes": 384372,
+   "ratio": 1.5
   },
   {
    "src": "C82A3513.JPG",
@@ -4430,7 +4798,8 @@
    "thumb": "C82A3513.jpg",
    "preview": "C82A3513.jpg",
    "tbytes": 33544,
-   "pbytes": 320812
+   "pbytes": 320812,
+   "ratio": 1.5
   },
   {
    "src": "C82A3515.JPG",
@@ -4442,7 +4811,8 @@
    "thumb": "C82A3515.jpg",
    "preview": "C82A3515.jpg",
    "tbytes": 38980,
-   "pbytes": 388784
+   "pbytes": 388784,
+   "ratio": 1.5
   },
   {
    "src": "C82A3516.JPG",
@@ -4454,7 +4824,8 @@
    "thumb": "C82A3516.jpg",
    "preview": "C82A3516.jpg",
    "tbytes": 38040,
-   "pbytes": 377645
+   "pbytes": 377645,
+   "ratio": 1.5
   },
   {
    "src": "C82A3519.JPG",
@@ -4466,7 +4837,8 @@
    "thumb": "C82A3519.jpg",
    "preview": "C82A3519.jpg",
    "tbytes": 35146,
-   "pbytes": 350161
+   "pbytes": 350161,
+   "ratio": 1.5
   },
   {
    "src": "C82A3520.JPG",
@@ -4478,7 +4850,8 @@
    "thumb": "C82A3520.jpg",
    "preview": "C82A3520.jpg",
    "tbytes": 32485,
-   "pbytes": 319115
+   "pbytes": 319115,
+   "ratio": 1.5
   },
   {
    "src": "C82A3521.JPG",
@@ -4490,7 +4863,8 @@
    "thumb": "C82A3521.jpg",
    "preview": "C82A3521.jpg",
    "tbytes": 33195,
-   "pbytes": 325966
+   "pbytes": 325966,
+   "ratio": 1.5
   },
   {
    "src": "C82A3523.JPG",
@@ -4502,7 +4876,8 @@
    "thumb": "C82A3523.jpg",
    "preview": "C82A3523.jpg",
    "tbytes": 37857,
-   "pbytes": 391321
+   "pbytes": 391321,
+   "ratio": 1.5
   },
   {
    "src": "C82A3524.JPG",
@@ -4514,7 +4889,8 @@
    "thumb": "C82A3524.jpg",
    "preview": "C82A3524.jpg",
    "tbytes": 37716,
-   "pbytes": 389442
+   "pbytes": 389442,
+   "ratio": 1.5
   },
   {
    "src": "C82A3525.JPG",
@@ -4526,7 +4902,8 @@
    "thumb": "C82A3525.jpg",
    "preview": "C82A3525.jpg",
    "tbytes": 36279,
-   "pbytes": 375053
+   "pbytes": 375053,
+   "ratio": 1.5
   },
   {
    "src": "C82A3529.JPG",
@@ -4538,7 +4915,8 @@
    "thumb": "C82A3529.jpg",
    "preview": "C82A3529.jpg",
    "tbytes": 35382,
-   "pbytes": 351219
+   "pbytes": 351219,
+   "ratio": 1.5
   },
   {
    "src": "C82A3530.JPG",
@@ -4550,7 +4928,8 @@
    "thumb": "C82A3530.jpg",
    "preview": "C82A3530.jpg",
    "tbytes": 34975,
-   "pbytes": 348958
+   "pbytes": 348958,
+   "ratio": 1.5
   },
   {
    "src": "C82A3532.JPG",
@@ -4562,7 +4941,8 @@
    "thumb": "C82A3532.jpg",
    "preview": "C82A3532.jpg",
    "tbytes": 36658,
-   "pbytes": 368981
+   "pbytes": 368981,
+   "ratio": 1.5
   },
   {
    "src": "C82A3533.JPG",
@@ -4574,7 +4954,8 @@
    "thumb": "C82A3533.jpg",
    "preview": "C82A3533.jpg",
    "tbytes": 37487,
-   "pbytes": 376722
+   "pbytes": 376722,
+   "ratio": 1.5
   },
   {
    "src": "C82A3535.JPG",
@@ -4586,7 +4967,8 @@
    "thumb": "C82A3535.jpg",
    "preview": "C82A3535.jpg",
    "tbytes": 41712,
-   "pbytes": 464572
+   "pbytes": 464572,
+   "ratio": 1.5
   },
   {
    "src": "C82A3536.JPG",
@@ -4598,7 +4980,8 @@
    "thumb": "C82A3536.jpg",
    "preview": "C82A3536.jpg",
    "tbytes": 39672,
-   "pbytes": 437837
+   "pbytes": 437837,
+   "ratio": 1.5
   },
   {
    "src": "C82A3539.JPG",
@@ -4610,7 +4993,8 @@
    "thumb": "C82A3539.jpg",
    "preview": "C82A3539.jpg",
    "tbytes": 38220,
-   "pbytes": 408109
+   "pbytes": 408109,
+   "ratio": 1.5
   },
   {
    "src": "C82A3540.JPG",
@@ -4622,43 +5006,47 @@
    "thumb": "C82A3540.jpg",
    "preview": "C82A3540.jpg",
    "tbytes": 37770,
-   "pbytes": 404418
+   "pbytes": 404418,
+   "ratio": 1.5
   },
   {
    "src": "C82A3541.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6929995,
    "date": "2026-11-07 15:25:09",
    "orient": 8,
    "thumb": "C82A3541.jpg",
    "preview": "C82A3541.jpg",
    "tbytes": 32648,
-   "pbytes": 302018
+   "pbytes": 302018,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3542.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6837687,
    "date": "2026-11-07 15:25:12",
    "orient": 8,
    "thumb": "C82A3542.jpg",
    "preview": "C82A3542.jpg",
    "tbytes": 29707,
-   "pbytes": 272655
+   "pbytes": 272655,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3543.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6894044,
    "date": "2026-11-07 15:25:19",
    "orient": 8,
    "thumb": "C82A3543.jpg",
    "preview": "C82A3543.jpg",
    "tbytes": 29943,
-   "pbytes": 279958
+   "pbytes": 279958,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3545.JPG",
@@ -4670,7 +5058,8 @@
    "thumb": "C82A3545.jpg",
    "preview": "C82A3545.jpg",
    "tbytes": 40377,
-   "pbytes": 409670
+   "pbytes": 409670,
+   "ratio": 1.5
   },
   {
    "src": "C82A3546.JPG",
@@ -4682,7 +5071,8 @@
    "thumb": "C82A3546.jpg",
    "preview": "C82A3546.jpg",
    "tbytes": 39661,
-   "pbytes": 403258
+   "pbytes": 403258,
+   "ratio": 1.5
   },
   {
    "src": "C82A3547.JPG",
@@ -4694,7 +5084,8 @@
    "thumb": "C82A3547.jpg",
    "preview": "C82A3547.jpg",
    "tbytes": 39912,
-   "pbytes": 404337
+   "pbytes": 404337,
+   "ratio": 1.5
   },
   {
    "src": "C82A3548.JPG",
@@ -4706,7 +5097,8 @@
    "thumb": "C82A3548.jpg",
    "preview": "C82A3548.jpg",
    "tbytes": 39257,
-   "pbytes": 395658
+   "pbytes": 395658,
+   "ratio": 1.5
   },
   {
    "src": "C82A3549.JPG",
@@ -4718,7 +5110,8 @@
    "thumb": "C82A3549.jpg",
    "preview": "C82A3549.jpg",
    "tbytes": 36434,
-   "pbytes": 373951
+   "pbytes": 373951,
+   "ratio": 1.5
   },
   {
    "src": "C82A3550.JPG",
@@ -4730,7 +5123,8 @@
    "thumb": "C82A3550.jpg",
    "preview": "C82A3550.jpg",
    "tbytes": 36626,
-   "pbytes": 376474
+   "pbytes": 376474,
+   "ratio": 1.5
   },
   {
    "src": "C82A3554.JPG",
@@ -4742,7 +5136,8 @@
    "thumb": "C82A3554.jpg",
    "preview": "C82A3554.jpg",
    "tbytes": 41049,
-   "pbytes": 419701
+   "pbytes": 419701,
+   "ratio": 1.5
   },
   {
    "src": "C82A3555.JPG",
@@ -4754,7 +5149,8 @@
    "thumb": "C82A3555.jpg",
    "preview": "C82A3555.jpg",
    "tbytes": 41918,
-   "pbytes": 424665
+   "pbytes": 424665,
+   "ratio": 1.5
   },
   {
    "src": "C82A3556.JPG",
@@ -4766,571 +5162,619 @@
    "thumb": "C82A3556.jpg",
    "preview": "C82A3556.jpg",
    "tbytes": 42221,
-   "pbytes": 431532
+   "pbytes": 431532,
+   "ratio": 1.5
   },
   {
    "src": "C82A3557.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8128013,
    "date": "2026-11-07 15:34:52",
    "orient": 8,
    "thumb": "C82A3557.jpg",
    "preview": "C82A3557.jpg",
    "tbytes": 39240,
-   "pbytes": 346352
+   "pbytes": 346352,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3558.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8409545,
    "date": "2026-11-07 15:35:32",
    "orient": 8,
    "thumb": "C82A3558.jpg",
    "preview": "C82A3558.jpg",
    "tbytes": 41086,
-   "pbytes": 397948
+   "pbytes": 397948,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3559.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8085665,
    "date": "2026-11-07 15:35:42",
    "orient": 8,
    "thumb": "C82A3559.jpg",
    "preview": "C82A3559.jpg",
    "tbytes": 40865,
-   "pbytes": 385617
+   "pbytes": 385617,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3561.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7907772,
    "date": "2026-11-07 15:35:50",
    "orient": 8,
    "thumb": "C82A3561.jpg",
    "preview": "C82A3561.jpg",
    "tbytes": 39130,
-   "pbytes": 367921
+   "pbytes": 367921,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3562.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10113765,
    "date": "2026-11-07 15:36:19",
    "orient": 8,
    "thumb": "C82A3562.jpg",
    "preview": "C82A3562.jpg",
    "tbytes": 45428,
-   "pbytes": 459890
+   "pbytes": 459890,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3564.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9273775,
    "date": "2026-11-07 15:36:53",
    "orient": 8,
    "thumb": "C82A3564.jpg",
    "preview": "C82A3564.jpg",
    "tbytes": 39829,
-   "pbytes": 415180
+   "pbytes": 415180,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3565.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8988979,
    "date": "2026-11-07 15:36:58",
    "orient": 8,
    "thumb": "C82A3565.jpg",
    "preview": "C82A3565.jpg",
    "tbytes": 38331,
-   "pbytes": 389831
+   "pbytes": 389831,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3566.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8481276,
    "date": "2026-11-07 15:37:09",
    "orient": 8,
    "thumb": "C82A3566.jpg",
    "preview": "C82A3566.jpg",
    "tbytes": 37449,
-   "pbytes": 366821
+   "pbytes": 366821,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3567.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8638254,
    "date": "2026-11-07 15:37:12",
    "orient": 8,
    "thumb": "C82A3567.jpg",
    "preview": "C82A3567.jpg",
    "tbytes": 37126,
-   "pbytes": 375541
+   "pbytes": 375541,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3568.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8662024,
    "date": "2026-11-07 15:38:37",
    "orient": 8,
    "thumb": "C82A3568.jpg",
    "preview": "C82A3568.jpg",
    "tbytes": 38383,
-   "pbytes": 378696
+   "pbytes": 378696,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3569.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8905236,
    "date": "2026-11-07 15:38:40",
    "orient": 8,
    "thumb": "C82A3569.jpg",
    "preview": "C82A3569.jpg",
    "tbytes": 39730,
-   "pbytes": 394835
+   "pbytes": 394835,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3570.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8816519,
    "date": "2026-11-07 15:38:43",
    "orient": 8,
    "thumb": "C82A3570.jpg",
    "preview": "C82A3570.jpg",
    "tbytes": 39028,
-   "pbytes": 392500
+   "pbytes": 392500,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3571.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8845087,
    "date": "2026-11-07 15:38:47",
    "orient": 8,
    "thumb": "C82A3571.jpg",
    "preview": "C82A3571.jpg",
    "tbytes": 38533,
-   "pbytes": 382563
+   "pbytes": 382563,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3572.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8705930,
    "date": "2026-11-07 15:38:51",
    "orient": 8,
    "thumb": "C82A3572.jpg",
    "preview": "C82A3572.jpg",
    "tbytes": 39289,
-   "pbytes": 384174
+   "pbytes": 384174,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3573.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8292097,
    "date": "2026-11-07 15:38:54",
    "orient": 8,
    "thumb": "C82A3573.jpg",
    "preview": "C82A3573.jpg",
    "tbytes": 38561,
-   "pbytes": 370645
+   "pbytes": 370645,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3575.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8694811,
    "date": "2026-11-07 15:40:03",
    "orient": 8,
    "thumb": "C82A3575.jpg",
    "preview": "C82A3575.jpg",
    "tbytes": 39675,
-   "pbytes": 383312
+   "pbytes": 383312,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3576.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8385434,
    "date": "2026-11-07 15:40:06",
    "orient": 8,
    "thumb": "C82A3576.jpg",
    "preview": "C82A3576.jpg",
    "tbytes": 38116,
-   "pbytes": 363015
+   "pbytes": 363015,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3577.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8547843,
    "date": "2026-11-07 15:40:10",
    "orient": 8,
    "thumb": "C82A3577.jpg",
    "preview": "C82A3577.jpg",
    "tbytes": 38988,
-   "pbytes": 372072
+   "pbytes": 372072,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3578.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8154354,
    "date": "2026-11-07 15:40:14",
    "orient": 8,
    "thumb": "C82A3578.jpg",
    "preview": "C82A3578.jpg",
    "tbytes": 37123,
-   "pbytes": 352411
+   "pbytes": 352411,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3579.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9431981,
    "date": "2026-11-07 15:40:39",
    "orient": 8,
    "thumb": "C82A3579.jpg",
    "preview": "C82A3579.jpg",
    "tbytes": 41763,
-   "pbytes": 422411
+   "pbytes": 422411,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3580.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8394172,
    "date": "2026-11-07 15:40:43",
    "orient": 8,
    "thumb": "C82A3580.jpg",
    "preview": "C82A3580.jpg",
    "tbytes": 39660,
-   "pbytes": 374563
+   "pbytes": 374563,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3582.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9296579,
    "date": "2026-11-07 15:40:54",
    "orient": 8,
    "thumb": "C82A3582.jpg",
    "preview": "C82A3582.jpg",
    "tbytes": 41846,
-   "pbytes": 418603
+   "pbytes": 418603,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3583.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8860871,
    "date": "2026-11-07 15:40:58",
    "orient": 8,
    "thumb": "C82A3583.jpg",
    "preview": "C82A3583.jpg",
    "tbytes": 41333,
-   "pbytes": 403027
+   "pbytes": 403027,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3585.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8470789,
    "date": "2026-11-07 15:41:43",
    "orient": 8,
    "thumb": "C82A3585.jpg",
    "preview": "C82A3585.jpg",
    "tbytes": 39455,
-   "pbytes": 378250
+   "pbytes": 378250,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3586.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8083855,
    "date": "2026-11-07 15:41:46",
    "orient": 8,
    "thumb": "C82A3586.jpg",
    "preview": "C82A3586.jpg",
    "tbytes": 39093,
-   "pbytes": 362970
+   "pbytes": 362970,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3587.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8490902,
    "date": "2026-11-07 15:41:49",
    "orient": 8,
    "thumb": "C82A3587.jpg",
    "preview": "C82A3587.jpg",
    "tbytes": 40613,
-   "pbytes": 382510
+   "pbytes": 382510,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3588.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8562390,
    "date": "2026-11-07 15:41:52",
    "orient": 8,
    "thumb": "C82A3588.jpg",
    "preview": "C82A3588.jpg",
    "tbytes": 40439,
-   "pbytes": 386972
+   "pbytes": 386972,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3589.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9554518,
    "date": "2026-11-07 15:42:31",
    "orient": 8,
    "thumb": "C82A3589.jpg",
    "preview": "C82A3589.jpg",
    "tbytes": 41134,
-   "pbytes": 409846
+   "pbytes": 409846,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3590.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10806905,
    "date": "2026-11-07 15:42:34",
    "orient": 8,
    "thumb": "C82A3590.jpg",
    "preview": "C82A3590.jpg",
    "tbytes": 44014,
-   "pbytes": 465028
+   "pbytes": 465028,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3591.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 10163164,
    "date": "2026-11-07 15:42:39",
    "orient": 8,
    "thumb": "C82A3591.jpg",
    "preview": "C82A3591.jpg",
    "tbytes": 43704,
-   "pbytes": 445991
+   "pbytes": 445991,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3592.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9021161,
    "date": "2026-11-07 15:42:47",
    "orient": 8,
    "thumb": "C82A3592.jpg",
    "preview": "C82A3592.jpg",
    "tbytes": 40693,
-   "pbytes": 391208
+   "pbytes": 391208,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3593.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8076975,
    "date": "2026-11-07 15:42:50",
    "orient": 8,
    "thumb": "C82A3593.jpg",
    "preview": "C82A3593.jpg",
    "tbytes": 36317,
-   "pbytes": 333254
+   "pbytes": 333254,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3594.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 7920227,
    "date": "2026-11-07 15:42:59",
    "orient": 8,
    "thumb": "C82A3594.jpg",
    "preview": "C82A3594.jpg",
    "tbytes": 36974,
-   "pbytes": 335345
+   "pbytes": 335345,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3595.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9323825,
    "date": "2026-11-07 15:43:02",
    "orient": 8,
    "thumb": "C82A3595.jpg",
    "preview": "C82A3595.jpg",
    "tbytes": 40391,
-   "pbytes": 396933
+   "pbytes": 396933,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3597.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8848703,
    "date": "2026-11-07 15:46:40",
    "orient": 8,
    "thumb": "C82A3597.jpg",
    "preview": "C82A3597.jpg",
    "tbytes": 43761,
-   "pbytes": 396233
+   "pbytes": 396233,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3598.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9779502,
    "date": "2026-11-07 15:46:45",
    "orient": 8,
    "thumb": "C82A3598.jpg",
    "preview": "C82A3598.jpg",
    "tbytes": 43268,
-   "pbytes": 426015
+   "pbytes": 426015,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3599.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9918575,
    "date": "2026-11-07 15:46:49",
    "orient": 8,
    "thumb": "C82A3599.jpg",
    "preview": "C82A3599.jpg",
    "tbytes": 43410,
-   "pbytes": 432349
+   "pbytes": 432349,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3600.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8842421,
    "date": "2026-11-07 15:46:57",
    "orient": 8,
    "thumb": "C82A3600.jpg",
    "preview": "C82A3600.jpg",
    "tbytes": 42866,
-   "pbytes": 391612
+   "pbytes": 391612,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3602.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 9089381,
    "date": "2026-11-07 15:47:20",
    "orient": 8,
    "thumb": "C82A3602.jpg",
    "preview": "C82A3602.jpg",
    "tbytes": 42064,
-   "pbytes": 403755
+   "pbytes": 403755,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3603.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6415757,
    "date": "2026-11-07 15:51:12",
    "orient": 8,
    "thumb": "C82A3603.jpg",
    "preview": "C82A3603.jpg",
    "tbytes": 28509,
-   "pbytes": 252775
+   "pbytes": 252775,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3605.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5910419,
    "date": "2026-11-07 15:51:38",
    "orient": 8,
    "thumb": "C82A3605.jpg",
    "preview": "C82A3605.jpg",
    "tbytes": 29381,
-   "pbytes": 240326
+   "pbytes": 240326,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3606.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6115228,
    "date": "2026-11-07 15:51:41",
    "orient": 8,
    "thumb": "C82A3606.jpg",
    "preview": "C82A3606.jpg",
    "tbytes": 29320,
-   "pbytes": 243672
+   "pbytes": 243672,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3607.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5966357,
    "date": "2026-11-07 15:51:51",
    "orient": 8,
    "thumb": "C82A3607.jpg",
    "preview": "C82A3607.jpg",
    "tbytes": 26542,
-   "pbytes": 227057
+   "pbytes": 227057,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3608.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6143577,
    "date": "2026-11-07 15:51:56",
    "orient": 8,
    "thumb": "C82A3608.jpg",
    "preview": "C82A3608.jpg",
    "tbytes": 30095,
-   "pbytes": 246315
+   "pbytes": 246315,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3610.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 5960081,
    "date": "2026-11-07 15:52:22",
    "orient": 8,
    "thumb": "C82A3610.jpg",
    "preview": "C82A3610.jpg",
    "tbytes": 29035,
-   "pbytes": 235893
+   "pbytes": 235893,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3611.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6287119,
    "date": "2026-11-07 15:52:30",
    "orient": 8,
    "thumb": "C82A3611.jpg",
    "preview": "C82A3611.jpg",
    "tbytes": 27847,
-   "pbytes": 244308
+   "pbytes": 244308,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3612.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 6228600,
    "date": "2026-11-07 15:52:35",
    "orient": 8,
    "thumb": "C82A3612.jpg",
    "preview": "C82A3612.jpg",
    "tbytes": 26008,
-   "pbytes": 233418
+   "pbytes": 233418,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3613.JPG",
@@ -5342,19 +5786,21 @@
    "thumb": "C82A3613.jpg",
    "preview": "C82A3613.jpg",
    "tbytes": 32708,
-   "pbytes": 324119
+   "pbytes": 324119,
+   "ratio": 1.5
   },
   {
    "src": "C82A3614.JPG",
-   "w": 6000,
-   "h": 4000,
+   "w": 4000,
+   "h": 6000,
    "bytes": 8978027,
    "date": "2026-11-07 16:04:52",
    "orient": 8,
    "thumb": "C82A3614.jpg",
    "preview": "C82A3614.jpg",
    "tbytes": 32249,
-   "pbytes": 354719
+   "pbytes": 354719,
+   "ratio": 0.6667
   },
   {
    "src": "C82A3615.JPG",
@@ -5366,7 +5812,8 @@
    "thumb": "C82A3615.jpg",
    "preview": "C82A3615.jpg",
    "tbytes": 29566,
-   "pbytes": 301386
+   "pbytes": 301386,
+   "ratio": 1.5
   },
   {
    "src": "C82A3623.JPG",
@@ -5378,7 +5825,8 @@
    "thumb": "C82A3623.jpg",
    "preview": "C82A3623.jpg",
    "tbytes": 31365,
-   "pbytes": 303034
+   "pbytes": 303034,
+   "ratio": 1.5
   },
   {
    "src": "C82A3625.JPG",
@@ -5390,7 +5838,8 @@
    "thumb": "C82A3625.jpg",
    "preview": "C82A3625.jpg",
    "tbytes": 25628,
-   "pbytes": 222388
+   "pbytes": 222388,
+   "ratio": 1.5
   },
   {
    "src": "C82A3627.JPG",
@@ -5402,7 +5851,8 @@
    "thumb": "C82A3627.jpg",
    "preview": "C82A3627.jpg",
    "tbytes": 32182,
-   "pbytes": 291948
+   "pbytes": 291948,
+   "ratio": 1.5
   },
   {
    "src": "C82A3634.JPG",
@@ -5414,7 +5864,8 @@
    "thumb": "C82A3634.jpg",
    "preview": "C82A3634.jpg",
    "tbytes": 28321,
-   "pbytes": 261239
+   "pbytes": 261239,
+   "ratio": 1.5
   },
   {
    "src": "C82A3635.JPG",
@@ -5426,7 +5877,8 @@
    "thumb": "C82A3635.jpg",
    "preview": "C82A3635.jpg",
    "tbytes": 41013,
-   "pbytes": 385115
+   "pbytes": 385115,
+   "ratio": 1.5
   },
   {
    "src": "C82A3637.JPG",
@@ -5438,7 +5890,8 @@
    "thumb": "C82A3637.jpg",
    "preview": "C82A3637.jpg",
    "tbytes": 32943,
-   "pbytes": 259330
+   "pbytes": 259330,
+   "ratio": 1.5
   },
   {
    "src": "C82A3638.JPG",
@@ -5450,7 +5903,8 @@
    "thumb": "C82A3638.jpg",
    "preview": "C82A3638.jpg",
    "tbytes": 34738,
-   "pbytes": 272168
+   "pbytes": 272168,
+   "ratio": 1.5
   },
   {
    "src": "C82A3639.JPG",
@@ -5462,7 +5916,8 @@
    "thumb": "C82A3639.jpg",
    "preview": "C82A3639.jpg",
    "tbytes": 39008,
-   "pbytes": 397075
+   "pbytes": 397075,
+   "ratio": 1.5
   },
   {
    "src": "C82A3653.JPG",
@@ -5474,7 +5929,8 @@
    "thumb": "C82A3653.jpg",
    "preview": "C82A3653.jpg",
    "tbytes": 24894,
-   "pbytes": 194554
+   "pbytes": 194554,
+   "ratio": 1.5
   },
   {
    "src": "C82A3654.JPG",
@@ -5486,7 +5942,8 @@
    "thumb": "C82A3654.jpg",
    "preview": "C82A3654.jpg",
    "tbytes": 25349,
-   "pbytes": 244404
+   "pbytes": 244404,
+   "ratio": 1.5
   },
   {
    "src": "C82A3655.JPG",
@@ -5498,7 +5955,8 @@
    "thumb": "C82A3655.jpg",
    "preview": "C82A3655.jpg",
    "tbytes": 25219,
-   "pbytes": 222481
+   "pbytes": 222481,
+   "ratio": 1.5
   },
   {
    "src": "C82A3656.JPG",
@@ -5510,7 +5968,8 @@
    "thumb": "C82A3656.jpg",
    "preview": "C82A3656.jpg",
    "tbytes": 25627,
-   "pbytes": 225748
+   "pbytes": 225748,
+   "ratio": 1.5
   },
   {
    "src": "C82A3657.JPG",
@@ -5522,7 +5981,8 @@
    "thumb": "C82A3657.jpg",
    "preview": "C82A3657.jpg",
    "tbytes": 24022,
-   "pbytes": 213575
+   "pbytes": 213575,
+   "ratio": 1.5
   },
   {
    "src": "C82A3659.JPG",
@@ -5534,7 +5994,8 @@
    "thumb": "C82A3659.jpg",
    "preview": "C82A3659.jpg",
    "tbytes": 20691,
-   "pbytes": 161386
+   "pbytes": 161386,
+   "ratio": 1.5
   },
   {
    "src": "C82A3660.JPG",
@@ -5546,7 +6007,8 @@
    "thumb": "C82A3660.jpg",
    "preview": "C82A3660.jpg",
    "tbytes": 22039,
-   "pbytes": 173902
+   "pbytes": 173902,
+   "ratio": 1.5
   }
  ],
  "bride": "Ayeshha",
