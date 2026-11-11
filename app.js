@@ -1,5 +1,5 @@
 /* ============================================================
-   Ayesha Mansuri — Wedding Album
+   Ayeshha & Umair - Wedding Album
    Originals live at /photos/, display copies at /thumbs/ + /previews/.
    ============================================================ */
 (function () {
