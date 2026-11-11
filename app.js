@@ -162,22 +162,6 @@
     rendered += slice.length;
     el.gallery.appendChild(frag);
 
-    // Observe every new card so it fades in when scrolled into view.
-    created.forEach(function (c) {
-      if (fadeObserver) fadeObserver.observe(c);
-      else c.classList.add('is-in');
-    });
-
-    // Deterministic fallback: reveal anything already within (or above) the
-    // viewport right now, so the grid is never blank while the observer
-    // callback is still pending.
-    requestAnimationFrame(function () {
-      var vh = window.innerHeight;
-      created.forEach(function (c) {
-        var r = c.getBoundingClientRect();
-        if (r.top < vh + 250 && r.bottom > -250) c.classList.add('is-in');
-      });
-    });
     return true;
   }
 
@@ -200,27 +184,14 @@
   }
 
   /* ---------- Lazy loading ---------- */
-  var fadeObserver = null;
 
   // Must run before the first render so the initial cards are observed.
-  function setupFadeObserver() {
-    if (!('IntersectionObserver' in window)) return;
-    fadeObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) {
-          e.target.classList.add('is-in');
-          fadeObserver.unobserve(e.target);
-        }
-      });
-    }, { rootMargin: '250px' });
-  }
-
   function initObserver() {
     if (!('IntersectionObserver' in window)) {
       // No IO support: render everything and show it immediately.
       var pump = function () {
         while (renderChunk()) {}
-        el.gallery.querySelectorAll('.card').forEach(function (c) { c.classList.add('is-in'); });
+        
       };
       pump();
       return;
@@ -820,24 +791,9 @@
       photos = m.photos || [];
       el.heroCount.textContent = photos.length;
       el.introCount.textContent = photos.length;
-      setupFadeObserver();
       rebuild();
       initObserver();
 
-      // Safety net: if the browser never delivers the observer callback (a
-      // backgrounded tab gets no rendering frames), make sure the grid still
-      // becomes visible instead of staying blank.
-      setTimeout(function () {
-        el.gallery.querySelectorAll('.card:not(.is-in)').forEach(function (c) {
-          var r = c.getBoundingClientRect();
-          if (r.top < window.innerHeight * 4) c.classList.add('is-in');
-        });
-      }, 1200);
-      setTimeout(function () {
-        el.gallery.querySelectorAll('.card:not(.is-in)').forEach(function (c) {
-          c.classList.add('is-in');
-        });
-      }, 8000);
       setupHero();
       bindEvents();
       setTimeout(function () { el.loader.classList.add('is-hidden'); }, 350);
