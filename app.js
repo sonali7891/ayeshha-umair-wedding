@@ -260,21 +260,23 @@
   var slidesRendered = [];
   var zoom = { on: false, scale: 1, x: 0, y: 0 };
 
-  // Size the image box to the photo's own aspect ratio so the picture is
-  // never cropped or stretched - it is shown exactly as it was taken.
+  // Work out the exact pixel box that shows the whole photo, at its true
+  // aspect ratio, inside the current viewport. The picture is never cropped
+  // and never stretched - it is shown exactly as it was taken.
   function sizeSlideImage(img, p) {
     if (!img || !p) return;
     var sw = window.innerWidth;
     var sh = window.innerHeight;
     var photoAspect = p.w / p.h;
     var screenAspect = sw / sh;
+    var w, h;
     if (photoAspect >= screenAspect) {
-      img.style.width = '100%';
-      img.style.height = 'auto';
+      w = sw; h = sw / photoAspect;
     } else {
-      img.style.height = '100%';
-      img.style.width = 'auto';
+      h = sh; w = sh * photoAspect;
     }
+    img.style.width = Math.round(w) + 'px';
+    img.style.height = Math.round(h) + 'px';
     img.style.objectFit = 'contain';
   }
 
