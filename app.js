@@ -377,24 +377,50 @@
     return s;
   }
 
-  // Prefetch the neighbouring previews so a swipe never waits on the network.
+  // Warm the previews that sit just OUTSIDE the slide window - those are the
+  // ones the next swipe will need. Anything inside the window has already
+  // had its <img src> assigned by slideFor(), so prefetching it would just
+  // duplicate an in-flight request and waste mobile data.
   var prefetched = {};
+  var prefetchRefs = [];
   function prefetch(i) {
     if (i < 0 || i >= view.length || prefetched[i]) return;
+    if (slideEls[i]) return;              // already being fetched by its slide
     prefetched[i] = 1;
     var im = new Image();
+    // Keep the reference alive until the load settles - dropping it straight
+    // away can let a memory-constrained mobile browser cancel the fetch.
+    im.onload = im.onerror = function () { im.onload = im.onerror = null; };
     im.src = PREV_DIR + view[i].preview;
+    prefetchRefs.push(im);
+    if (prefetchRefs.length > 8) prefetchRefs.shift();
+  }
+
+  // Free the decoded bitmap of a slide that is leaving the window.
+  function releaseSlide(s) {
+    if (!s) return;
+    var im = s.querySelector('img');
+    if (im) {
+      im.src = '';                       // releases the decoded image
+      im.removeAttribute('src');
+      im.style.opacity = '0';
+    }
+    s.style.backgroundImage = '';
   }
 
   // Keep a window of slides around the current one so swiping is
   // instant and memory stays bounded.
   function ensureSlides(center) {
-    var lo = Math.max(0, center - 3);
-    var hi = Math.min(view.length - 1, center + 3);
+    // A phone can afford fewer full-screen decoded previews than a desktop.
+    var span = window.innerWidth <= 760 ? 2 : 3;
+    var lo = Math.max(0, center - span);
+    var hi = Math.min(view.length - 1, center + span);
     for (var i in slideEls) {
       var k = Number(i);
       if (k < lo || k > hi) {
-        if (slideEls[k] && slideEls[k].parentNode) slideEls[k].parentNode.removeChild(slideEls[k]);
+        var leaving = slideEls[i];
+        releaseSlide(leaving);
+        if (leaving && leaving.parentNode) leaving.parentNode.removeChild(leaving);
         delete slideEls[i];
       }
     }
@@ -407,7 +433,9 @@
         slideEls[j] = s;
       }
     }
-    prefetch(center - 1); prefetch(center + 1);
+    // Warm the leading edges just outside the window.
+    prefetch(center - (span + 1));
+    prefetch(center + (span + 1));
     return lo;
   }
 
@@ -505,7 +533,13 @@
     updateMeta(n);
 
     var img = slideEls[n] && slideEls[n].querySelector('img');
-    if (img && !img.complete) el.lb.classList.add('is-loading');
+    if (img && !img.complete) {
+      // Only show the spinner if the image is genuinely slow, so a fast
+      // load never causes a distracting flash of the spinner.
+      var slow = setTimeout(function () { el.lb.classList.add('is-loading'); }, 250);
+      img.addEventListener('load', function () { clearTimeout(slow); el.lb.classList.remove('is-loading'); }, { once: true });
+      img.addEventListener('error', function () { clearTimeout(slow); el.lb.classList.remove('is-loading'); }, { once: true });
+    }
     // The controls are never revealed by an automatic/programmatic move.
   }
 

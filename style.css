@@ -302,7 +302,6 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
   max-width: 100%; max-height: 100%;
   object-fit: contain;
   display: block;
-  will-change: transform, opacity;
   opacity: 0;
   /* Centred first, then the zoom offset, then the zoom scale - so the photo
      stays centred and keeps its aspect ratio at every zoom level. */
@@ -312,6 +311,10 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 /* The photograph is always shown at 100% of its own size - never scaled
    down - so it stays a true full-screen image throughout a transition.
    The zoom variables keep the aspect ratio at every zoom level. */
+
+/* Only the photo on screen needs a promoted compositor layer - promoting
+   every slide would cost ~95 MB of VRAM on a 3x DPR phone. */
+.lb-slide.is-active img { will-change: transform, opacity; }
 
 .lb-spinner {
   position: absolute; top: 50%; left: 50%;
