@@ -259,7 +259,6 @@
   var drag = null;          // active pointer drag state
   var chromeTimer = null;
   var trackAnimTimer = null;
-  var slidesRendered = [];
   var zoom = { on: false, scale: 1, x: 0, y: 0 };
 
   // Work out the exact pixel box that shows the whole photo, at its true
@@ -791,10 +790,10 @@
       var threshold = window.innerWidth * 0.16;
       var target = current;
 
-      if (velocity < -0.5) target = current + 1;
-      else if (velocity > 0.5) target = current - 1;
-      else if (delta > threshold) target = current + 1;
-      else if (delta < -threshold) target = current - 1;
+      // Distance is the primary signal; velocity only adds a flick in the
+      // same direction, so a slow deliberate swipe is never misjudged.
+      if (delta > threshold || velocity < -0.45) target = current + 1;
+      else if (delta < -threshold || velocity > 0.45) target = current - 1;
 
       if (target < 0) target = 0;
       if (target > view.length - 1) target = view.length - 1;
