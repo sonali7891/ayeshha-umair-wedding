@@ -67,7 +67,7 @@
   };
 
   /* ---------- Favourites (localStorage) ---------- */
-  var LS_KEY = 'amesuri-wedding-favs';
+  var LS_KEY = 'ayeshha-umair-wedding-favs';
 
   function loadFavs() {
     try {
